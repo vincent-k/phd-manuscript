@@ -1,0 +1,5 @@
+Definition add_lights_reconfig (n:nat) :=
+ mk_components (generate_from_template LightComp n);
+ mk_normal_bindings p1 
+            (Ident "Light Collector") (Ident "Collect Light Info")
+            (Ident "Street Light")  n (Ident "Get").

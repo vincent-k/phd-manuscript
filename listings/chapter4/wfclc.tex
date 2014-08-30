@@ -1,0 +1,11 @@
+      (Hp : forall c, decidable (well_formed_component c)): 
+forall lc, decidable (forall c, In c lc -> well_formed_component c).
+Proof.
+  exact (fix well_formed_component_lc_dec lc :=
+   match lc as lc return 
+    decidable (forall c', In c' lc -> well_formed_component c') with 
+     | nil       => well_formed_component_nil_dec
+     | cons c lc => well_formed_component_cons_dec c (Hp c) lc 
+                                   (well_formed_component_lc_dec lc)
+  end).
+Defined.  (*Qed would hide recursion to the caller*) 

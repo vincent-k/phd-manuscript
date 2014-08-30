@@ -1,0 +1,9 @@
+Definition valid_binding b lc li : Prop :=
+  match b with
+   | Normal p i j k l => normal_binding i j k l lc
+   | Export p i j k   => export_binding i j k lc li       
+   | Import p i j k   => import_binding i j k lc li
+  end. 
+
+Definition well_formed_bindings lb lc li : Prop :=
+  forall b, In b lb -> valid_binding b lc li.

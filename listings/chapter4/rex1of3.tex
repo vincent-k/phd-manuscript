@@ -1,0 +1,18 @@
+Parameter p  : path.
+Parameter iclC : implementationClass.
+Parameter sigS1 : signature.
+Parameter sigC2 : signature.
+
+Definition cpath : path := (app p (Ident "Component N"::nil)).
+
+Definition C : component :=
+ Component (Ident "C") cpath iclC Configuration
+     (*subcomponents*) 
+     nil
+     (*interfaces*) 
+     (Interface (Ident "s1") sigS1 (app cpath (Ident "C"::nil))
+               External Server Functional Mandatory Singleton ::
+      Interface (Ident "c2") sigC2 (app cpath (Ident "C"::nil))
+               External Client Functional Mandatory Singleton :: nil)
+      (*bindings*) 
+      nil.

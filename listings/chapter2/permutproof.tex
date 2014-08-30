@@ -1,0 +1,8 @@
+Lemma permut_example:
+  permut (1::2::3::nil) (3::1::2::nil).
+Proof.
+  apply p_trans with (l2:=1::3::2::nil).
+  + apply p_skip.
+    apply p_swap.
+  + apply p_swap.
+Qed.

@@ -1,0 +1,5 @@
+Fixpoint plus (n m : nat) {struct n} : nat :=
+  match n with
+  | 0 => m
+  | S p => S (plus p m)
+  end

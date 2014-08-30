@@ -1,0 +1,3 @@
+Inductive vector (A : Type) : nat -> Type :=
+| Vnil : vector A 0
+| Vcons : A -> forall n : nat, vector A n -> vector A (S n).

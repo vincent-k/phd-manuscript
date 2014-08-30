@@ -1,0 +1,4 @@
+Definition vhead (A:Type) (n:nat) (v: vector A (S n)) :=
+match v with
+  Vcons el n v' => el
+end.

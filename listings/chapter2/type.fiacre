@@ -1,0 +1,4 @@
+type Order is union
+   makeSandwich
+ | makeCoffee of 0..2
+end

@@ -1,0 +1,10 @@
+Function check_if_recipients_are_mandatory_aux (li:list interface) 
+                      (lb:list binding) (lc:list component) : bool :=
+  match li with
+    nil    => true
+  | i :: r => let lir := export_recipients (i->id) lb lc in
+              if not_nil lir && check_if_mandatory lir then
+                check_if_recipients_are_mandatory_aux r lb lc
+              else
+                false
+  end.

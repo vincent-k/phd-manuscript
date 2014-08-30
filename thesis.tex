@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt,twoside,openright]{book}
+
+\usepackage{lmodern}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese,french,english]{babel}
+%\usepackage[backend=biber,backref=true]{biblatex}
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage{float}
+\usepackage[hyperfootnotes=false]{hyperref}
+\usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{paralist}
+\usepackage{setspace}
+\usepackage{standalone}
+\usepackage{subfigure}
+\usepackage{tabularx}
+\usepackage[disable]{todonotes}
+\usepackage{minitoc}
+\usepackage{styles/highlighter}
+\usepackage{xcolor}
+
+%\usepackage{tikz}
+%\usepackage{styles/tikz-uml}
+\usepackage[nottoc,chapter]{tocbibind}
+
+\usepackage{textcomp}
+\usepackage{epigraph}%to make quotations at start of chapter
+
+%to force image position when doing [H]
+\usepackage{float}
+\usepackage{proof}
+\usepackage{ stmaryrd } %for llbracket
+
+
+\usepackage{bussproofs}
+
+%%%\addbibresource{thesis.bib}
+
+
+\usepackage[Lenny]{fncychap}
+%styles:Sonny, Lenny, Gleen
+
+\usepackage{pifont}
+
+
+\input{configuration}
+
+
+\newcommand{\thehm}{\textsc{The HyperManager}}
+\newcommand{\pnets}{\textit{pNets}}
+\newcommand{\spinnaker}{\textsf{Spinnaker}}
+\newcommand{\gcm}{\ac{GCM}}
+\newcommand{\adl}{\ac{ADL}}
+
+\newcommand{\chapbreak}{\begin{center}\ding{64}\ding{64}\ding{64}\end{center}}
+
+
+%\newcommand{\origunderscore}{}
+%\let\origunderscore\_
+%\renewcommand{\_}{\allowbreak\origunderscore}
+
+\usepackage{underscore}
+
+\usepackage{amsthm}%for \qed
+%\newcommand{\proof}{\vspace*{-1ex} \noindent {\bf Proof: }}
+%\newcommand{\proofsketch}{\vspace*{-1ex} \noindent {\bf Proof Sketch: }}
+
+%% TODO: reset acronym counter
+
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{property}{Property}[section]
+
+
+\definecolor{redlemma}{rgb}{0.9,0,0}
+\newtheorem{lemma}{\textcolor{redlemma}{Lemma}}[section]
+\newtheorem{theorem}{\textcolor{redlemma}{Theorem}}[section]
+
+\newenvironment{changemargin}[2]{% 
+\begin{list}{}{% 
+	 \setlength{\topsep}{0pt}% 
+    \setlength{\leftmargin}{#1}% 
+    \setlength{\rightmargin}{#2}% 
+    \setlength{\listparindent}{\parindent}% 
+    \setlength{\itemindent}{\parindent}% 
+    \setlength{\parsep}{\parskip}% 
+}% 
+\item[]}{\end{list}} 
+
+
+\begin{document}
+    \dominitoc
+
+    % commands to use are \todo{...} and \missingfigure{...}
+    \listoftodos
+
+    \frontmatter
+    \include{tex/frontmatter/titlepage}
+    \include{tex/frontmatter/dedication}
+    \include{tex/frontmatter/abstract}
+    \include{tex/frontmatter/acknowledgements}
+    \include{tex/frontmatter/tableofcontent}
+  
+    \mainmatter
+    % chapters
+    \include{tex/mainmatter/Chapter1} %intro
+    \include{tex/mainmatter/Chapter2} %preliminaries
+     \include{tex/mainmatter/Chapter3} %hypermanager
+      \include{tex/mainmatter/Chapter4} %Mefresa
+       \include{tex/mainmatter/Chapter5} % Painless
+        \include{tex/mainmatter/ChapterBehaviour} % Painless
+        \include{tex/mainmatter/Chapter6} %related work
+         \include{tex/mainmatter/Chapter7}%final
+
+    \appendix
+    \include{tex/mainmatter/appendices/app1}
+
+
+    \backmatter
+    %\include{tex/backmatter/bibliography}
+    \bibliographystyle{IEEEtran}
+    \nocite{*}
+    \bibliography{thesis}
+    \include{tex/backmatter/acronyms}
+\end{document}

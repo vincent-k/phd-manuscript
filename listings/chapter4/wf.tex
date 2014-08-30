@@ -1,0 +1,7 @@
+Definition well_formed (s:state) : Prop :=
+  match s with
+    | Component id p ic cl lc li lb => 
+      id = Ident "Root" /\ p = root /\ ic = "null" /\
+      cl = Configuration /\ li = nil /\
+      well_formed_component s
+  end.

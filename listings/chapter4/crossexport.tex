@@ -1,0 +1,10 @@
+Definition cross_export idI1 idC2 idI2 lc li : Prop :=
+ (exists i, Some i = li[idI1, Internal] /\ (i->com) = Client) /\
+ 
+ (~ exists c, Some c = lc[idC2] /\ 
+    (exists i, Some i = (c->interfaces)[idI2, External])) /\
+ 
+ (forall c, In c lc -> 
+    exists c', Some c' = (c->subComponents)[idC2] /\
+    exists i, Some i = (c'->interfaces)[idI2, External] /\
+              (i ->com) = Server).

@@ -1,0 +1,15 @@
+Definition root : path := nil.
+
+Parameter sigC1 : signature.
+Parameter sigS3 : signature.
+
+Definition build_N (id: ident) : operation := 
+  Mk_component id root "null" Configuration [] [] [];
+  Mk_interface (Ident "c1") sigC1 [id] External 
+               Server Functional Mandatory Singleton;
+  Mk_interface (Ident "c1") sigC1 [id] Internal
+               Client Functional Mandatory Singleton;
+  Mk_interface (Ident "s3") sigS3 [id] Internal
+               Server Functional Optional Singleton;
+  Mk_interface (Ident "s3") sigS3 [id] External 
+               Client Functional Optional Singleton.

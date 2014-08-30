@@ -1,0 +1,8 @@
+Fixpoint mk_normal_bindings (p:path) (icc:ident) (iic:ident) 
+                             (ics:ident) (n:nat) (iis:ident) :=
+ match n with
+    0   => done 
+  | S m => 
+    (mk_binding (Normal p icc iic (suffix_ident ics n) iis)) ;
+    mk_normal_bindings p icc iic ics m iis
+end.

@@ -1,0 +1,6 @@
+Definition projectionComponentId (c:component) : ident :=
+   match c with
+     | Component id p cl _ lc li lb => id
+   end.
+  
+Notation "c '->id' " := (projectionComponentId c).

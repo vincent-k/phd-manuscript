@@ -1,0 +1,11 @@
+Inductive client_internal_mandatory_itfs_are_bound c : Prop :=
+ | CIMI_Bound: 
+  (forall itf, In itf (c->itfs) -> (itf->role)  = Client ->
+   (itf->visibility) = Internal -> (itf->contingency) = Mandatory ->  
+   forall li, 
+    li = export_recipients (itf->id) (c->bnds) (c->subcomps) ->
+    (li <> nil) /\ 
+        (forall i, In i li -> (i->contingency) = Mandatory)) ->
+    (forall c', In c' (c->subcomps) -> 
+        client_internal_mandatory_itfs_are_bound c')        ->
+    client_internal_mandatory_itfs_are_bound c.

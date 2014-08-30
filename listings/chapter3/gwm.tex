@@ -1,0 +1,42 @@
+process GatewayMethod [Call_GatewayMethod: in                  future_id#gatewayMethod_args_type,
+ GetProxy_JMXIndicatorsMethod  : in none,
+ New_JMXIndicatorsMethod       : in proxy,
+ Q_JMXIndicatorsMethod         :  proxy#JMXIndicatorsMethod_args_type,
+ GetValue_JMXIndicatorsMethod  : in proxy#JMXIndicatorsMethod_return_type, 
+ Recycle_JMXIndicatorsMethod   : out proxy,
+ R_GatewayMethod               : out future_id#GatewayMethod_return_type] is
+
+	states s_init, s1, s2, s3, s4, s5, s6
+	
+	var fid       : future_id,
+	    args      : gatewayMethod_args_type,
+		p         : proxy,
+		jmx_reply : JMXIndicatorsMethod_return_type
+	
+	from s_init
+		Call_GatewayMethod ? fid, args;
+		to s1
+	
+	from s1
+		GetProxy_JMXIndicatorsMethod;
+		to s2
+	
+	from s2
+		New_JMXIndicatorsMethod ? p; 
+		to s3
+			
+	from s3
+		Q_JMXIndicatorsMethod ? p, args;
+		to s4
+		
+	from s4
+		GetValue_JMXIndicatorsMethod ? p, jmx_reply;
+		to s5
+		
+	from s5
+		Recycle_JMXIndicatorsMethod ! p;
+		to s6
+	
+	from s6	
+		R_GatewayMethod ! fid, jmx_reply;
+		to s_init

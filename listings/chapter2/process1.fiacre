@@ -1,0 +1,5 @@
+process Slave [ready : none, order : in Order] is
+    states startSlavery, waitOrder,
+              makingLatte, makingEspresso, makingCapuccino,
+              makingSandwich
+     var tmp : Order         

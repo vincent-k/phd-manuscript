@@ -1,0 +1,5 @@
+Definition bind_system (pN: path) : operation :=
+ Mk_binding (Export pN (Ident "c1") (Ident "C") (Ident "s1"));
+ Mk_binding (Normal pN (Ident "C") (Ident "c2") 
+                   (Ident "S") (Ident "s2"));
+ Mk_binding (Import pN (Ident "s3") (Ident "S") (Ident "c3")).

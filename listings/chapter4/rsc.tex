@@ -1,0 +1,11 @@
+Definition relation (X:Type) := X -> X -> Prop.
+
+Inductive rt_closure (X:Type) (R: relation X) (x:X) : X -> Prop :=
+  | rt_base : rt_closure R x x
+  | rt_step : forall (y z : X),
+               R x y ->
+               rt_closure R y z ->
+               rt_closure R x z.
+
+Notation " op '/' s '~~~>*' op' '/' s' " := 
+                      (rt_closure step (op,s) (op',s')).

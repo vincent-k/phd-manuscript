@@ -1,0 +1,4 @@
+well_formed_template_generation:
+ forall c, well_formed_component c ->
+ forall n, well_formed_components (generate_from_template c n).
+Proof.

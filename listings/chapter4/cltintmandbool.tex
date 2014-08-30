@@ -1,0 +1,11 @@
+Fixpoint client_internal_mandatory_itfs_are_bound_bool c : bool := 
+ match c with
+   Component i p ic cl lc li lb => 
+    (client_internal_mandatory_itfs_are_bound_bool_one li lc lb) &&
+    (fix f_sub lc {struct lc} :=
+      match lc with
+        nil     => true
+      | sc :: r => 
+         client_internal_mandatory_itfs_are_bound_bool sc && f_sub r
+     end) lc
+end.

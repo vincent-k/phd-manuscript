@@ -1,0 +1,24 @@
+from startSlavery
+  ready; 
+  to waitOrder
+
+from waitOrder
+  order?tmp;
+  case tmp of
+   makeCoffee(0) -> to makingLatte
+ | makeCoffee(1) -> to makingEspresso
+ | makeCoffee(2) -> to makingCapuccino
+ | makeSandwich -> to makingSandwich
+end
+
+from makingLatte
+  to startSlavery
+
+from makingEspresso
+  to startSlavery
+
+from makingCapuccino
+  to startSlavery
+
+from makingSandwich
+  to startSlavery

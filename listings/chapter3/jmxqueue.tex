@@ -1,0 +1,25 @@
+process Queue [ Q_JMXIndicatorsMethod: in                            future_id#JMXIndicatorsMethod_args_type, 
+ Serve_JMXIndicatorsMethod: out                              future_id#JMXIndicatorsMethod_args_type, 
+ Error:  errorMsgT ]
+is
+  states SEmpty, S1, S11, SOutOfBounds, SError
+  var a0:future_id, a00:JMXIndicatorsMethod_args_type, 
+        a1:future_id, a11:JMXIndicatorsMethod_args_type, 
+        a2:future_id, a22:JMXIndicatorsMethod_args_type, 
+        errmsg:errorMsgT:={parti=0,partst=UnknownErr}
+
+from SEmpty
+    Q_JMXIndicatorsMethod?a0,a00; to S1
+    
+from S1 select 
+     Serve_JMXIndicatorsMethod!a0,a00; to SEmpty
+  [] Q_JMXIndicatorsMethod?a1,a11     ; to S11
+end
+
+from S11 select 
+     Serve_JMXIndicatorsMethod!a0,a00; a0:=a1; a00:=a11;  to S1
+  [] Q_JMXIndicatorsMethod?a2,a22; errmsg.partst:=PS11; to SOutOfBounds 
+end
+
+from SOutOfBounds
+    Error!errmsg; to SError

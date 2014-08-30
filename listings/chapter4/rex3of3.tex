@@ -1,0 +1,22 @@
+Parameter sigC1 : signature.
+Parameter sigS3 : signature.
+
+Definition pN : path := cpath.
+
+Definition N : component :=
+  Component (Ident "Component N") p "_blank" Configuration
+   (*subcomponent*)
+   (C :: S :: nil)
+   (*interfaces*)
+   (Interface (Ident "c1") sigC1 pN
+               External Server Functional Mandatory Singleton ::
+    Interface (Ident "c1") sigC1 pN
+               Internal Client Functional Mandatory Singleton :: 
+    Interface (Ident "s3") sigS3 pN
+               Internal Server Functional Optional Singleton   ::
+    Interface (Ident "s3") sigS3 pN
+              External Client Functional Optional Singleton   :: nil) 
+    (*bindings*)
+    (Export pN (Ident "c1") (Ident "C") (Ident "s1") ::
+     Normal pN (Ident "C") (Ident "c2") (Ident "S") (Ident "s2") ::
+     Import pN (Ident "s3") (Ident "S") (Ident "c3") :: nil).

@@ -1,0 +1,16 @@
+Inductive not_in_l (i:ident) (l:list component): Prop :=
+  | NotInNil  : l = (nil: list component) -> 
+                not_in_l i l
+  | NotInStep : forall (c:component) (r:list component),
+                l = c :: r               ->      
+                (((c->id) == i) = false) ->
+                not_in_l i r             ->
+                not_in_l i l. 
+               
+Inductive unique_ids (l:list component) : Prop :=
+  | Unique_Base: l = nil -> unique_ids l
+  | Unique_Step: forall c r,
+                 l = c :: r         ->
+                 not_in_l (c->id) r ->
+                 unique_ids r       ->
+                 unique_ids l.

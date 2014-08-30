@@ -1,0 +1,5 @@
+Definition build_running_example : operation :=
+ let iN := Ident "Component N" in
+ let iC := Ident "C"           in
+ let iS := Ident "S"           in
+ build_N iN; build_C iC [iN]; build_S iS [iN]; bind_system [iN].  

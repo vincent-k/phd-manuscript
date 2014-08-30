@@ -1,0 +1,17 @@
+  forall c, decidable (well_formed_component c).
+Proof.
+ fix 1; intros [i p ic cl lc li lb].
+ assert (IHp_dec := 
+     well_formed_component_lc_dec well_formed_component_dec lc);
+ clear well_formed_component_dec.
+ Guarded. 
+
+ destruct IHp_dec; destruct (well_formed_bindings_dec lb lc li);
+ destruct (well_formed_interfaces_dec li); 
+ destruct (unique_ids_dec lc);
+  
+ (*The first subgoal is when all properties are Well-formed. The 
+ others have at least one that isn't and are proved by congruence*)
+  [ left; apply WellFormedComponent; simpl; intros; auto | ..];
+  (right; intro Hwf; inversion Hwf; simpl in *; congruence).
+Qed.

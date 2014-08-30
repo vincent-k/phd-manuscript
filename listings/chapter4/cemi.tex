@@ -1,0 +1,16 @@
+Inductive subc_client_external_mandatory_itfs_are_bound c : Prop :=
+ | CEMI_Bound: 
+ (forall c', In c' (c->subcomps) -> 
+  (forall int, In int (c'->itfs) -> (int->role) = Client ->
+  (int->visibility) = External -> (int->contingency) = Mandatory ->
+  (*these type of itfs can only be in a Normal or Import binding*)
+  
+  forall l l',
+   l=normal_recipients (c'->id) (int->id) (c->bnds) (c->subcomps) ->
+   l' = import_recipients (c'->id) (int->id)  (c->bnds) (c->itfs) ->
+   (app l l' <> nil) /\
+   forall i, In i (app l l') -> (i->contingency) = Mandatory))     ->
+  (*recursive call*)
+  (forall c', In c' (c->subcomps) -> 
+           subc_client_external_mandatory_itfs_are_bound c')       ->
+  subc_client_external_mandatory_itfs_are_bound c.

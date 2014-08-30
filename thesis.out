@@ -1,0 +1,66 @@
+\BOOKMARK [0][-]{Doc-Start}{List of Figures}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{List of Listings}{}% 2
+\BOOKMARK [0][-]{Doc-Start}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Component-based software engineering}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Context \204 The Spinnaker project}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Contributions}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Organisation of this thesis}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Preliminaries}{}% 9
+\BOOKMARK [1][-]{section.2.1}{The GCM Component Model}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{Overview of the GCM specification}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{The GCM ADL}{section.2.1}% 12
+\BOOKMARK [1][-]{section.2.2}{ProActive \204 A middleware for distributed programming}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.1}{GCM/ProActive \204 a reference implementation for GCM}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.2}{Specifying architectures with the ADL}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{pNets: A formalism for defining behavioural semantics}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.3.1}{Behavioural semantics for GCM/ProActive applications}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.2}{Coping with structural reconfigurations}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{The Fiacre specification language}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{A brief overview of the Coq Proof Assistant}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.5.1}{Data types}{section.2.5}% 21
+\BOOKMARK [2][-]{subsection.2.5.2}{Functional programming in Coq}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.3}{Proving properties}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.4}{Extracting certified programs}{section.2.5}% 24
+\BOOKMARK [0][-]{chapter.3}{The HyperManager}{}% 25
+\BOOKMARK [1][-]{section.3.1}{The HyperManager architecture}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Formal specification and verification methodology}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{The HyperManager as a formal methods case study}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{On HyperManager Gateway}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{On HyperManager Server}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.3}{On System Product}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{The case study reloaded: on structural reconfigurations}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.4.1}{On HyperManager Reconfigurable Gateway}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.2}{On HyperManager Reconfigurable Server}{section.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.4.3}{On Reconfigurable System Product}{section.3.4}% 35
+\BOOKMARK [1][-]{section.3.5}{Discussion}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter.4}{A mechanized framework for reasoning on software architectures}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Mechanizing GCM with the Coq proof assistant}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.1.1}{Core elements}{section.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.1.2}{Well-formed component architectures}{section.4.1}% 40
+\BOOKMARK [2][-]{subsection.4.1.3}{Well-typed component architectures}{section.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.1.4}{Well-formedness and well-typedness decidability}{section.4.1}% 42
+\BOOKMARK [1][-]{section.4.2}{An operation language for composing architectures}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.2.1}{Syntax and semantics}{section.4.2}% 44
+\BOOKMARK [2][-]{subsection.4.2.2}{Building well-formed architectures}{section.4.2}% 45
+\BOOKMARK [1][-]{section.4.3}{Proving Properties}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.3.1}{Meeting the Specification: Absence of Cross-Bindings}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.2}{Supporting Parametrized ADLs}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.3}{Structural Reconfigurations}{section.4.3}% 49
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 50
+\BOOKMARK [0][-]{chapter.5}{Painless integration with ProActive}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Extracting a certified Painless interpreter}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Certified functional code from logical specifications}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{The remaining bits: adjusting to OCaml native types}{section.5.1}% 54
+\BOOKMARK [1][-]{section.5.2}{Painless support for the static and runtime verification of GCM/ProActive Applications}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.3}{Architectural classes for statically ensuring safe reconfigurations}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 57
+\BOOKMARK [0][-]{chapter.6}{Mechanizing}{}% 58
+\BOOKMARK [0][-]{chapter.7}{Related Work}{}% 59
+\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 60
+\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 61
+\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 62
+\BOOKMARK [0][-]{chapter.8}{Final Remarks}{}% 63
+\BOOKMARK [0][-]{chapter.1}{Appendix 1}{}% 64
+\BOOKMARK [0][-]{chapter.1}{Bibliography}{}% 65
+\BOOKMARK [0][-]{chapter*.64}{List of Acronyms}{}% 66

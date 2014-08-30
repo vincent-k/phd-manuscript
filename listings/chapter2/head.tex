@@ -1,0 +1,5 @@
+Definition head (A:Type) (l: list A) : option A :=
+  match l with
+     nil       => None
+  | cons h t => Some h
+  end.

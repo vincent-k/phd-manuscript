@@ -1,0 +1,12 @@
+Inductive operation : Type :=
+ | Mk_component : ident -> path -> implementationClass -> 
+                  controlLevel -> list component -> list interface -> 
+                  list binding -> operation
+ | Rm_component : path -> ident -> operation
+ | Mk_interface : ident -> signature -> path -> visibility -> 
+                  role -> functionality -> contingency -> 
+                  cardinality -> operation
+ | Mk_binding   : binding -> operation 
+ | Rm_binding   : binding -> operation
+ | Seq          : operation -> operation -> operation
+ | Done         : operation.

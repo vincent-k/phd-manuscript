@@ -1,0 +1,17 @@
+Parameter iclS : implementationClass.
+Parameter sigS2 : signature.
+Parameter sigC3 : signature.
+
+Definition spath : path := cpath.
+
+Definition S : component :=
+  Component (Ident "S") spath iclS Configuration
+     (*subcomponents*) 
+      nil
+      (*interfaces*) 
+      (Interface (Ident "s2") sigS2 (app spath (Ident "S"::nil))
+               External Server Functional Mandatory Singleton ::
+       Interface (Ident "c3") sigC3 (app spath (Ident "S"::nil))
+               External Client Functional Optional Singleton :: nil)
+       (*bindings*) 
+       nil.

@@ -1,0 +1,3 @@
+Definition sound_contingency_bool (c:component) : bool :=
+ client_internal_mandatory_itfs_are_bound_bool c &&
+ subcomponents_client_external_mandatory_itfs_are_bound_bool c.

@@ -1,0 +1,7 @@
+Function get_comp (id:ident) (l:list component): option component :=
+    match l with
+      | nil    => None
+      | e :: r => if (e->id) == id then Some e else get_comp id r
+    end.
+
+Notation "l '[' id ']'" := (get_comp id l).

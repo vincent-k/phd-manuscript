@@ -1,0 +1,11 @@
+Function get_interface (id:ident) (v:visibility) 
+           (l:list interface) : option interface :=
+    match l with
+      | nil    => None
+      | i :: r => if ((i->id) == id) && ((i->visibility) == v then 
+	                    Some i  
+		              else 
+		                  get_interface id v r
+    end.
+
+Notation "l '[' id ',' v ']'" := (get_interface id v l).

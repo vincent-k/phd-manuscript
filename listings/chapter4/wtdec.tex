@@ -1,0 +1,6 @@
+  forall c, decidable (well_typed c).
+Proof.
+  intro c. unfold decidable.
+  rewrite well_typed_correctness.
+  destruct (well_typed_bool c); auto.
+Qed.

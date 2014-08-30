@@ -1,0 +1,5 @@
+cim_itfs_bound_correctness:
+  forall c,
+    client_internal_mandatory_itfs_are_bound_bool c = true <-> 
+    client_internal_mandatory_itfs_are_bound c.
+Proof.

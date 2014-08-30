@@ -1,0 +1,6 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Extracting a certified \textsf {Painless} interpreter}{\reset@font\mtcSfont 116}{section.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Certified functional code from logical specifications}{\reset@font\mtcSSfont 116}{subsection.5.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}The remaining bits: adjusting to OCaml native types}{\reset@font\mtcSSfont 116}{subsection.5.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}\textsf {Painless} support for the static and runtime verification of GCM/ProActive Applications}{\reset@font\mtcSfont 116}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{\reset@font\mtcSfont 116}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Discussion}{\reset@font\mtcSfont 116}{section.5.4}}

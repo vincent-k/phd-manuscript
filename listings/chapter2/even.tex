@@ -1,0 +1,5 @@
+Inductive is_even (n:nat) : Prop :=
+  | Base: n = 0 -> 
+          is_even n
+  | Step: is_even (n - 2) -> 
+          is_even n.

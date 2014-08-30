@@ -1,0 +1,222 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 JUL 2014 18:15
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**uniqueids.tex
+(./uniqueids.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 I
+     nductive not_in_l (i:ident) (l:list component): Prop :=
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1 Inductive not_
+                  in_l (i:ident) (l:list component): Prop :=
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--9
+[]
+ []
+
+
+Overfull \hbox (25.29062pt too wide) in paragraph at lines 1--9
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (39.4336pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 ident\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 l \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (72.4742pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 listcomponent\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (35.81018pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 Prop \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (52.85016pt too wide) in paragraph at lines 1--9
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 NotInNil \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (13.73608pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 l \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.07245pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 nil \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (85.25201pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 listcomponent\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/
+it/10 >
+ []
+
+
+Overfull \hbox (90.59392pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 not[]n[]il\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 NotInStep \OT1/cm
+r/m/n/10 :
+ []
+
+
+Overfull \hbox (41.02785pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (66.22815pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 component\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 
+:
+ []
+
+
+Overfull \hbox (85.0992pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 listcomponent\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; l \OT1/cmr/m/
+n/10 =
+ []
+
+
+Overfull \hbox (12.66084pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 c \OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (23.12268pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 r\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (34.32758pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 (((\OML/cmm/m/it/10 c\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (30.87221pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 id\OT1/cmr/m/n/10 ) ==
+ []
+
+
+Overfull \hbox (17.88954pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (46.0047pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 false\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (53.4296pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 not[]n[]ir\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (36.26527pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 not[]n[]il:$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 I
+      nductive unique_ids (l:list component) : Prop :=
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 Inductive unique_
+                      ids (l:list component) : Prop :=
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+)
+! Emergency stop.
+<*> uniqueids.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 493633
+ 162 string characters out of 3143378
+ 50245 words of memory out of 3000000
+ 3407 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 18i,1n,12p,88b,56s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

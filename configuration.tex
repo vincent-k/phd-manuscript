@@ -1,0 +1,456 @@
+%\usepackage{vmargin}
+%\special{papersize=160mm,240mm}
+%\setpapersize{custom}{160mm}{240mm}
+%\setmargins{1.2cm}{1.5cm}{13cm}{18.5cm}{0.6cm}{0.8cm}{0cm}{1.0cm}
+
+% algpseudocode settings
+%\algrenewcommand\alglinenumber[1]{
+%    {\footnotesize#1}
+%}
+
+% prevent footnotes from breaking across pages
+\interfootnotelinepenalty=10000
+
+% redefine algorithms' frame
+\makeatletter
+\renewcommand\fs@ruled{%
+  \def\@fs@cfont{\rmfamily}%
+  \let\@fs@capt\floatc@plain%
+  \def\@fs@pre{\hrule height.8pt depth0pt \kern2pt}%% or use \def\@fs@pre{} to get rid of the top rule
+  \def\@fs@post{}%\def\@fs@post{\kern2pt\hrule\relax}%% or use \def\@fs@post{} to get rid of the last rule
+  \def\@fs@mid{\kern2pt\hrule\kern15pt}%% or use \def\@fs@mid{} to get rid of the middle rule
+  \let\@fs@iftopcapt\iffalse}
+\makeatother
+
+% define new algorithmicx blocks
+\algblock{ForEach}{EndForEach}
+\algnewcommand\algorithmicforeach{\textbf{for\ each}}
+\algnewcommand\algorithmicforeachdo{\textbf{do}}
+\algnewcommand\algorithmicendforeach{\textbf{end\ for\ each}}
+\algrenewtext{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicforeachdo}
+\algrenewtext{EndForEach}{\algorithmicendforeach}
+
+\algblock{ForEachParallel}{EndForEachParallel}
+\algnewcommand\algorithmicforeachparallel{\textbf{for\ each}}
+\algnewcommand\algorithmicforeachparalleldo{\textbf{do\ in\ parallel}}
+\algnewcommand\algorithmicendforeachparallel{\textbf{end\ for}}
+\algrenewtext{ForEachParallel}[1]{\algorithmicforeachparallel\ #1\ \algorithmicforeachparalleldo}
+\algrenewtext{EndForEachParallel}{\algorithmicendforeachparallel}
+
+\algnewcommand{\CommentLeft}[1]{\State \(\triangleright\) #1}
+
+% hyperref configuration
+\hypersetup{
+    colorlinks=false,
+    linkcolor=red,
+    urlcolor=blue,
+    citecolor=green
+}
+
+% custom colors
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+
+% listing configuration
+
+\lstdefinestyle{java} {
+    aboveskip=1.5em,
+    basicstyle=\ttfamily\footnotesize,
+    captionpos=b,
+    frame=single, 
+    identifierstyle=,
+    language=Java,
+    tabsize=4,
+    numbers=left, 
+    numberstyle=\scriptsize,
+    xleftmargin=1.15em,     
+    framexleftmargin=2em,
+    escapeinside={\$}{\$},
+	%commentstyle=\color{gray}
+}
+
+\lstdefinestyle{plain} {
+    aboveskip=1.5em,
+    basicstyle=\ttfamily\footnotesize,
+    captionpos=b,
+    frame=single, 
+    identifierstyle=
+}
+
+\lstdefinestyle{python} {
+    aboveskip=1.5em,
+    language=Python,
+    showstringspaces=false,
+    formfeed=\newpage,
+    tabsize=4,
+    commentstyle=\itshape,
+    captionpos=b,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left, 
+    numberstyle=\scriptsize, 
+    frame=single, 
+    xleftmargin=1.15em,     
+    framexleftmargin=2em,
+    escapeinside={@}{@}
+}
+
+\lstdefinestyle{sparql} {
+    aboveskip=1.5em,
+    language=SPARQL,
+    showstringspaces=false,
+    formfeed=\newpage,
+    tabsize=4,
+    commentstyle=\itshape,
+    captionpos=b,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left, 
+    numberstyle=\scriptsize, 
+    frame=single, 
+    xleftmargin=1.15em,     
+    framexleftmargin=2em,
+    escapeinside={@}{@}
+}
+
+\lstdefinestyle{rdf} {
+    aboveskip=1.5em,
+    showstringspaces=false,
+    formfeed=\newpage,
+    tabsize=4,
+    commentstyle=\itshape,
+    captionpos=b,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left, 
+    numberstyle=\scriptsize, 
+    frame=single, 
+    xleftmargin=1.15em,     
+    framexleftmargin=2em,
+    escapeinside={@}{@}
+}
+
+% tikz configuration
+\usetikzlibrary{
+    arrows,
+    backgrounds,
+    calc,
+    chains,
+    decorations.markings,
+    decorations.pathmorphing,
+    fit,
+    matrix,
+    patterns,
+    plotmarks,
+    positioning,
+    shadows,
+    shapes
+}
+
+% new PGF shapes
+
+% t shape for component interfaces
+\makeatletter
+\pgfdeclareshape{t}{
+    \inheritsavedanchors[from=rectangle]
+    \inheritanchorborder[from=rectangle]
+    \inheritanchor[from=rectangle]{center}
+    \inheritanchor[from=rectangle]{base}
+    \inheritanchor[from=rectangle]{north}
+    \inheritanchor[from=rectangle]{north east}
+    \inheritanchor[from=rectangle]{east}
+    \inheritanchor[from=rectangle]{south east}
+    \inheritanchor[from=rectangle]{south}
+    \inheritanchor[from=rectangle]{south west}
+    \inheritanchor[from=rectangle]{west}
+    \inheritanchor[from=rectangle]{north west}
+    \backgroundpath{
+        % store lower right in xa/ya and upper right in xb/yb
+       \southwest \pgf@xa=\pgf@x \pgf@ya=\pgf@y
+       \northeast \pgf@xb=\pgf@x \pgf@yb=\pgf@y
+       \pgfmathparse{(\pgf@xb-\pgf@xa)/2}
+       \pgf@xc=\pgf@xa
+       \advance\pgf@xc by \pgfmathresult pt
+       \pgfpathmoveto{\pgfpoint{\pgf@xa}{\pgf@ya}}
+       \pgfpathmoveto{\pgfpoint{\pgf@xa}{\pgf@yb}}
+       \pgfpathlineto{\pgfpoint{\pgf@xb}{\pgf@yb}}
+       \pgfpathmoveto{\pgfpoint{\pgf@xc}{\pgf@yb}}
+       \pgfpathlineto{\pgfpoint{\pgf@xc}{\pgf@ya}}
+   }
+}
+\makeatother
+
+\captionsetup[algorithm]{
+    justification=centering,labelfont=normalfont,labelsep=endash
+}
+
+% increase line spacing
+\onehalfspacing
+
+% rename the default name of the table of contents
+% from 'Contents' to 'Table of Content'
+\addto\captionsenglish{
+    \renewcommand\contentsname{Table of Contents\vspace{-5pt}}
+}
+
+% define abstract environment since it is not available 
+% with book document class
+\newenvironment{abstract}{
+    \null\vfill
+    \begin{center}
+        \bfseries\abstractname
+    \end{center}
+}{
+    \vfill\null\clearpage
+}
+
+% custom minitoc command to have extra space after 
+% the mini table of content
+\newcommand{\cminitoc}{
+    \minitoc
+    \vspace{1em}
+}
+
+% Group list of listings by chapter
+\makeatletter
+\let\my@chapter\@chapter
+\renewcommand*{\@chapter}{%
+  \addtocontents{lol}{\protect\addvspace{7pt}}%
+  \my@chapter}
+\makeatother
+
+% reconfigure list of listings commands
+\renewcommand{\lstlistlistingname}{List of Listings}
+
+\renewcommand{\lstlistoflistings}{
+    \begingroup
+    \tocfile{\lstlistlistingname}{lol}
+    \endgroup
+    \mtcaddchapter
+}
+
+% tabular helper
+\newcommand*{\tabbox}[2][t]{
+        \vspace{0pt
+    }\parbox[#1][3.7\baselineskip]{1.35cm}{\strut#2\strut}
+}
+
+% bibliography, backref text
+%\DefineBibliographyStrings{english}{
+ %   backrefpage = {cited on p.},
+ %   backrefpages= {cited on pp.},
+%}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{redcomment}{rgb}{0.5,0,0}
+
+
+\lstdefinelanguage{Coqfix}{  
+  sensitive=true,
+  morecomment=[l]{//},      %single line comment 
+  morecomment=[s]{(*}{*)}, %normal comment
+ morecomment=[n]{(*}{*)},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{orange},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={Inductive, Definition, Function, Fixpoint, Lemma, Theorem, Eval, Parameter},      % if you want to add more keywords to the set
+ morekeywords={[2] Prop, Type, with, match, end, Proof, Qed, forall, Notation, if, then, else, Case, compute, let, in, return, Defined, as, fix}   % if you want to add more keywords to the set
+}
+
+\lstdefinelanguage{Coq}{  
+  sensitive=true,
+  morecomment=[l]{//},      %single line comment 
+  morecomment=[s]{(*}{*)}, %normal comment
+ morecomment=[n]{(*}{*)},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{orange},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={Inductive, Definition, Function, Fixpoint, Lemma, Theorem, Eval, Parameter},      % if you want to add more keywords to the set
+ morekeywords={[2] Prop, Type, with, match, end, Proof, Qed, forall, Notation, if, then, else, Case, compute, let, in, return, Defined, as, exists}   % if you want to add more keywords to the set
+}
+
+
+\lstdefinelanguage{OCaml}{  
+  sensitive=true,
+  morecomment=[l]{//},      %single line comment 
+  morecomment=[s]{(*}{*)}, %normal comment
+ morecomment=[n]{(*}{*)},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{black},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={ int, float, string, Obj},               % if you want to add more keywords to the set
+ morekeywords={[2] fun, let, function, if, then, else, match, with, in}               % if you want to add more keywords to the set
+}
+
+
+\lstdefinelanguage{MyXML}{  
+  sensitive=true,
+  %morecomment=[l]{<!--},      %single line comment 
+  morecomment=[s]{<!--}{-->}, %normal comment
+ morecomment=[n]{<!--}{-->},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  keywordstyle=[3]\bfseries,
+  keywordstyle=[4]\color{darkgreen},
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{orange},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={DOCTYPE, PUBLIC},            
+ morekeywords={[2] definition},       
+ morekeywords={[3] interface, content, controller},
+ morekeywords={[4] desc, class, signature, name, role}
+}
+
+\lstdefinelanguage{Fiacre}{  
+  sensitive=true,
+  morecomment=[l]{//},      %single line comment 
+  morecomment=[s]{/*}{*/}, %normal comment
+ morecomment=[n]{/*}{*/},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  keywordstyle=[3]\bfseries,
+  keywordstyle=[4]\color{darkgreen},
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{orange},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={type, process, union, is, record, const, component, par},            
+ morekeywords={[2] from, if, to, end, select},       
+ morekeywords={[3] var, states},
+ morekeywords={[4] in, out}
+}
+
+\lstdefinelanguage{Fiacretypes}{  
+  sensitive=true,
+  morecomment=[l]{//},      %single line comment 
+  morecomment=[s]{/*}{*/}, %normal comment
+ morecomment=[n]{/*}{*/},  %nested comment
+  morestring=[b]",    
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  %frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{red},          % keyword style
+  keywordstyle=[2]\color{blue},          % keyword style
+  keywordstyle=[3]\bfseries,
+  keywordstyle=[4]\color{darkgreen},
+  commentstyle=\color{redcomment},       % comment style
+  stringstyle=\color{orange},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  morekeywords={type, process, union, is, record, const, component, par, end},            
+ morekeywords={[2] from, if, to, select},       
+ morekeywords={[3] var, states},
+ morekeywords={[4] in, out}
+}

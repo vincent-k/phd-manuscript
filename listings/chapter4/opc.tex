@@ -1,0 +1,10 @@
+Parameter iclC : implementationClass.
+Parameter sigS1 : signature.
+Parameter sigC2 : signature.
+
+Definition build_C (id: ident) (pN: path) : operation := 
+  Mk_component id pN iclC Configuration [] [] [];
+  Mk_interface (Ident "s1") sigS1 (app pN [id]) 
+               External Server Functional Mandatory Singleton;
+  Mk_interface (Ident "c2") sigC2 (app pN [id]) 
+               External Client Functional Mandatory Singleton.

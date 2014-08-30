@@ -1,0 +1,5 @@
+let vhead n = function
+  | Vnil -> 
+      Obj.magic (fun _ -> id)
+  | Vcons (el, n0, v') -> 
+      el

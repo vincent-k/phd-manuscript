@@ -1,0 +1,4 @@
+Inductive binding : Type :=
+    Normal : path -> ident -> ident -> ident -> ident -> binding
+  | Export : path -> ident -> ident -> ident -> binding
+  | Import : path -> ident -> ident -> ident -> binding.

@@ -1,0 +1,14 @@
+process Master [ready : none, order : out Order] is
+    states start, ordering
+    
+    from start
+        ready;
+        to ordering
+        
+    from ordering select
+         order!makeCoffee(0)
+      [] order!makeCoffee(1)
+      [] order!makeCoffee(2)
+      [] order!makeSandwich
+      end;    
+      to start

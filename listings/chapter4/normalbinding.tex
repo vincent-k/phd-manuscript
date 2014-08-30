@@ -1,0 +1,10 @@
+Function normal_binding (idC1 idI1 idC2 idI2:ident) 
+                (lc:list component)  : Prop :=
+ match lc[idC1], lc[idC2] with
+ | Some c1, Some c2 =>
+    match (c1->itfs)[idI1, External], (c2->itfs)[idI2, External] with
+     | Some i, Some i' => (i->role) = Client /\ (i'->role) = Server
+     | _, _            => False
+     end
+ | _, _ => False
+ end.

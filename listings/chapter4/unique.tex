@@ -1,0 +1,17 @@
+Inductive not_in_l_pairs (i : ident) (v : visibility) l : Prop :=
+    NotInPairNil  : l = (nil:list interface) -> not_in_l_pairs i a l
+  | NotInPairStep : forall (int : interface) (r : list interface),
+            l = int :: r                                         ->
+            ((int->id) == i) && ((int->visibility) == v) = false -> 
+            not_in_l_pairs i v r                                 -> 
+            not_in_l_pairs i v l.
+
+Inductive unique_pairs (li: list interface) : Prop :=
+    UniquePairsNil : li = nil -> unique_pairs li
+  | UniquePairsStep: forall int r,
+                      li = int :: r                                ->
+                      not_in_l_pairs (int->id) (int->visibility) r ->
+                      unique_pairs r                               ->
+                      unique_pairs li.
+                      
+Definition well_formed_interfaces li : Prop := unique_pairs li.

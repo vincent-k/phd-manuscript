@@ -1,0 +1,6 @@
+Function client_internal_mandatory_itfs_are_bound_bool_one 
+  (li:list interface) (lc:list component) (lb:list binding) : bool := 
+  match li[Client, Internal, Mandatory] with
+    nil    => true
+  | i :: r => check_if_recipients_are_mandatory_aux (i :: r) lb lc
+  end.

@@ -1,0 +1,8 @@
+Function beq_role (ro1 ro2:role) : bool :=
+  match ro1, ro2 with
+    | Client, Client => true
+    | Server, Server => true                 
+    | _, _           => false	
+  end.
+
+Notation "ro1 '==' ro2" := (beq_role ro1 ro2).

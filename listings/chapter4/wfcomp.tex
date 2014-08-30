@@ -1,0 +1,7 @@
+Inductive well_formed_component c : Prop :=
+    | WellFormedComponent:  
+      (forall c', In c' (c->subcomps) -> well_formed_component c') ->
+      unique_ids (c->subcomps)                                     -> 
+      well_formed_interfaces (c->itfs)                             ->
+      well_formed_bindings  (c->bnds) (c->subcomps) (c->itfs)      ->
+      well_formed_component c.

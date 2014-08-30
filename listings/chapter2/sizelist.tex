@@ -1,0 +1,5 @@
+Fixpoint length (A : Type) (l : list A) : nat :=
+  match l with
+  | nil => 0
+  | cons h tl => S (length tl)
+  end.

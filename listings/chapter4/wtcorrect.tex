@@ -1,0 +1,8 @@
+  forall c, well_typed c <-> well_typed_bool c = true.
+Proof.
+  intro c. unfold well_typed; unfold well_typed_bool.
+  rewrite sound_cardinality_correctness.
+  rewrite sound_contigency_correctness.
+  destruct (sound_cardinality_bool c);
+  destruct (sound_contingency_bool c); intuition.
+Qed. 

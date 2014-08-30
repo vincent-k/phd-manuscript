@@ -1,0 +1,5 @@
+Fixpoint mk_components lc : operation :=
+ match lc with
+  nil    => done
+| c :: r => mk_component c; mk_components r
+end.

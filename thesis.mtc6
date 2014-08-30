@@ -1,0 +1,19 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}The HyperManager architecture}{\reset@font\mtcSfont 39}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Formal specification and verification methodology}{\reset@font\mtcSfont 42}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}The HyperManager as a formal methods case study}{\reset@font\mtcSfont 46}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}On HyperManager Gateway}{\reset@font\mtcSSfont 46}{subsection.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {JMX Indicators} component}{\reset@font\mtcSSSfont 46}{section*.30}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Gateway Primitive} component}{\reset@font\mtcSSSfont 49}{section*.32}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Push Component} component}{\reset@font\mtcSSSfont 51}{section*.34}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Model Generation and Proven Properties}{\reset@font\mtcSSSfont 53}{section*.37}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}On HyperManager Server}{\reset@font\mtcSSfont 55}{subsection.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {JMX Indicators} component}{\reset@font\mtcSSSfont 55}{section*.39}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Server Primitive} component}{\reset@font\mtcSSSfont 55}{section*.40}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Pull Component} component}{\reset@font\mtcSSSfont 56}{section*.42}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Model Generation and Proven Properties}{\reset@font\mtcSSSfont 57}{section*.44}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}On System Product}{\reset@font\mtcSSfont 58}{subsection.3.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}The case study reloaded: on structural reconfigurations}{\reset@font\mtcSfont 60}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}On HyperManager Reconfigurable Gateway}{\reset@font\mtcSSfont 61}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}On HyperManager Reconfigurable Server}{\reset@font\mtcSSfont 62}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}On Reconfigurable System Product}{\reset@font\mtcSSfont 62}{subsection.3.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Discussion}{\reset@font\mtcSfont 64}{section.3.5}}

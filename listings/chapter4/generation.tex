@@ -1,0 +1,9 @@
+Function generate_from_template template n {struct n} := 
+ match template, n with 
+   _                               , 0   => nil
+ | Component i t p cl nil li nil   , S m => 
+   let li' := update_interfaces_path li (suffix_ident i n) in
+       (Component (suffix_ident i n) t p cl nil li' nil) :: 
+       (generate_from_template template m)
+   | _, _ => nil
+  end.

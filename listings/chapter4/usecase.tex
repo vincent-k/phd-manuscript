@@ -1,0 +1,17 @@
+Parameter slclass lcclass : implementationClass.
+Parameter s1 s2 : signature.
+
+Definition p1 := [Ident "Lights Control"; Ident "Switched On Lights"].
+
+Definition LightComp : component :=
+  Component (Ident "Street Light") p1 slclass Configuration nil 
+      [Interface (Ident "Get") "" (app p1 [Ident "Street Light"]) 
+             External Server Functional Mandatory Singleton] nil.
+
+Definition LCC : component := 
+ Component (Ident "Light Collector") p1 lcclass Configuration nil 
+     [Interface (Ident "Light Info") s1 (app p [Ident "Light Collector"]) 
+            External Server Functional Mandatory Singleton;
+      Interface (Ident "Collect Light Info") s2 (app p [Ident "Light Collector"]) 
+            External Client Functional Mandatory Singleton] 
+     nil.

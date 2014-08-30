@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: tex/frontmatter/titlepage.aux
+A level-1 auxiliary file: tex/frontmatter/dedication.aux
+A level-1 auxiliary file: tex/frontmatter/abstract.aux
+A level-1 auxiliary file: tex/frontmatter/acknowledgements.aux
+A level-1 auxiliary file: tex/frontmatter/tableofcontent.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter1.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter2.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter3.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter4.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter5.aux
+A level-1 auxiliary file: tex/mainmatter/ChapterBehaviour.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter6.aux
+A level-1 auxiliary file: tex/mainmatter/Chapter7.aux
+A level-1 auxiliary file: tex/mainmatter/appendices/app1.aux
+The style file: IEEEtran.bst
+A level-1 auxiliary file: tex/backmatter/acronyms.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: thesis.bib
+Warning--string name "sept" is undefined
+--line 6 of file thesis.bib
+Warning--string name "march" is undefined
+--line 171 of file thesis.bib
+Warning--string name "march" is undefined
+--line 184 of file thesis.bib
+Warning--string name "november" is undefined
+--line 198 of file thesis.bib
+Warning--I didn't find a database entry for "Giménez98atutorial"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing institution in fiacre2009
+Warning--empty year in garavel:inria-00583776
+Warning--empty booktitle in Bruni:2008:GDA:1424922.1424928
+
+Done.
+You've used 54 entries,
+            4039 wiz_defined-function locations,
+            1216 strings with 20299 characters,
+and the built_in function-call counts, 38641 in all, are:
+= -- 3111
+> -- 983
+< -- 233
++ -- 505
+- -- 192
+* -- 1997
+:= -- 6163
+add.period$ -- 121
+call.type$ -- 54
+change.case$ -- 68
+chr.to.int$ -- 501
+cite$ -- 57
+duplicate$ -- 2823
+empty$ -- 3202
+format.name$ -- 239
+if$ -- 8757
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 580
+newline$ -- 245
+num.names$ -- 69
+pop$ -- 1322
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2952
+stack$ -- 0
+substring$ -- 1222
+swap$ -- 2228
+text.length$ -- 66
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 54
+warning$ -- 3
+while$ -- 150
+width$ -- 56
+write$ -- 626
+(There were 8 warnings)

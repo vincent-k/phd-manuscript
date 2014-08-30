@@ -1,0 +1,9 @@
+component CruelWorld is
+    port ready : none,
+         order : Order
+            
+   par * in
+      Slave  [ready, order]
+   || Master [ready, order]
+   end        
+CruelWorld

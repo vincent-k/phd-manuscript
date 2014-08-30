@@ -1,0 +1,17 @@
+process Body  [ Serve_JMXIndicatorsMethod : in future_id#JMXIndicatorsMethod_args_type,
+ Call_JMXIndicatorsMethod  : out future_id#JMXIndicatorsMethod_args_type, 
+ R_JMXIndicatorsMethod     : in future_id#JMXIndicatorsMethod_return_type   ] is
+	states s0, s1, s11			
+
+	var args  : JMXIndicatorsMethod_args_type,	
+		reply : JMXIndicatorsMethod_return_type,
+		fid   : future_id           
+	
+	from s0 
+	   Serve_JMXIndicatorsMethod ? fid, args ; to s1
+	
+	from s1
+	   Call_JMXIndicatorsMethod ! fid, args; to s11
+	   
+	from s11
+	   R_JMXIndicatorsMethod ? fid, reply; to s0

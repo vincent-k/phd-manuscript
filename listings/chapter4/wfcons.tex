@@ -1,0 +1,7 @@
+well_formed_component_cons_dec 
+   (c  : component) 
+   (Hc : decidable (well_formed_component c))
+   (lc : list component) 
+   (Hlc: decidable (forall e, In e lc -> well_formed_component e)):
+ decidable (forall e, In e (cons c lc) -> well_formed_component e).
+Proof.

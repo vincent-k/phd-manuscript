@@ -1,0 +1,19 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}The GCM Component Model}{\reset@font\mtcSfont 6}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Overview of the GCM specification}{\reset@font\mtcSSfont 7}{subsection.2.1.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Component introspection}{\reset@font\mtcPfont 7}{section*.4}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Component configuration}{\reset@font\mtcPfont 8}{section*.6}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Component runtime instantiation}{\reset@font\mtcPfont 9}{section*.8}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Component typing}{\reset@font\mtcPfont 10}{section*.9}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}The GCM ADL}{\reset@font\mtcSSfont 11}{subsection.2.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}ProActive --- A middleware for distributed programming}{\reset@font\mtcSfont 12}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}GCM/ProActive --- a reference implementation for GCM}{\reset@font\mtcSSfont 13}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Specifying architectures with the ADL}{\reset@font\mtcSSfont 15}{subsection.2.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}pNets: A formalism for defining behavioural semantics}{\reset@font\mtcSfont 18}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Behavioural semantics for GCM/ProActive applications}{\reset@font\mtcSSfont 20}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Coping with structural reconfigurations}{\reset@font\mtcSSfont 22}{subsection.2.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}The Fiacre specification language}{\reset@font\mtcSfont 24}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}A brief overview of the Coq Proof Assistant}{\reset@font\mtcSfont 27}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Data types}{\reset@font\mtcSSfont 28}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Functional programming in Coq}{\reset@font\mtcSSfont 29}{subsection.2.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.3}Proving properties}{\reset@font\mtcSSfont 31}{subsection.2.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.4}Extracting certified programs}{\reset@font\mtcSSfont 34}{subsection.2.5.4}}

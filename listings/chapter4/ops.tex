@@ -1,0 +1,10 @@
+Parameter iclS : implementationClass.
+Parameter sigS2 : signature.
+Parameter sigC3 : signature.
+
+Definition build_S (id: ident) (pN: path) : operation :=
+  Mk_component id pN iclS Configuration [] [] [];
+  Mk_interface (Ident "s2") sigS2 (app pN [id]) 
+               External Server Functional Mandatory Singleton;
+  Mk_interface (Ident "c3") sigC3 (app pN [id]) 
+               External Client Functional Optional Singleton.

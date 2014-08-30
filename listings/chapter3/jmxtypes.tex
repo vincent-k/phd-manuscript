@@ -1,0 +1,29 @@
+type stability_type is union
+  Stable
+| Unstable
+end
+
+type device_id_type is union
+   IdOne
+ | IdTwo
+end
+
+type availability_type is union
+   Available
+ | Unavailable	
+end
+
+type device_availability_type is record 
+  id:device_id_type, 
+  availability:availability_type 
+end
+
+type JMXIndicatorsMethod_return_type is union
+	  memory_usage of stability_type   
+  | device_status of device_availability_type
+end
+
+type JMXIndicatorsMethod_args_type is union
+	  MemoryUsage 
+  | DeviceStatus of device_id_type
+end

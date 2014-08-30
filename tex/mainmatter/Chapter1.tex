@@ -1,0 +1,163 @@
+% Chapter 1
+
+\chapter{Introduction} 
+\label{chap:intro} 
+\epigraph{\textit{"Never permit a dichotomy to rule your life, a dichotomy in which you hate what you do so you can have pleasure in your spare time. Look for a situation in which your work will give you as much happiness as your spare time."}}{Pablo Picasso}
+
+\minitoc
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+
+		This thesis belongs to the domain of formal methods. In particular, we focus on a specific methodology
+	for the development of applications: component-based software engineering. 
+	
+		Let it be by means of (semi-)automatic or interactive approaches, the goal of formal methods
+	is to increase the confidence one can place on a software system. Throughout this thesis, 	
+	we discuss the application of formal methods techniques in the context of 
+	component-based engineering.     	
+	
+
+
+\section{Component-based software engineering}
+\label{sec:cbse}
+
+%By enforcing a strict separation between interface and implementation and by making software architecture explicit, 
+%component-based programming can facilitate the implementation and maintenance of complex distributed software 
+%systems
+
+%abstract
+	Among all programming paradigms, component-based engineering stands as one of the 
+	most followed approaches for real world software development.  Its emphasis on a clean separation 
+	of concerns makes it appealing for both industrial and research purposes.
+	Furthermore, component-based systems are notorious for their capacity to address the inherent 
+	challenges of today's software development.  These, promote modular designs,
+	and therefore ease the burden of development and maintenance of applications. Moreover, portability 
+	and re-usability of components are further benefits of this paradigm.
+
+	%1 - core elements
+	There are several component models proposed in the literature \cite{fractalSpec,BCDGHP:Telecom08}, 
+	each with their own particularities
+	(hierarchical/flat, static/reconfigurable, ...). Yet,
+	their foundation is generally made of three main ingredients:
+	\textit{components}, \textit{interfaces} and \textit{bindings}. A component can be seen as a 
+	\textit{building block}, usually a piece of software code. An interface is an access point to/from 
+	components. Finally, a binding is a connection established between components, 
+	through their interfaces.	
+	
+	%2 - difference with OO 
+	Indeed, component-based programming shares some resemblances with object-oriented programming.
+	Their fundamental distinction lies at the fact that in the former paradigm, 
+	communications are always	explicitly made through the component's interfaces, 
+	therefore making all existing dependencies evident.
+
+	%3 - reconfig 	
+	Another facet of component-based systems concerns software evolution.	
+	This methodology of developing software enables \textit{on-the-fly} structural 
+	reconfigurations of the architecture of the application. The advantage of modifying the software 
+	architecture at runtime comes from the need to cope with the plethora of situations 
+	that may arise in a potentially massively distributed and heterogeneous system.  Indeed,
+	the ability to restructure is also a key aspect in	the field of \textit{autonomic} computing 
+	where software is expected to adapt itself.	However, this capacity comes with a price: 
+	we no longer need only to care about functional concerns, but also  about structural ones.
+	
+	%4 - GCM	
+		
+	The widespread use of component models together with the interesting challenges posed by 
+	reconfigurable component-based applications make it an exciting research
+	topic for the formal methods community. Within our research group, we focus on the 
+	\ac{GCM} \cite{BCDGHP:Telecom08} to address the intricacies of grid 
+	and cloud computing. Details regarding its specification are discussed in Section \ref{sec:gcm}.
+
+
+
+\section{Context --- The Spinnaker project}
+\label{sec:spinnaker}
+
+
+%\footnote{\url{http://www.spinnaker-rfid.com/}
+%\url{http://www.inria.fr/en/centre/sophia/calendar/conference-of-christophe-loussert-tagsys-rfid}
+%
+
+
+	This thesis occurs in the context of the Spinnaker project\footnote{Project OSEO ISIS. \url{http://www.spinnaker-rfid.com/}}, 
+	a collaborative project between INRIA and several industrial partners, where we intend to contribute for the widespread
+	adoption of \ac{RFID}-based technology. To this end, our contribution comes with the design and implementation
+	of a non-intrusive, flexible and reliable solution that can integrate itself with other already deployed
+	systems.	Specifically, we developed \textsc{The HyperManager}, a general purpose monitoring
+	application with autonomic features. This was built using GCM/ProActive\footnote{\url{http://proactive.activeeon.com/index.php}} --- a Java middleware for parallel
+	and distributed programming that follows the principles of the \ac{GCM}. For the purposes
+	of this project, it had the goal to monitor the \textsf{E-Connectware}\footnote{\url{http://www.tagsysrfid.com/Products-Services/RFID-Middleware}}  
+	(\textsf{ECW}) framework in a loosely coupled manner.
+
+
+
+%\section{Motivation}
+%\label{sec:motivation}
+
+
+%	Furthermore, the expressiveness found in interactive theorem provers allows us to reason about properties
+%	that cannot be expressed in a model-checker. 
+	
+%	 Moreover, it is in our plans to
+%	extend the expressiveness of the GCM ADL by including the possibility to define architectures 
+%	that would not necessarily be an explicit representation of its structure, but parametrized. Reasoning 
+%	on such \textit{parametrized} ADLs would feel natural in a system like a proof assistant, as
+%	it essentially boils down to reason inductively on the parameters.
+
+
+\section{Contributions}
+\label{sec:contrib}
+
+	
+	The contributions of this thesis are three-fold. First,
+
+
+\section{Organisation of this thesis}
+\label{sec:struct}
+
+	The remaining of this thesis is organized as follows.
+
+
+	\begin{itemize}
+		\item Chapter \ref{chap:preli} gives an overview of the \textbf{technical background} required for the understanding 
+			      of this thesis. Pointers for relevant literature are indicated for the reader desiring further
+				  details.				
+				
+				  
+		\item Chapter \ref{chap:hyper} discusses an \textbf{industrial case study} on the formal specification and verification
+			     of a reconfigurable GCM/ProActive application. This is achieved by formally defining its behavioural
+				 semantics and check it against the desired properties by means of model-checking techniques. 
+			     		
+		
+		\item Chapter \ref{chap:mefresa} presents \textsc{Mefresa}, a \textbf{framework for the reasoning on software architectures}.
+				  It is tailored for the \ac{GCM}, and developed using the Coq proof assistant. 
+				  
+				  
+		\item Chapter \ref{chap:extraction} shows how we leverage the \textsc{Mefresa} framework and Coq's certified extraction 
+		         mechanism	to provide an \textbf{extension to the GCM/ProActive middleware}. We propose a 
+		         new approach for the specification of reconfigurable \ac{GCM} architectures.		
+		
+		\item Chapter \ref{chap:behaviour} addresses the mechanization of a \textbf{behavioural semantics using the Coq proof assistant}. We show how we can interactively reason about transition
+		systems.
+			     Further, we illustrate its use in the context of the \ac{GCM}.
+		
+		
+		\item Chapter \ref{chap:related} discusses relevant \textbf{related work} w.r.t. to the main contributions of this thesis.			
+				  	
+					
+
+		\item For last, chapter \ref{chap:conclusion} discusses the \textbf{final conclusions} about this thesis, and 
+		         indicates perspectives for future work and improvements.
+		
+		
+	\end{itemize}
+
+
+
+%\begin{flushright}
+%Guide written by ---\\
+%Sunil Patel: \href{http://www.sunilpatel.co.uk}{www.sunilpatel.co.uk}
+%\end{flushright}

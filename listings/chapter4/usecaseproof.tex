@@ -1,0 +1,8 @@
+Lemma adding_lights_red:
+ exists s, 
+  add_lights_reconfig 3 / LightsControlUseCaseArchitecture ~~~>* Done / s.
+
+Lemma adding_lights:
+ forall s,  
+  add_lights_reconfig 3 / LightsControlUseCaseArchitecture ~~~>* Done / s ->
+  well_formed s.

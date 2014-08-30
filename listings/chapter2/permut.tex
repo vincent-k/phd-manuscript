@@ -1,0 +1,11 @@
+Inductive permut (A : Type) : list A -> list A -> Prop :=
+  | p_nil  : permut nil nil
+  | p_skip : forall (x : A) (l1 l2 : list A),
+                permut l1 l2 -> 
+                permut (x :: l1) (x :: l2)  
+  | p_swap : forall (x y : A) (l1 : list A),
+                permut (y :: x :: l1) (x :: y :: l1)
+  | p_trans : forall l1 l2 l3 : list A,
+                 permut l1 l2   -> 
+                 permut l2 l3 ->
+                 permut l1 l3.
