@@ -8,48 +8,48 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Preliminaries}{5}{chapter.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple GCM architecture\relax }}{7}{figure.caption.3}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Normal Binding\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Import Binding\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Export Binding\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Components \textbf {A} and \textbf {B}\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces \textbf {A} invokes \textbf {f$_1$} from \textbf {B}\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces \textbf {A} blocks! \textit {wait-by-necessity}\relax }}{14}{figure.caption.12}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces \textbf {B} replies, and \textbf {A} is happy\relax }}{14}{figure.caption.12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple GCM application example\relax }}{15}{figure.caption.13}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces GCM \textit {composite} application example\relax }}{16}{figure.caption.14}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces pNet representing a primitive component\relax }}{21}{figure.caption.16}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Behaviour of proxy\relax }}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Behaviour of the proxy manager\relax }}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Binding controller\relax }}{23}{figure.caption.18}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces pNet example for reconfigurable multicast interface\relax }}{23}{figure.caption.19}
+\contentsline {xchapter}{Preliminaries}{7}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple GCM architecture\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Normal Binding\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Import Binding\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Export Binding\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Components \textbf {A} and \textbf {B}\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \textbf {A} invokes \textbf {f$_1$} from \textbf {B}\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \textbf {A} blocks! \textit {wait-by-necessity}\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces \textbf {B} replies, and \textbf {A} is happy\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple GCM application example\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces GCM \textit {composite} application example\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces pNet representing a primitive component\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Behaviour of proxy\relax }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Behaviour of the proxy manager\relax }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Binding controller\relax }}{25}{figure.caption.18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces pNet example for reconfigurable multicast interface\relax }}{25}{figure.caption.19}
 \addvspace {10\p@ }
-\contentsline {xchapter}{The HyperManager}{37}{chapter.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Hierarchical representation of our case study\relax }}{39}{figure.caption.23}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces HyperManager server component\relax }}{40}{figure.caption.24}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces HyperManager gateway component\relax }}{41}{figure.caption.26}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Formal specification and verification workflow\relax }}{45}{figure.caption.27}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Behaviour of the JMXIndicatorsMethod method\relax }}{49}{figure.caption.31}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Behaviour of the HMGatewayMethod method\relax }}{51}{figure.caption.33}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Behaviour of the HMStartMonitoringMethod method\relax }}{52}{figure.caption.35}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Behaviour of the HMStopMonitoringMethod method\relax }}{52}{figure.caption.35}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Behaviour of the HMLoopMethod method for the HyperManager Gateway\relax }}{53}{figure.caption.36}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Behaviour of the HMServerMethod method\relax }}{55}{figure.caption.41}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Behaviour of the HMLoopMethod method for the HyperManager Server\relax }}{56}{figure.caption.43}
+\contentsline {xchapter}{The HyperManager}{39}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Hierarchical representation of our case study\relax }}{41}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces HyperManager server component\relax }}{42}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces HyperManager gateway component\relax }}{43}{figure.caption.26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Formal specification and verification workflow\relax }}{47}{figure.caption.27}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Behaviour of the JMXIndicatorsMethod method\relax }}{51}{figure.caption.31}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Behaviour of the HMGatewayMethod method\relax }}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Behaviour of the HMStartMonitoringMethod method\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Behaviour of the HMStopMonitoringMethod method\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Behaviour of the HMLoopMethod method for the HyperManager Gateway\relax }}{55}{figure.caption.36}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Behaviour of the HMServerMethod method\relax }}{57}{figure.caption.41}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Behaviour of the HMLoopMethod method for the HyperManager Server\relax }}{58}{figure.caption.43}
 \addvspace {10\p@ }
-\contentsline {xchapter}{A mechanized framework for reasoning on software architectures}{67}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textsf {binding} examples\relax }}{73}{figure.caption.55}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Use-Case Architecture\relax }}{110}{figure.caption.63}
+\contentsline {xchapter}{A mechanized framework for reasoning on software architectures}{69}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textsf {binding} examples\relax }}{75}{figure.caption.55}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Use-Case Architecture\relax }}{112}{figure.caption.63}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\textsf {Painless} integration with ProActive}{115}{chapter.5}
+\contentsline {xchapter}{\textsf {Painless} integration with ProActive}{117}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mechanizing}{117}{chapter.6}
+\contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related Work}{119}{chapter.7}
+\contentsline {xchapter}{Related Work}{121}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final Remarks}{125}{chapter.8}
+\contentsline {xchapter}{Final Remarks}{127}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Appendix 1}{127}{chapter.1}
+\contentsline {xchapter}{Appendix 1}{129}{chapter.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{137}{chapter*.64}
+\contentsline {xchapter}{List of Acronyms}{139}{chapter*.64}

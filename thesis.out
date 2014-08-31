@@ -55,12 +55,16 @@
 \BOOKMARK [1][-]{section.5.2}{Painless support for the static and runtime verification of GCM/ProActive Applications}{chapter.5}% 55
 \BOOKMARK [1][-]{section.5.3}{Architectural classes for statically ensuring safe reconfigurations}{chapter.5}% 56
 \BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 57
-\BOOKMARK [0][-]{chapter.6}{Mechanizing}{}% 58
-\BOOKMARK [0][-]{chapter.7}{Related Work}{}% 59
-\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 60
-\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 61
-\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 62
-\BOOKMARK [0][-]{chapter.8}{Final Remarks}{}% 63
-\BOOKMARK [0][-]{chapter.1}{Appendix 1}{}% 64
-\BOOKMARK [0][-]{chapter.1}{Bibliography}{}% 65
-\BOOKMARK [0][-]{chapter*.64}{List of Acronyms}{}% 66
+\BOOKMARK [0][-]{chapter.6}{Mechanized behavioural semantics}{}% 58
+\BOOKMARK [1][-]{section.6.1}{Labelled transition systems, and traces}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.2}{Synchronization of LTSs, and traces}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.3}{Modelling GCM internals}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 62
+\BOOKMARK [0][-]{chapter.7}{Related Work}{}% 63
+\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 64
+\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 66
+\BOOKMARK [0][-]{chapter.8}{Final Remarks}{}% 67
+\BOOKMARK [0][-]{chapter.1}{Appendix 1}{}% 68
+\BOOKMARK [0][-]{chapter.1}{Bibliography}{}% 69
+\BOOKMARK [0][-]{chapter*.64}{List of Acronyms}{}% 70

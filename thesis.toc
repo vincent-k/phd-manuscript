@@ -12,83 +12,87 @@
 \contentsline {section}{\numberline {1.1}Component-based software engineering}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Context --- The Spinnaker project}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Contributions}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Organisation of this thesis}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Preliminaries}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}The GCM Component Model}{6}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Overview of the GCM specification}{7}{subsection.2.1.1}
-\contentsline {paragraph}{Component introspection}{7}{section*.4}
-\contentsline {paragraph}{Component configuration}{8}{section*.6}
-\contentsline {paragraph}{Component runtime instantiation}{9}{section*.8}
-\contentsline {paragraph}{Component typing}{10}{section*.9}
-\contentsline {subsection}{\numberline {2.1.2}The GCM ADL}{11}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}ProActive --- A middleware for distributed programming}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}GCM/ProActive --- a reference implementation for GCM}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Specifying architectures with the ADL}{15}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}pNets: A formalism for defining behavioural semantics}{18}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Behavioural semantics for GCM/ProActive applications}{20}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Coping with structural reconfigurations}{22}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}The Fiacre specification language}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}A brief overview of the Coq Proof Assistant}{27}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Data types}{28}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Functional programming in Coq}{29}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Proving properties}{31}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{34}{subsection.2.5.4}
-\contentsline {chapter}{\numberline {3}The HyperManager}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}The HyperManager architecture}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Formal specification and verification methodology}{42}{section.3.2}
-\contentsline {section}{\numberline {3.3}The HyperManager as a formal methods case study}{46}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}On HyperManager Gateway}{46}{subsection.3.3.1}
-\contentsline {subsubsection}{\textsf {JMX Indicators} component}{46}{section*.30}
-\contentsline {subsubsection}{\textsf {Gateway Primitive} component}{49}{section*.32}
-\contentsline {subsubsection}{\textsf {Push Component} component}{51}{section*.34}
-\contentsline {subsubsection}{Model Generation and Proven Properties}{53}{section*.37}
-\contentsline {subsection}{\numberline {3.3.2}On HyperManager Server}{55}{subsection.3.3.2}
-\contentsline {subsubsection}{\textsf {JMX Indicators} component}{55}{section*.39}
-\contentsline {subsubsection}{\textsf {Server Primitive} component}{55}{section*.40}
-\contentsline {subsubsection}{\textsf {Pull Component} component}{56}{section*.42}
-\contentsline {subsubsection}{Model Generation and Proven Properties}{57}{section*.44}
-\contentsline {subsection}{\numberline {3.3.3}On System Product}{58}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}The case study reloaded: on structural reconfigurations}{60}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}On HyperManager Reconfigurable Gateway}{61}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}On HyperManager Reconfigurable Server}{62}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}On Reconfigurable System Product}{62}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Discussion}{64}{section.3.5}
-\contentsline {chapter}{\numberline {4}A mechanized framework for reasoning on software architectures}{67}{chapter.4}
-\contentsline {section}{\numberline {4.1}Mechanizing GCM with the Coq proof assistant}{68}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Core elements}{69}{subsection.4.1.1}
-\contentsline {subsubsection}{Interface datatype}{69}{section*.51}
-\contentsline {subsubsection}{Component datatype}{71}{section*.53}
-\contentsline {subsubsection}{Binding datatype}{72}{section*.54}
-\contentsline {subsubsection}{A complete example}{73}{section*.56}
-\contentsline {subsection}{\numberline {4.1.2}Well-formed component architectures}{76}{subsection.4.1.2}
-\contentsline {subsubsection}{A first well-formedness proof}{80}{section*.57}
-\contentsline {subsection}{\numberline {4.1.3}Well-typed component architectures}{81}{subsection.4.1.3}
-\contentsline {subsubsection}{A first well-typedness proof}{84}{section*.58}
-\contentsline {subsection}{\numberline {4.1.4}Well-formedness and well-typedness decidability}{85}{subsection.4.1.4}
-\contentsline {subsubsection}{Well-formedness decidability}{86}{section*.59}
-\contentsline {subsubsection}{Well-typedness decidability}{91}{section*.60}
-\contentsline {section}{\numberline {4.2}An \textsc {operation} language for composing architectures}{97}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{97}{subsection.4.2.1}
-\contentsline {subsubsection}{A first architecture through an \textsf {operation}}{101}{section*.62}
-\contentsline {subsection}{\numberline {4.2.2}Building well-formed architectures}{104}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Proving Properties}{106}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{106}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Supporting Parametrized ADLs}{108}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Structural Reconfigurations}{110}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Discussion}{113}{section.4.4}
-\contentsline {chapter}{\numberline {5}\textsf {Painless} integration with ProActive}{115}{chapter.5}
-\contentsline {section}{\numberline {5.1}Extracting a certified \textsf {Painless} interpreter}{116}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Certified functional code from logical specifications}{116}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}The remaining bits: adjusting to OCaml native types}{116}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}\textsf {Painless} support for the static and runtime verification of GCM/ProActive Applications}{116}{section.5.2}
-\contentsline {section}{\numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{116}{section.5.3}
-\contentsline {section}{\numberline {5.4}Discussion}{116}{section.5.4}
-\contentsline {chapter}{\numberline {6}Mechanizing}{117}{chapter.6}
-\contentsline {chapter}{\numberline {7}Related Work}{119}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{119}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{120}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{122}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final Remarks}{125}{chapter.8}
-\contentsline {chapter}{\numberline {A}Appendix 1}{127}{chapter.1}
-\contentsline {chapter}{Bibliography}{129}{chapter.1}
-\contentsline {chapter}{List of Acronyms}{137}{chapter*.64}
+\contentsline {section}{\numberline {1.4}Organisation of this thesis}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Preliminaries}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}The GCM Component Model}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Overview of the GCM specification}{9}{subsection.2.1.1}
+\contentsline {paragraph}{Component introspection}{9}{section*.5}
+\contentsline {paragraph}{Component configuration}{10}{section*.7}
+\contentsline {paragraph}{Component runtime instantiation}{11}{section*.9}
+\contentsline {paragraph}{Component typing}{12}{section*.10}
+\contentsline {subsection}{\numberline {2.1.2}The GCM ADL}{13}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}ProActive --- A middleware for distributed programming}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}GCM/ProActive --- a reference implementation for GCM}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Specifying architectures with the ADL}{17}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}pNets: A formalism for defining behavioural semantics}{20}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Behavioural semantics for GCM/ProActive applications}{22}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Coping with structural reconfigurations}{24}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}The Fiacre specification language}{26}{section.2.4}
+\contentsline {section}{\numberline {2.5}A brief overview of the Coq Proof Assistant}{29}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Data types}{30}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Functional programming in Coq}{31}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Proving properties}{33}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{36}{subsection.2.5.4}
+\contentsline {chapter}{\numberline {3}The HyperManager}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}The HyperManager architecture}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Formal specification and verification methodology}{44}{section.3.2}
+\contentsline {section}{\numberline {3.3}The HyperManager as a formal methods case study}{48}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}On HyperManager Gateway}{48}{subsection.3.3.1}
+\contentsline {subsubsection}{\textsf {JMX Indicators} component}{48}{section*.30}
+\contentsline {subsubsection}{\textsf {Gateway Primitive} component}{51}{section*.32}
+\contentsline {subsubsection}{\textsf {Push Component} component}{53}{section*.34}
+\contentsline {subsubsection}{Model Generation and Proven Properties}{55}{section*.37}
+\contentsline {subsection}{\numberline {3.3.2}On HyperManager Server}{57}{subsection.3.3.2}
+\contentsline {subsubsection}{\textsf {JMX Indicators} component}{57}{section*.39}
+\contentsline {subsubsection}{\textsf {Server Primitive} component}{57}{section*.40}
+\contentsline {subsubsection}{\textsf {Pull Component} component}{58}{section*.42}
+\contentsline {subsubsection}{Model Generation and Proven Properties}{59}{section*.44}
+\contentsline {subsection}{\numberline {3.3.3}On System Product}{60}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}The case study reloaded: on structural reconfigurations}{62}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}On HyperManager Reconfigurable Gateway}{63}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}On HyperManager Reconfigurable Server}{64}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}On Reconfigurable System Product}{64}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Discussion}{66}{section.3.5}
+\contentsline {chapter}{\numberline {4}A mechanized framework for reasoning on software architectures}{69}{chapter.4}
+\contentsline {section}{\numberline {4.1}Mechanizing GCM with the Coq proof assistant}{70}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Core elements}{71}{subsection.4.1.1}
+\contentsline {subsubsection}{Interface datatype}{71}{section*.51}
+\contentsline {subsubsection}{Component datatype}{73}{section*.53}
+\contentsline {subsubsection}{Binding datatype}{74}{section*.54}
+\contentsline {subsubsection}{A complete example}{75}{section*.56}
+\contentsline {subsection}{\numberline {4.1.2}Well-formed component architectures}{78}{subsection.4.1.2}
+\contentsline {subsubsection}{A first well-formedness proof}{82}{section*.57}
+\contentsline {subsection}{\numberline {4.1.3}Well-typed component architectures}{83}{subsection.4.1.3}
+\contentsline {subsubsection}{A first well-typedness proof}{86}{section*.58}
+\contentsline {subsection}{\numberline {4.1.4}Well-formedness and well-typedness decidability}{87}{subsection.4.1.4}
+\contentsline {subsubsection}{Well-formedness decidability}{88}{section*.59}
+\contentsline {subsubsection}{Well-typedness decidability}{93}{section*.60}
+\contentsline {section}{\numberline {4.2}An \textsc {operation} language for composing architectures}{99}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{99}{subsection.4.2.1}
+\contentsline {subsubsection}{A first architecture through an \textsf {operation}}{103}{section*.62}
+\contentsline {subsection}{\numberline {4.2.2}Building well-formed architectures}{106}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Proving Properties}{108}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{108}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Supporting Parametrized ADLs}{110}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Structural Reconfigurations}{112}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Discussion}{115}{section.4.4}
+\contentsline {chapter}{\numberline {5}\textsf {Painless} integration with ProActive}{117}{chapter.5}
+\contentsline {section}{\numberline {5.1}Extracting a certified \textsf {Painless} interpreter}{118}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Certified functional code from logical specifications}{118}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}The remaining bits: adjusting to OCaml native types}{118}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}\textsf {Painless} support for the static and runtime verification of GCM/ProActive Applications}{118}{section.5.2}
+\contentsline {section}{\numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{118}{section.5.3}
+\contentsline {section}{\numberline {5.4}Discussion}{118}{section.5.4}
+\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}
+\contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{120}{section.6.1}
+\contentsline {section}{\numberline {6.2}Synchronization of LTSs, and traces}{120}{section.6.2}
+\contentsline {section}{\numberline {6.3}Modelling GCM internals}{120}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{120}{section.6.4}
+\contentsline {chapter}{\numberline {7}Related Work}{121}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{121}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{122}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{124}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final Remarks}{127}{chapter.8}
+\contentsline {chapter}{\numberline {A}Appendix 1}{129}{chapter.1}
+\contentsline {chapter}{Bibliography}{131}{chapter.1}
+\contentsline {chapter}{List of Acronyms}{139}{chapter*.64}

@@ -11,10 +11,11 @@
 %----------------------------------------------------------------------------------------
 
 
-		This thesis belongs to the domain of formal methods. In particular, we focus on a specific methodology
-	for the development of applications: component-based software engineering. 
+		This thesis belongs to the domain of formal methods. In particular, we focus 
+		their application on a specific methodology
+	for the development of software: component-based engineering. 
 	
-		Let it be by means of (semi-)automatic or interactive approaches, the goal of formal methods
+		Let it be by means of automatic or interactive approaches, the goal of formal methods
 	is to increase the confidence one can place on a software system. Throughout this thesis, 	
 	we discuss the application of formal methods techniques in the context of 
 	component-based engineering.     	
@@ -112,7 +113,54 @@
 \label{sec:contrib}
 
 	
-	The contributions of this thesis are three-fold. First,
+		In this thesis, we contribute to the state of the art in the domain
+	of formal methods and (distributed) component-based systems.
+		
+	Our first contribution is an industrial
+	case study on the behavioural specification and verification of a reconfigurable
+	distributed application. This promotes the use of formal methods in an industrial context,
+	but also puts in evidence the necessity for alternative and/or complementary approaches 
+	in order to better address such undertakings.		
+		
+	Our second contribution is a framework, developed with the Coq proof assistant,
+	for reasoning on software architectures: \textsc{Mefresa}. This encompasses
+	the mechanization of the \ac{GCM} specification, and the means to
+	reason about reconfigurable \ac{GCM} architectures. Further, we address
+	behavioural concerns by formalizing a semantics based on execution traces of
+	synchronized transition systems.
+	Overall, it provides the first steps towards a complete specification and verification
+	platform addressing both architectural and behavioural properties.
+						
+	Finally, our third contribution is a new \ac{ADL}, denominated \textsc{Painless},
+	and its proof-of-concept integration with the ProActive middleware. 
+	\textsc{Painless} allows to specify parametrized \ac{GCM} architectures, along with
+	their structural reconfigurations, in a declarative-like language. Compliance
+	with the \ac{GCM} specification is evaluated by certified	 functional code extracted from
+	\textsc{Mefresa}. This permits the safe deployment and
+	reconfiguration of \ac{GCM} applications.
+			
+	The following publications resulted from this thesis.
+	
+	\begin{itemize}
+		\item Nuno Gaspar and Eric Madelaine. \textit{Fractal \'a la Coq}.
+		Conf\'erence en Ing\'enierie du Logiciel, Rennes, France, June 2012.
+		
+		\item Nuno Gaspar, Ludovic Henrio and Eric Madelaine. 
+		\textit{Bringing Coq into the World of GCM Distributed Applications}.
+		International Journal of Parallel Programming, pp. 1-20, 2013.
+		
+		\item Nuno Gaspar, Ludovic Henrio and Eric Madelaine.
+		\textit{Formally Reasoning on a Reconfigurable Component-Based 
+		System --- A Case Study for the Industrial World}.
+		International Symposium on Formal Aspects of Component 
+		Software (FACS'2013), October 2013.  
+	\end{itemize}
+
+
+	Moreover, a talk
+	entitled \textit{Formal Reasoning on Component-Based Reconfigurable Applications},
+	was given at the student session of the 40$^{th}$ ACM SIGPLAN-SIGACT Symposium on 
+	Principles of Programming Languages (POPL'2013).
 
 
 \section{Organisation of this thesis}
