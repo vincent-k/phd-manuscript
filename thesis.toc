@@ -84,15 +84,18 @@
 \contentsline {section}{\numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{118}{section.5.3}
 \contentsline {section}{\numberline {5.4}Discussion}{118}{section.5.4}
 \contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}
-\contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{120}{section.6.1}
-\contentsline {section}{\numberline {6.2}Synchronization of LTSs, and traces}{120}{section.6.2}
-\contentsline {section}{\numberline {6.3}Modelling GCM internals}{120}{section.6.3}
-\contentsline {section}{\numberline {6.4}Discussion}{120}{section.6.4}
-\contentsline {chapter}{\numberline {7}Related Work}{121}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{121}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{122}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{124}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final Remarks}{127}{chapter.8}
-\contentsline {chapter}{\numberline {A}Appendix 1}{129}{chapter.1}
-\contentsline {chapter}{Bibliography}{131}{chapter.1}
-\contentsline {chapter}{List of Acronyms}{139}{chapter*.64}
+\contentsline {section}{\numberline {6.1}Groundwork: infinite objects and LTL}{120}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Lazy lists}{120}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Linear temporal logic}{120}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{120}{section.6.2}
+\contentsline {section}{\numberline {6.3}Synchronization of LTSs, and traces}{123}{section.6.3}
+\contentsline {section}{\numberline {6.4}Modelling GCM internals}{123}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{123}{section.6.5}
+\contentsline {chapter}{\numberline {7}Related Work}{125}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{125}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{126}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{128}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final Remarks}{131}{chapter.8}
+\contentsline {chapter}{\numberline {A}Appendix 1}{133}{chapter.1}
+\contentsline {chapter}{Bibliography}{135}{chapter.1}
+\contentsline {chapter}{List of Acronyms}{143}{chapter*.64}

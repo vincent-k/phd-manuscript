@@ -97,6 +97,12 @@
 \contentsline {lstlisting}{listings/chapter4/usecaseproof.tex}{114}{lstlisting.4.-39}
 \addvspace {7pt}
 \addvspace {7pt}
+\contentsline {lstlisting}{\numberline {6.1}\textsf {lts\_state} datatype}{120}{lstlisting.6.1}
+\contentsline {lstlisting}{\numberline {6.2}\textsf {action} datatype}{120}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.3}\textsf {message} datatype}{120}{lstlisting.6.3}
+\contentsline {lstlisting}{\numberline {6.4}\textsf {LTS} datatype}{121}{lstlisting.6.4}
+\contentsline {lstlisting}{\numberline {6.5}Trace definition for a \textsf {LTS}}{121}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.6}\textsf {lts\_target\_state} function definition}{122}{lstlisting.6.6}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

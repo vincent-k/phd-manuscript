@@ -1,0 +1,4 @@
+Definition state_mem : Type := list (string * nat) .
+
+Inductive lts_state :=
+  | LTS_State : nat -> state_mem -> lts_state.

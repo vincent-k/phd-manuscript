@@ -1,0 +1,20 @@
+Function lts_get_target_state (ts:transitions) 
+                          (st:lts_state) (m:message) : option lts_state :=
+  match ts with
+    nil                           => None
+  | (q, Action me asgn, qs) :: r => 
+                                    if st === q && beq_message me m then 
+                                      match st with
+                                        LTS_State _ q_mem =>
+                                          let q_mem_upd := process_assignments q_mem asgn in  
+                                          Some (q_mem_upd->>qs) 
+                                      end
+                                    else 
+                                      lts_get_target_state r st m 
+  end.
+
+Definition lts_target_state (A:LTS) (st:lts_state) (m:message) : option lts_state :=
+  match m with
+    Message "-" _ _ => Some st
+  | _ => lts_get_target_state (@Transitions A) st m
+  end.
