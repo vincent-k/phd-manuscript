@@ -1,0 +1,12 @@
+Inductive communication_type : Type :=
+  | Read:  communication_type
+  | Emit:  communication_type.
+
+Inductive parameter : Type :=
+   Val: nat   -> parameter
+ | Var: string -> parameter.
+
+Definition parameters := list parameter.
+
+Inductive message : Type := 
+  | Message: string -> communication_type -> parameters -> message.

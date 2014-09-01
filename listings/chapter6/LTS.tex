@@ -1,0 +1,10 @@
+Definition actions := list action.
+
+Definition transitions := list(lts_state * action * lts_state).
+
+Record LTS : Type := mk_LTS
+  { States      : lts_states         ;
+    Init        : lts_state          ;
+    Actions     : actions            ;
+    Transitions : transitions 
+  }.

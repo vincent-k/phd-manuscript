@@ -1,0 +1,13 @@
+CoInductive LTS_Trace (A:LTS) : lts_state -> LList action -> Prop :=
+  | lts_empty_trace : 
+      forall (m:message) (asgns:assignments) (q:lts_state), 
+         In (Action m asgns) (@Actions A) ->
+         lts_target_state A q m = None ->
+         LTS_Trace A q LNil
+  
+  | lts_lcons_trace : forall (q q':lts_state) (m:message) 
+      (asgns:assignments) (l:LList action),
+         In (Action m asgns) (@Actions A) ->
+         Some q' = lts_target_state A q m ->  
+         LTS_Trace A q' l                -> 
+         LTS_Trace A q (LCons (Action m asgns) l).

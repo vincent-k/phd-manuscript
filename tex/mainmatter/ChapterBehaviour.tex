@@ -29,6 +29,86 @@ mechanization.
 \label{sec:pLTS}
 
 	
+	\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{lts\_state} datatype}, 
+	                      %firstnumber=19,
+	                      label=lst:ltsstate]{listings/chapter6/state.tex}	
+	
+	
+	\noindent A \textsf{lts\_state} is identified by a natural number, and holds an internal memory that is a
+	simple mapping between strings to naturals. For the sake of simplicity we directly use strings to denote variables,
+	and constrain ourselves to natural number values.
+	
+	Next, let us now see the \textsf{action} datatype. Listing \ref{lst:action} illustrates its definition.
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{action} datatype}, 
+	                      %firstnumber=19,
+	                      label=lst:action]{listings/chapter6/action.tex}	
+
+	\noindent An \textsf{action} is composed by a \textsf{message}, and a set of \textsf{assignments}.
+	As expected, the latter permits to specify the assignment of specific state variables to a \textsf{transition}.
+	The former holds the label, its type of communication and a set of parameters. Listing \ref{lst:message}
+	depicts its definition.
+	
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{message} datatype}, 
+	                      %firstnumber=19,
+	                      label=lst:message]{listings/chapter6/message.tex}	
+
+	\noindent A message can either be \textit{reading} or \textit{emitting} (lines 2-3). Typically, these
+	are used to receive and transmit values, respectively. Naturally, the allowed \textsf{parameters} are
+	either values --- natural numbers --- or variables (line 6-7).
+	
+	
+	Finally, we can now see the \textsf{LTS} datatype as depicted by Listing \ref{lst:lts}.	
+		
+	\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{LTS} datatype}, 
+	                      %firstnumber=19,
+	                      label=lst:lts]{listings/chapter6/LTS.tex}	
+
+	Having defined the \textsf{LTS} datatype, we can now define \textsf{traces}. A trace is a sequence of actions 
+	resulting from the sequence of \textsf{transitions} taken by the \textsf{LTS}. It can either be finite or
+	infinite. A finite trace means that a \textit{sink} state was attained, thus the execution \textit{deadlocks}.
+	Listing \ref{lst:ltstrace} defines a \textsf{LTS} trace.	
+	
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Trace definition for a \textsf{LTS}}, 
+	                      %firstnumber=19,
+	                      label=lst:ltstrace]{listings/chapter6/ltstrace.tex}	
+
+
+	\noindent A \textsf{LTS\_Trace} is defined by a co-inductive predicate since we potentially deal
+	with infinite sequences. The expression, \textsf{LTS\_Trace A q l}, means that \textsf{l} is a trace
+	in the \textsf{LTS} object \textsf{A}, starting from the state \textsf{q}.   
+
+		The \textsf{LTS\_Trace} predicate is composed by two constructors: \textsf{lts\_empty\_trace} (line 2)
+	and \textsf{lts\_cons\_trace} (line 8).  The former simply expresses that, from any state, 
+	all \textsf{actions} of the \textsf{LTS} yield no target state (lines 3-5). Indeed, the
+	function 
+	\textsf{lts\_target\_state : LTS $\rightarrow$ lts\_state $\rightarrow$ message $\rightarrow$ lts\_state}
+	is responsible computing the attained state from \textsf{q} with an \textsf{action} holding the message
+	\textsf{m}. Thus, the constructor's conclusion is \textsf{LTS\_Trace A q LNil}, since the trace from \textsf{q}
+	is empty.	The latter constructor however, demands the that we reach a state \textsf{q'} (line 11), and
+	a trace from \textsf{q'} (line 12), in order to conclude \textsf{LTS\_Trace A q (LCons (Action m asgns) l)}.
+		
+	
+
+	
+
+
+	
+	For the sake of clarity, Listing \ref{lst:ltstargetstate} 	
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{lts\_target\_state} function definition}, 
+	                      %firstnumber=19,
+	                      label=lst:ltstargetstate]{listings/chapter6/lts\_target\_state.tex}		
+	
+	
+	\noindent a
 
 
 
