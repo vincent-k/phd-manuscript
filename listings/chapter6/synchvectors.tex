@@ -1,0 +1,10 @@
+Inductive SyncronizationElement : Type :=
+  | WildCard    : SyncronizationElement
+  | SyncElement : string -> SyncronizationElement.
+
+Inductive SyncronizationOutput : Type :=
+  | GlobalAction: string -> SyncronizationOutput.
+
+Inductive SynchronizationVector : Type := 
+  SyncVector: list SyncronizationElement * SyncronizationOutput -> 
+              SynchronizationVector.

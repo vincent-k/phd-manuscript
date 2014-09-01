@@ -103,6 +103,8 @@
 \contentsline {lstlisting}{\numberline {6.4}\textsf {LTS} datatype}{121}{lstlisting.6.4}
 \contentsline {lstlisting}{\numberline {6.5}Trace definition for a \textsf {LTS}}{121}{lstlisting.6.5}
 \contentsline {lstlisting}{\numberline {6.6}\textsf {lts\_target\_state} function definition}{122}{lstlisting.6.6}
+\contentsline {lstlisting}{\numberline {6.7}\textsf {SynchronizationVector} datatype}{123}{lstlisting.6.7}
+\contentsline {lstlisting}{\numberline {6.8}A convenient notation for \textsf {SynchronizationVectors}}{124}{lstlisting.6.8}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

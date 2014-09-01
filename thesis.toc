@@ -84,13 +84,10 @@
 \contentsline {section}{\numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{118}{section.5.3}
 \contentsline {section}{\numberline {5.4}Discussion}{118}{section.5.4}
 \contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}
-\contentsline {section}{\numberline {6.1}Groundwork: infinite objects and LTL}{120}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Lazy lists}{120}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Linear temporal logic}{120}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{120}{section.6.2}
-\contentsline {section}{\numberline {6.3}Synchronization of LTSs, and traces}{123}{section.6.3}
-\contentsline {section}{\numberline {6.4}Modelling GCM internals}{123}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{123}{section.6.5}
+\contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{119}{section.6.1}
+\contentsline {section}{\numberline {6.2}Synchronization of LTS, and traces}{123}{section.6.2}
+\contentsline {section}{\numberline {6.3}Modelling GCM internals}{124}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{124}{section.6.4}
 \contentsline {chapter}{\numberline {7}Related Work}{125}{chapter.7}
 \contentsline {section}{\numberline {7.1}On the HyperManager use case}{125}{section.7.1}
 \contentsline {section}{\numberline {7.2}On the Mefresa framework}{126}{section.7.2}

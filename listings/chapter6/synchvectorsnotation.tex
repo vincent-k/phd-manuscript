@@ -1,0 +1,8 @@
+Definition sync_notation (a:string) : SyncronizationElement :=
+  match a with
+    "-" => WildCard
+  | _   => SyncElement a
+  end.
+
+Notation "<< A , .. , B >> -> C" := 
+ (SyncVector((cons (sync_notation A) .. (cons (sync_notation B) nil) .. ), GlobalAction C)).

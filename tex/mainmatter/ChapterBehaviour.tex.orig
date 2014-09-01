@@ -25,9 +25,29 @@ For last, Section \ref{sec:behaviourdiscussion} discusses the final remarks abou
 mechanization.
 
 
+
+\section{Groundwork: infinite objects and LTL}
+\label{sec:groundwork}
+
+	\cite[chap. 13]{opac-b1101046}
+
+\subsection{Lazy lists}
+\label{sub:lazy}
+
+
+\subsection{Linear temporal logic}
+\label{sub:ltl}
+
+
 \section{Labelled transition systems, and traces}
 \label{sec:pLTS}
 
+<<<<<<< HEAD
+	
+=======
+	A LTS is composed by a set of states, an initial state, a set of actions, and a set of transitions, each composed
+	by a source state, a transition, and a target state. First, let us see the datatype used to encode
+	a LTS state. Listing \ref{lst:ltsstate} depicts such datatype.
 	
 	\lstinputlisting[language=Coq, stepnumber=1, 
 	                      caption={\textsf{lts\_state} datatype}, 
@@ -38,7 +58,7 @@ mechanization.
 	\noindent A \textsf{lts\_state} is identified by a natural number, and holds an internal memory that is a
 	simple mapping between strings to naturals. For the sake of simplicity we directly use strings to denote variables,
 	and constrain ourselves to natural number values.
-	
+
 	Next, let us now see the \textsf{action} datatype. Listing \ref{lst:action} illustrates its definition.
 	
 		\lstinputlisting[language=Coq, stepnumber=1, 
@@ -58,7 +78,7 @@ mechanization.
 
 	\noindent A message can either be \textit{reading} or \textit{emitting} (lines 2-3). Typically, these
 	are used to receive and transmit values, respectively. Naturally, the allowed \textsf{parameters} are
-	either values --- natural numbers --- or variables (lines 6-7).
+	either values --- natural numbers --- or variables (line 6-7).
 	
 	
 	Finally, we can now see the \textsf{LTS} datatype as depicted by Listing \ref{lst:lts}.	
@@ -89,67 +109,34 @@ mechanization.
 	all \textsf{actions} of the \textsf{LTS} yield no target state (lines 3-5). Indeed, the
 	function 
 	\textsf{lts\_target\_state : LTS $\rightarrow$ lts\_state $\rightarrow$ message $\rightarrow$ lts\_state}
-	is responsible for computing the attained state from \textsf{q} with an \textsf{action} holding the message
+	is responsible computing the attained state from \textsf{q} with an \textsf{action} holding the message
 	\textsf{m}. Thus, the constructor's conclusion is \textsf{LTS\_Trace A q LNil}, since the trace from \textsf{q}
 	is empty.	The latter constructor however, demands the that we reach a state \textsf{q'} (line 11), and
-	a trace from \textsf{q'} (line 12), in order to conclude \textsf{LTS\_Trace A q (LCons (Action m asgns) l)} (line 13).
+	a trace from \textsf{q'} (line 12), in order to conclude \textsf{LTS\_Trace A q (LCons (Action m asgns) l)}.
+		
 	
-		For the sake of clarity, Listing \ref{lst:ltstargetstate} depicts the \textsf{lts\_target\_state} function.	
+
+	
+
+
+	
+	For the sake of clarity, Listing \ref{lst:ltstargetstate} 	
 	
 		\lstinputlisting[language=Coq, stepnumber=1, 
 	                      caption={\textsf{lts\_target\_state} function definition}, 
 	                      %firstnumber=19,
-	                      label=lst:ltstargetstate]{listings/chapter6/ltstargetstate.tex}			
+	                      label=lst:ltstargetstate]{listings/chapter6/lts\_target\_state.tex}		
 	
 	
-	\noindent The function pattern matches the \textsf{message m} and checks whether its label
-	is equal to \textsf{"-"}. If it is the case then it simply returns the current state \textsf{st} (line 19),
-	otherwise it proceeds by calling the \textsf{lts\_get\_target\_state} function (line 20).
-	The is due to the fact that we consider a \textsf{message} with a \textsf{"-"} label as
-	a special case. As we shall see in Section \ref{sec:pnet}, this exception is related with the 
-	way we deal with synchronization between \ac{LTS}.
-	
-	The \textsf{lts\_get\_target\_state} function starts by pattern matching on the \textsf{LTS}
-	list of \textsf{transitions} (line 3),  returning no state if its empty (line 4). If it is not the 
-	case (line 5), then we check if the \textsf{transition} at the head of the list possesses
-	a source state that matches the parameter state \textsf{st}, and if the \textsf{message} contained
-	in its \textsf{action} is equal to the parameter \textsf{message m} (line 6). Should that be the case,
-	then it simply process the assignments associated with the taken \textsf{action} (line 9), and updates
-	the target state memory accordingly (line 10). As expected, this the the purpose of the
-	\textsf{process\_assignment : state\_mem $\rightarrow$ assignments $\rightarrow$ state\_mem} function, 
-	and \textsf{-$>>$} notation, respectively. Otherwise it recurs on the tail of the list of 
-	\textsf{transitions} (line 13).
+	\noindent a
+>>>>>>> cd034ef6ae7b4d3fd6f34ff8f3197f7e3cb7fe79
 
 
-\section{Synchronization of LTS, and traces}
+
+\section{Synchronization of LTSs, and traces}
 \label{sec:pnet}
 
-	In the previous Section we saw how to model a single \ac{LTS}. However, it is often the case
-	that we want to be able to have several \ac{LTS} communicate with each other.	This is achieved
-	by synchronizing their \textsf{actions}.
-	
-		First, let us formalize the notion of a synchronization vector. Listing \ref{lst:synchvectors}
-	depicts its datatype.	
-	
-	\lstinputlisting[language=Coq, stepnumber=1, 
-                      caption={\textsf{SynchronizationVector} datatype}, 
-                      %firstnumber=19,
-                      label=lst:synchvectors]{listings/chapter6/synchvectors.tex}		
 
-	\noindent Basically, a synchronization vector is composed by a list of synchronization elements,
-	and an output element (line 9). The former indicate the \textsf{actions} that need to be considered among
-	the list of \ac{LTS} being synchronized. The latter stands for the resulting global action.  
-	Both synchronization and output elements are represented by string values. For the sake of convenience
-	we also permit synchronization elements to be defined through the \textsf{WildCard} constructor (line 2).
-	Further we define a notation as depicted by Listing \ref{lst:synchvectorsnotation}.
-	
-	\lstinputlisting[language=Coq, stepnumber=1, 
-                      caption={A convenient notation for \textsf{SynchronizationVectors}}, 
-                      %firstnumber=19,
-                      label=lst:synchvectorsnotation]{listings/chapter6/synchvectorsnotation.tex}	
-                      	
-    \noindent Basically, it permits Coq to directly understand expressions such 
-    as the following one: \textsf{$<<$ "x" , "y" , "-" , "z" $>>$ -> "XYZ"}.
 
 
 \section{Modelling GCM internals}
