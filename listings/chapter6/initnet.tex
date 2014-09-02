@@ -1,0 +1,11 @@
+Definition init_net_state (net_obj: Net) : net_state :=
+  match net_obj with
+    mk_SingletonNet lts_obj => NetSingleton_State (@Init lts_obj)
+  | mk_Net (list_lts, _svs)  => 
+      let lq := (fix fix_init_lts_states list_lts :=
+          match list_lts with
+            nil          => nil
+          | lts_obj :: r => (@Init lts_obj) :: fix_init_lts_states r
+          end
+      ) list_lts in Net_State lq
+  end.

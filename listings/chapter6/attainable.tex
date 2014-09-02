@@ -1,0 +1,10 @@
+Inductive attainable (A:Net) : 
+              list net_state -> net_state -> net_state -> Prop :=
+  | Attain0 : forall q mem, q=q -> attainable A mem q q
+  | AttainN : forall qi qf mem,  ~ seen qi mem ->
+              forall list_lts svs, A = mk_Net (list_lts, svs) ->
+              forall qn sv, In sv svs ->
+              forall ga_lq, ga_lq = net_target_states A qi sv -> 
+              In qn (get_list_snd ga_lq) ->
+              attainable A (qi::mem) qn qf ->
+              attainable A mem qi qf.

@@ -1,0 +1,18 @@
+Fixpoint net_target_states (net_obj : Net) (q: net_state) 
+            (sv:SynchronizationVector) : list (action * net_state) :=
+ match net_obj, q, sv with
+  mk_Net (llts, list_svs), Net_State sts, SyncVector (svs, svo) =>
+   let acts := allowed_actions_from_sv_element llts sts svs in       
+   let acts' := combineN acts in      
+   (fix fix_net_target_states (list_acts: list (list action)) :=
+    match list_acts with
+      nil       => nil
+    | acts :: r => 
+     let no_msg_states := get_target_lts_states sts llts acts in
+     let params_to_emit := message_parameter_to_emit no_msg_states in
+     let llts' := transmit_message params_to_emit no_msg_states in
+     let global_action := global_action_output svo acts in
+     (global_action, Net_State (llts')) :: fix_net_target_states r
+     end) acts'
+  | _, _, _ => nil
+  end.

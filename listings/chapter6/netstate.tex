@@ -1,0 +1,3 @@
+Inductive net_state : Type :=
+  | NetSingleton_State: lts_state      -> net_state
+  | Net_State         : list lts_state -> net_state.

@@ -120,6 +120,9 @@ mechanization.
 	and \textsf{-$>>$} notation, respectively. Otherwise it recurs on the tail of the list of 
 	\textsf{transitions} (line 13).
 
+	
+
+
 
 \section{Synchronization of LTS, and traces}
 \label{sec:pnet}
@@ -144,12 +147,111 @@ mechanization.
 	Further we define a notation as depicted by Listing \ref{lst:synchvectorsnotation}.
 	
 	\lstinputlisting[language=Coq, stepnumber=1, 
-                      caption={A convenient notation for \textsf{SynchronizationVectors}}, 
+                      caption={A convenient notation for \textsf{SynchronizationVector}}, 
                       %firstnumber=19,
                       label=lst:synchvectorsnotation]{listings/chapter6/synchvectorsnotation.tex}	
                       	
     \noindent Basically, it permits Coq to directly understand expressions such 
     as the following one: \textsf{$<<$ "x" , "y" , "-" , "z" $>>$ -> "XYZ"}.
+
+	Let us now define a type for a communicating network of \ac{LTS}. We shall call this type \textsf{Net}.
+	Its definition is depicted by Listing \ref{lst:net}.	
+
+	\lstinputlisting[language=Coq, stepnumber=1, 
+                     caption={\textsf{Net} datatype}, 
+                     %firstnumber=19,
+                     label=lst:net]{listings/chapter6/net.tex}	
+
+	\noindent It is composed by two constructors: \textsf{mk\_SingletonNet} and \textsf{mk\_Net}.
+	The former is used for simple models constituted with a single \ac{LTS}, while the latter
+	permits to specify communicating \ac{LTS} by means of synchronization vectors.
+	
+	For this new structure we need a new notion of state. Listing \ref{lst:netstate} depicts the \textsf{pnet\_state}
+	datatype.
+
+	\lstinputlisting[language=Coq, stepnumber=1, 
+                     caption={\textsf{net\_state} datatype}, 
+                     %firstnumber=19,
+                     label=lst:netstate]{listings/chapter6/netstate.tex}	
+
+	\noindent Basically, both its constructors follow the same rationale: they keep track of the 
+	involved \textsf{lst\_states}. 
+	
+	%indexed_membership
+	%attainable
+	
+	Before proceeding to the definition of traces for	\textsf{Net}s, we need to consider
+	how their transitions are performed. For this case, we need to consider the current
+	\textsf{net\_state} and the activated synchronization vector. Moreover, each synchronization
+	element may permit more than one \textsf{action} to occur. Thus, a function
+	computing the target \textsf{net\_state}s must also return the resulting global action.
+	Listing \ref{lst:nettargetstates} depicts such a function.
+		
+	\lstinputlisting[language=Coqfix, stepnumber=1, 
+                     caption={\textsf{net\_target\_states} function definition}, 
+                     %firstnumber=19,
+                     label=lst:nettargetstates]{listings/chapter6/nettargetstates.tex}		
+	
+	
+	\noindent The above function may seem complicated at first sight, and requires 
+	a closer look. Basically, it starts by pattern matching on its \textsf{Net} parameter
+	\textsf{net\_obj}, \textsf{net\_state} parameter \textsf{q}, and synchronization vector parameter
+	\textsf{sv} (line 3). The function is supposed to be used with \textsf{Net} objects and \textsf{net\_state}
+	modelling systems with \textsf{LTS} synchronization. Should that not be the case, it simply returns
+	an empty list (line 17).
+	
+		
+		Another useful function concerns the computation of the initial state of a \textsf{Net}.
+	Listing \ref{lst:initnet} depicts its definition.
+	
+	\lstinputlisting[language=Coqfix, stepnumber=1, 
+                     caption={\textsf{init\_net\_state} function}, 
+                     %firstnumber=19,
+                     label=lst:initnet]{listings/chapter6/initnet.tex}		
+	
+	\noindent Basically, the above function computes the initial state of a \textsf{Net}. This is achieved
+	by pattern matching on the \textsf{Net} parameter \textsf{net\_obj} (line 2). If it is
+	a \textsf{Net} with a single \textsf{LTS} object, than it simply returns the adequate \textsf{net\_state}
+	constructor with the initial state of the \textsf{LTS} (line 3). Otherwise, it recursively
+	gathers the initial state of each \textsf{LTS} objects composing \textsf{net\_obj} into
+	the local variable \textsf{lq} (lines 5-9), and returns the adequate \textsf{net\_state}
+	constructor with \textsf{lq} (line 10).
+	
+				
+	
+	
+	
+		
+	
+	
+	
+	Let us now define a predicate indicating whether a state can attain another state. Listing \ref{lst:attainable}
+	depicts its formalization.
+			
+			\lstinputlisting[language=Coq, stepnumber=1, 
+                     caption={\textsf{attainable} predicate definition}, 
+                     %firstnumber=19,
+                     label=lst:attainable]{listings/chapter6/attainable.tex}	
+	
+		
+	\noindent 
+	
+	
+	
+		As expected, traces for \textsf{Net}s are slightly more involved than traces for \textsc{LTS}. 
+	Listing \ref{lst:nettrace} formalizes the notion of trace for the \textsf{Net} datatype.
+			
+
+		\lstinputlisting[language=Coq, stepnumber=1, 
+                     caption={Trace definition for \textsf{Net}}, 
+                     %firstnumber=19,
+                     label=lst:nettrace]{listings/chapter6/nettrace.tex}	
+	
+	\noindent It is composed by three constructors: \textsf{lts\_trace},
+	\textsf{net\_empty\_trace} and \textsf{net\_lcons\_trace}.
+		
+	
+	
 
 
 \section{Modelling GCM internals}
@@ -159,6 +261,9 @@ mechanization.
 
 \section{Discussion}
 \label{sec:behaviourdiscussion}
+
+
+	
 
 
 \chapbreak

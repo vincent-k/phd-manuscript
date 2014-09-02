@@ -1,0 +1,25 @@
+CoInductive Net_Trace (A: Net) : net_state -> LList action -> Prop :=
+ | lts_trace: forall net_q lts_q,
+     net_q = NetSingleton_State lts_q ->
+     forall A',  A=mk_SingletonNet A' ->
+     In lts_q (@States A')            ->
+     forall l, LTS_Trace A' lts_q l   ->
+     Net_Trace A net_q l
+  
+ | net_empty_trace: forall (q:net_state) list_lts list_sv, 
+      A = mk_Net (list_lts, list_sv)                  ->
+      forall list_lts_states, q = Net_State list_lts_states        ->
+      indexed_membership list_lts_states list_lts                  ->
+      attainable A nil (init_net_state A) q               ->
+      (forall sv, In sv list_sv -> net_target_states A q sv = nil) ->
+      Net_Trace A q LNil 
+      
+ | net_lcons_trace: forall (q:net_state) sync_vec list_lts list_sv,
+       A = mk_Net (list_lts, list_sv)                    ->
+       forall list_lts_states, q = Net_State list_lts_states   ->
+       indexed_membership list_lts_states list_lts             ->
+       attainable A nil (init_net_state A) q                   ->
+       In sync_vec list_sv                                     ->
+       forall ga_lq', ga_lq' = net_target_states A q sync_vec  ->
+       forall ga q', In (ga, q') ga_lq' -> Net_Trace A q' l    ->
+       Net_Trace A q (LCons ga l).
