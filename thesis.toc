@@ -84,10 +84,10 @@
 \contentsline {section}{\numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{118}{section.5.3}
 \contentsline {section}{\numberline {5.4}Discussion}{118}{section.5.4}
 \contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}
-\contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{119}{section.6.1}
+\contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{120}{section.6.1}
 \contentsline {section}{\numberline {6.2}Synchronization of LTS, and traces}{123}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}A first synchronization example}{128}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Master \& Slave example }{128}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.1}A first synchronization example}{129}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Master \& Slave example }{129}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Modelling GCM internals}{129}{section.6.3}
 \contentsline {section}{\numberline {6.4}Discussion}{129}{section.6.4}
 \contentsline {chapter}{\numberline {7}Related Work}{131}{chapter.7}

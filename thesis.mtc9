@@ -1,4 +1,6 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Labelled transition systems, and traces}{\reset@font\mtcSfont 119}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Labelled transition systems, and traces}{\reset@font\mtcSfont 120}{section.6.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Synchronization of LTS, and traces}{\reset@font\mtcSfont 123}{section.6.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Modelling GCM internals}{\reset@font\mtcSfont 128}{section.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Discussion}{\reset@font\mtcSfont 128}{section.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}A first synchronization example}{\reset@font\mtcSSfont 129}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.2}Master \& Slave example }{\reset@font\mtcSSfont 129}{subsection.6.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Modelling GCM internals}{\reset@font\mtcSfont 129}{section.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Discussion}{\reset@font\mtcSfont 129}{section.6.4}}

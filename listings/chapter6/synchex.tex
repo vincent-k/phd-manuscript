@@ -1,0 +1,5 @@
+Definition two_simplelts := simplelts :: simplelts :: nil.
+Definition sync_vectors :=
+  [<< "label" , "label" >> -> "label"].
+
+Definition two_simplenet := mk_Net (two_simplelts, sync_vectors).

@@ -287,33 +287,26 @@ mechanization.
 	predicate simply states that the $i^{th}$ element of the first parameter belongs to the set of \textsf{lts\_states} 
 	of the $i^{th}$ element of the second parameter (line 12).
 	%These two requirements serve the purpose of constraining 
-	For last, the third constructor deals with the most interesting case: there is a successful synchronization
-	between the \ac{LTS} composing the \textsf{Net} object \textsf{A}. 
-		
-	
-	
-	
-	%%
-	The expression
-	\textsf{net\_target\_states A q sync\_vec} (line 23) yields the list of target states along with
-	the associated global \textsf{action} from \textsf{net\_state} \textsf{q}, and by using 
-	synchronization vector \textsf{sync\_vec}.
-%%		
-	From the current \textsf{net\_state} \textsf{q}, and by choosing 
-	one of the specified synchronization vectors (line 22)
-
-	
-	
-	
-	it is necessary to establish 
-	a trace   from one of the \textsf{net\_state}s belonging	
-	to the list of tuples relating the resulting global action with the target \textsf{net\_state} (lines 23-24). 
-	Further, the associated global action is added to the trace (line 25).	
+	The third constructor deals with the most interesting case: there is a successful synchronization
+	between the \ac{LTS}s composing the \textsf{Net} object \textsf{A}. As in the second constructor,
+	the indexed membership and attainability requirements are also included (lines 20-21). 
+	Further, the expression
+	\textsf{net\_target\_states A q sync\_vec} (line 23) yields a list of tuples holding the 
+	target states along with the associated global \textsf{action} from 
+	\textsf{net\_state} \textsf{q}, and by using 
+	a synchronization vector \textsf{sync\_vec} belonging to \textsf{list\_sv} (line 22).
+	Finally, it is necessary to establish 
+	a trace from one of the \textsf{net\_state}s belonging	
+	to this list of tuples (line 24), and the associated global action 
+	is added to the trace (line 25).	
 	
 		
 		
 \subsection{A first synchronization example}	
 \label{sub:synchex}
+
+	
+	
 
 
 
@@ -328,11 +321,19 @@ fiacre tutorial
 \label{sec:gcmpnets}
 
 
+	 As seen in Section \ref{sec:pnets}, and further discussed by example throughout Chapter \ref{chap:hyper},
+   \ac{GCM} components are internally composed by a set of processes --- \ac{FIFO} \textit{queue}, \textsf{body}, 
+   etc. These can be modelled with our \textsf{LTS} datatype.
+   
+   	For instance, let us see how we can model the \ac{FIFO} \textit{queue} process.  
+ 	
+
+
 
 \section{Discussion}
 \label{sec:behaviourdiscussion}
 
-
+	
 	
 
 
