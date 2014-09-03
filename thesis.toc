@@ -86,13 +86,15 @@
 \contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}
 \contentsline {section}{\numberline {6.1}Labelled transition systems, and traces}{119}{section.6.1}
 \contentsline {section}{\numberline {6.2}Synchronization of LTS, and traces}{123}{section.6.2}
-\contentsline {section}{\numberline {6.3}Modelling GCM internals}{127}{section.6.3}
-\contentsline {section}{\numberline {6.4}Discussion}{127}{section.6.4}
-\contentsline {chapter}{\numberline {7}Related Work}{129}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{129}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{130}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{132}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final Remarks}{135}{chapter.8}
-\contentsline {chapter}{\numberline {A}Appendix 1}{137}{chapter.1}
-\contentsline {chapter}{Bibliography}{139}{chapter.1}
-\contentsline {chapter}{List of Acronyms}{147}{chapter*.64}
+\contentsline {subsection}{\numberline {6.2.1}A first synchronization example}{128}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Master \& Slave example }{128}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Modelling GCM internals}{129}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{129}{section.6.4}
+\contentsline {chapter}{\numberline {7}Related Work}{131}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{131}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{132}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{134}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final Remarks}{137}{chapter.8}
+\contentsline {chapter}{\numberline {A}Appendix 1}{139}{chapter.1}
+\contentsline {chapter}{Bibliography}{141}{chapter.1}
+\contentsline {chapter}{List of Acronyms}{149}{chapter*.64}

@@ -152,7 +152,9 @@ mechanization.
                       label=lst:synchvectorsnotation]{listings/chapter6/synchvectorsnotation.tex}	
                       	
     \noindent Basically, it permits Coq to directly understand expressions such 
-    as the following one: \textsf{$<<$ "x" , "y" , "-" , "z" $>>$ -> "XYZ"}.
+    as the following one: \textsf{$<<$ "x" , "y" , "-" , "z" $>>$ -> "XYZ"} --- from left to right,
+    four \textsf{LTS} objects are synchronized on their \textsf{actions} labelled \textsf{"x"}, \textsf{"y"}, any,
+    and \textsf{"z"}, respectively, yielding a global \textsf{action} labelled \textsf{"XYZ"}.
 
 	Let us now define a type for a communicating network of \ac{LTS}. We shall call this type \textsf{Net}.
 	Its definition is depicted by Listing \ref{lst:net}.	
@@ -198,8 +200,25 @@ mechanization.
 	\textsf{net\_obj}, \textsf{net\_state} parameter \textsf{q}, and synchronization vector parameter
 	\textsf{sv} (line 3). The function is supposed to be used with \textsf{Net} objects and \textsf{net\_state}
 	modelling systems with \textsf{LTS} synchronization. Should that not be the case, it simply returns
-	an empty list (line 17).
-	
+	an empty list (line 17). The function 
+	\textsf{allowed\_actions\_from\_sv\_element : list LTS $\rightarrow$ list lts_state $\rightarrow$ 
+	list SyncronizationElement $\rightarrow$ list (list action)} computes the \textsf{actions} that
+	may occur at each \textsf{LTS} composing \textsf{llts}, taking into account its current
+	\textsf{lts\_state} held at \textsf{sts} and w.r.t the adequate synchronization element
+	in \textsf{svs} (line 5). Then, it is necessary to generate all combinations of \textsf{actions}
+	that may occur for each \textsf{LTS} (line 6). This is the purpose of the
+	\textsf{combineN : list (list action) -> list (list action)} function.  Next, it goes through 
+	all generated combinations, and gets for all \textsf{LTS} objects
+	the target states along with the message to synchronize (line 11). 
+	This is the purpose of the \textsf{get\_target\_lts\_states}
+	function. Then,  the functions \textsf{message\_parameter\_to\_emit} and
+	\textsf{transmit\_message} take care of the variables passing between
+	the synchronized \textsf{LTS} objects. The function 
+	\textsf{global\_action\_output} returns the global action
+	resulting from the synchronized \textsf{action} labels with their parameters (line 14).
+	Finally, the computed global action along with the attained \textsf{pnet\_state} is kept,	
+	and the function recurs (line 15). 
+	 
 		
 		Another useful function concerns the computation of the initial state of a \textsf{Net}.
 	Listing \ref{lst:initnet} depicts its definition.
@@ -209,23 +228,15 @@ mechanization.
                      %firstnumber=19,
                      label=lst:initnet]{listings/chapter6/initnet.tex}		
 	
-	\noindent Basically, the above function computes the initial state of a \textsf{Net}. This is achieved
-	by pattern matching on the \textsf{Net} parameter \textsf{net\_obj} (line 2). If it is
-	a \textsf{Net} with a single \textsf{LTS} object, than it simply returns the adequate \textsf{net\_state}
+	\noindent Basically, the above function proceeds by pattern matching on the \textsf{Net} parameter \textsf{net\_obj} (line 2). 
+	If it is a \textsf{Net} with a single \textsf{LTS} object, than it simply returns the adequate \textsf{net\_state}
 	constructor with the initial state of the \textsf{LTS} (line 3). Otherwise, it recursively
 	gathers the initial state of each \textsf{LTS} objects composing \textsf{net\_obj} into
 	the local variable \textsf{lq} (lines 5-9), and returns the adequate \textsf{net\_state}
 	constructor with \textsf{lq} (line 10).
 	
-				
-	
-	
-	
-		
-	
-	
-	
-	Let us now define a predicate indicating whether a state can attain another state. Listing \ref{lst:attainable}
+
+		Let us now define a predicate indicating whether a state can attain another state. Listing \ref{lst:attainable}
 	depicts its formalization.
 			
 			\lstinputlisting[language=Coq, stepnumber=1, 
@@ -234,10 +245,25 @@ mechanization.
                      label=lst:attainable]{listings/chapter6/attainable.tex}	
 	
 		
-	\noindent 
+	\noindent It is composed by two constructors: \textsf{Attain0} and \textsf{AttainN}. Intuitively,
+	the former expresses the idea that a \textsf{net\_state} can always attain itself (line 3).
+	The latter is slightly more involved. Basically, in order for a \textsf{net\_state} \textsf{qi}
+	to attain \textsf{net\_state} \textsf{qf}, there needs to be a \textsf{net\_state} \textsf{qn}
+	that belongs to \textsf{qi}'s target states, and \textsf{qf} to be attainable from \textsf{qn}.
+	The function \textsf{net\_target\_states} computes \textsf{qi}'s target states (line 7) by using
+	one of the specified synchronization vectors (lines 5-6). 
+	However, it returns a list of tuples associating a global \textsf{action} with a \textsf{net\_state}.
+	Thus, \textsf{qn} needs to belong to the list of elements at the right of each tuple.	
+	This is the purpose of the function 
+	\textsf{get\_list\_snd : forall X Y : Type, list (X * Y) -> list Y}	(line 8). Then, 
+	\textsf{qn} needs to be able to attain \textsf{qf} (line 9). The careful reader may wonder
+	about the second predicate parameter that stores the list of already seen \textsf{net\_state}s. 
+	There is no point in revisiting already seen \textsf{net\_state}s in order to check 
+	attainability. Thus, it is also required that the source \textsf{net\_state} was not already
+	previously seen (line 4). Naturally, this is the purpose of the negated predicate
+	\textsf{seen : net\_state $\rightarrow$ list net\_state $\rightarrow$ Prop}.
 	
-	
-	
+			
 		As expected, traces for \textsf{Net}s are slightly more involved than traces for \textsc{LTS}. 
 	Listing \ref{lst:nettrace} formalizes the notion of trace for the \textsf{Net} datatype.
 			
@@ -249,11 +275,55 @@ mechanization.
 	
 	\noindent It is composed by three constructors: \textsf{lts\_trace},
 	\textsf{net\_empty\_trace} and \textsf{net\_lcons\_trace}.
+	The first constructor deals with singleton \textsf{Net}s, and thus relies on
+	the previously discussed \textsf{LTS\_Trace} predicate (lines 2-7).		
+	The second constructor is meant for empty traces, that is, when there is no
+	synchronization vector that can be activated (line 14), 
+	and thus the execution is stuck (line 15). Two further requirements are specified.
+	First, it is required that the current \textsf{net\_state} \textsf{q} is 
+	attainable from the initial state of the \textsf{Net} object \textsf{A} (line 13). Second, 
+	the 
+	\textsf{indexed\_membership : list lts\_state $\rightarrow$ list LTS $\rightarrow$ Prop}
+	predicate simply states that the $i^{th}$ element of the first parameter belongs to the set of \textsf{lts\_states} 
+	of the $i^{th}$ element of the second parameter (line 12).
+	%These two requirements serve the purpose of constraining 
+	For last, the third constructor deals with the most interesting case: there is a successful synchronization
+	between the \ac{LTS} composing the \textsf{Net} object \textsf{A}. 
 		
 	
 	
+	
+	%%
+	The expression
+	\textsf{net\_target\_states A q sync\_vec} (line 23) yields the list of target states along with
+	the associated global \textsf{action} from \textsf{net\_state} \textsf{q}, and by using 
+	synchronization vector \textsf{sync\_vec}.
+%%		
+	From the current \textsf{net\_state} \textsf{q}, and by choosing 
+	one of the specified synchronization vectors (line 22)
+
+	
+	
+	
+	it is necessary to establish 
+	a trace   from one of the \textsf{net\_state}s belonging	
+	to the list of tuples relating the resulting global action with the target \textsf{net\_state} (lines 23-24). 
+	Further, the associated global action is added to the trace (line 25).	
+	
+		
+		
+\subsection{A first synchronization example}	
+\label{sub:synchex}
 
 
+
+\subsection{Master \& Slave example }	
+\label{sub:masterslave}
+
+fiacre tutorial
+
+
+%%%
 \section{Modelling GCM internals}
 \label{sec:gcmpnets}
 

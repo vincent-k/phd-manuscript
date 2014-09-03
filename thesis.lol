@@ -108,9 +108,9 @@
 \contentsline {lstlisting}{\numberline {6.9}\textsf {Net} datatype}{124}{lstlisting.6.9}
 \contentsline {lstlisting}{\numberline {6.10}\textsf {net\_state} datatype}{124}{lstlisting.6.10}
 \contentsline {lstlisting}{\numberline {6.11}\textsf {net\_target\_states} function definition}{125}{lstlisting.6.11}
-\contentsline {lstlisting}{\numberline {6.12}\textsf {init\_net\_state} function}{125}{lstlisting.6.12}
+\contentsline {lstlisting}{\numberline {6.12}\textsf {init\_net\_state} function}{126}{lstlisting.6.12}
 \contentsline {lstlisting}{\numberline {6.13}\textsf {attainable} predicate definition}{126}{lstlisting.6.13}
-\contentsline {lstlisting}{\numberline {6.14}Trace definition for \textsf {Net}}{126}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.14}Trace definition for \textsf {Net}}{127}{lstlisting.6.14}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

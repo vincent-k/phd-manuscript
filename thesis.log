@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  2 SEP 2014 18:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  3 SEP 2014 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2909,12 +2909,16 @@ Chapter 6.
 (./listings/chapter6/synchvectors.tex)
 (./listings/chapter6/synchvectorsnotation.tex [123])
 (./listings/chapter6/net.tex) (./listings/chapter6/netstate.tex) [124]
-(./listings/chapter6/nettargetstates.tex) (./listings/chapter6/initnet.tex)
-[125] (./listings/chapter6/attainable.tex) (./listings/chapter6/nettrace.tex
-[126])) [127]
+(./listings/chapter6/nettargetstates.tex) [125]
+(./listings/chapter6/initnet.tex) (./listings/chapter6/attainable.tex [126])
+(./listings/chapter6/nettrace.tex [127])
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+ [128])
+[129]
 \openout2 = `tex/mainmatter/Chapter6.aux'.
 
- (./tex/mainmatter/Chapter6.tex [128
+ (./tex/mainmatter/Chapter6.tex [130
 
 
 
@@ -2930,14 +2934,14 @@ Overfull \hbox (44.98051pt too wide) in paragraph at lines 26--29
 d Ap-pli-ca-tion http://www-
  []
 
-[129] [130]
+[131] [132]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [131]
-[132]) [133]
+ [133]
+[134]) [135]
 \openout2 = `tex/mainmatter/Chapter7.aux'.
 
- (./tex/mainmatter/Chapter7.tex [134
+ (./tex/mainmatter/Chapter7.tex [136
 
 
 
@@ -2945,10 +2949,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 8.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc11 is empty on input line 11.
-) [135]
+) [137]
 \openout2 = `tex/mainmatter/appendices/app1.aux'.
 
- (./tex/mainmatter/appendices/app1.tex [136
+ (./tex/mainmatter/appendices/app1.tex [138
 
 
 
@@ -2959,19 +2963,19 @@ has been already used, duplicate ignored
 l.1 \chapter{Appendix 1}
                          % (fold)
 Appendix A.
-) [137] [138
+) [139] [140
 
 
-] (./thesis.bbl [139
+] (./thesis.bbl [141
 
-] [140]
+] [142]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-[141]
+[143]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -2993,7 +2997,7 @@ Appendix A.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[142] [143] [144]
+[144] [145] [146]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -3003,13 +3007,13 @@ Appendix A.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-) [145]
+) [147]
 \openout2 = `tex/backmatter/acronyms.aux'.
 
- (./tex/backmatter/acronyms.tex [146
+ (./tex/backmatter/acronyms.tex [148
 
 
-]) [147]
+]) [149]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 181.
 See the caption package documentation for explanation.
@@ -3035,7 +3039,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the thesis.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-[148
+[150
 
 ]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 136.
@@ -3049,9 +3053,15 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 136.
 (./tex/mainmatter/appendices/app1.aux) (./tex/backmatter/acronyms.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D83D9E0E870160E5DA38F3A067A76DFF;5473.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: D83D9E0E870160E5DA38F3A067A76DFF;5473
+(rerunfilecheck)             After:  860CFFBA4378DDB9C58C7B4FEB9311C4;5638.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3061,10 +3071,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 32318 strings out of 493633
- 562019 string characters out of 3143378
- 986023 words of memory out of 3000000
- 32790 multiletter control sequences out of 15000+200000
+ 32330 strings out of 493633
+ 562179 string characters out of 3143378
+ 986435 words of memory out of 3000000
+ 32798 multiletter control sequences out of 15000+200000
  181057 words of font info for 139 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  63i,27n,78p,932b,2159s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3114,10 +3124,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (170 pages, 2164232 bytes).
+Output written on thesis.pdf (172 pages, 2170143 bytes).
 PDF statistics:
- 5395 PDF objects out of 6186 (max. 8388607)
- 4354 compressed objects within 44 object streams
- 1413 named destinations out of 1440 (max. 500000)
+ 5407 PDF objects out of 6186 (max. 8388607)
+ 4364 compressed objects within 44 object streams
+ 1417 named destinations out of 1440 (max. 500000)
  809 words of extra memory for PDF output out of 10000 (max. 10000000)
 
