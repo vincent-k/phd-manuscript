@@ -56,17 +56,21 @@
 \BOOKMARK [1][-]{section.5.3}{Architectural classes for statically ensuring safe reconfigurations}{chapter.5}% 56
 \BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 57
 \BOOKMARK [0][-]{chapter.6}{Mechanized behavioural semantics}{}% 58
-\BOOKMARK [1][-]{section.6.1}{Labelled transition systems, and traces}{chapter.6}% 59
-\BOOKMARK [1][-]{section.6.2}{Synchronization of LTS, and traces}{chapter.6}% 60
-\BOOKMARK [2][-]{subsection.6.2.1}{A first synchronization example}{section.6.2}% 61
-\BOOKMARK [2][-]{subsection.6.2.2}{Master \046 Slave example }{section.6.2}% 62
-\BOOKMARK [1][-]{section.6.3}{Modelling GCM internals}{chapter.6}% 63
-\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 64
-\BOOKMARK [0][-]{chapter.7}{Related Work}{}% 65
-\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 66
-\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 67
-\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 68
-\BOOKMARK [0][-]{chapter.8}{Final Remarks}{}% 69
-\BOOKMARK [0][-]{chapter.1}{Appendix 1}{}% 70
-\BOOKMARK [0][-]{chapter.1}{Bibliography}{}% 71
-\BOOKMARK [0][-]{chapter*.64}{List of Acronyms}{}% 72
+\BOOKMARK [1][-]{section.6.1}{Groundwork: Infinite data structures}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.2}{Labelled transition systems, and traces}{chapter.6}% 60
+\BOOKMARK [2][-]{subsection.6.2.1}{Encoding labelled transitions systems}{section.6.2}% 61
+\BOOKMARK [2][-]{subsection.6.2.2}{LTS traces}{section.6.2}% 62
+\BOOKMARK [1][-]{section.6.3}{Synchronization of LTS, and traces}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.3.1}{Encoding synchronizations between LTSs}{section.6.3}% 64
+\BOOKMARK [2][-]{subsection.6.3.2}{Net traces}{section.6.3}% 65
+\BOOKMARK [2][-]{subsection.6.3.3}{Synchronized Master \046 Slave example}{section.6.3}% 66
+\BOOKMARK [1][-]{section.6.4}{Modelling GCM internals}{chapter.6}% 67
+\BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 68
+\BOOKMARK [0][-]{chapter.7}{Related Work}{}% 69
+\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 70
+\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 71
+\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 72
+\BOOKMARK [0][-]{chapter.8}{Final Remarks}{}% 73
+\BOOKMARK [0][-]{chapter.1}{Appendix 1}{}% 74
+\BOOKMARK [0][-]{chapter.1}{Bibliography}{}% 75
+\BOOKMARK [0][-]{chapter*.68}{List of Acronyms}{}% 76

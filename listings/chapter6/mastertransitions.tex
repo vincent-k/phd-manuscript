@@ -1,0 +1,5 @@
+Function master_transitions master_order_acts :=
+  match master_order_acts with
+    nil             => (slv0, slave_ready_act, slv1) :: nil
+  | m_act :: r => (slv1, m_act, slv0) :: (master_transitions  r)
+  end.

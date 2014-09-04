@@ -1,0 +1,5 @@
+CoInductive Always (A:Type) (P:LList A -> Prop) : LList A -> Prop :=
+  Always_LCons :
+    forall (a:A) (l:LList A), P (LCons a l) -> 
+                              Always P l  -> 
+                              Always P (LCons a l).

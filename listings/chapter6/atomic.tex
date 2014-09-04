@@ -1,0 +1,3 @@
+Inductive Atomic (A:Type) (At:A -> Prop) : LList A -> Prop :=
+ Atomic_intro : forall (a:A) (l:LList A), At a -> 
+                       Atomic At (LCons a l).

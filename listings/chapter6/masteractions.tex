@@ -1,0 +1,17 @@
+Definition makeCoffeeOrder (n:nat) : action := 
+  Action (Message "MakeCoffee" Emit (Val(n)::nil)) nil.
+
+Function nMakeCoffeeOrders n : actions :=
+  match n with
+    0   => makeCoffeeOrder 0 :: nil
+  | S m => makeCoffeeOrder n :: nMakeCoffeeOrders m
+  end.
+
+Definition makeSandwichOrder : action := 
+  Action (Message "MakeSandwich" Emit nil) nil.
+
+Definition master_order_acts n : actions  := 
+     makeSandwichOrder :: nMakeCoffeeOrders n.
+Definition master_ready_act := Action (Message "ready" Read nil) nil.
+Definition master_acts n : actions := 
+    master_ready_act :: (master_order_acts n).

@@ -3,8 +3,8 @@
 \select@language {english}
 \select@language {portuguese}
 \select@language {english}
-\contentsline {xchapter}{}{xx}{Doc-Start}
 \contentsline {xchapter}{}{xxi}{Doc-Start}
+\contentsline {xchapter}{}{xxiii}{Doc-Start}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \addvspace {10\p@ }
@@ -46,10 +46,10 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related Work}{131}{chapter.7}
+\contentsline {xchapter}{Related Work}{137}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final Remarks}{137}{chapter.8}
+\contentsline {xchapter}{Final Remarks}{143}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Appendix 1}{139}{chapter.1}
+\contentsline {xchapter}{Appendix 1}{145}{chapter.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{149}{chapter*.64}
+\contentsline {xchapter}{List of Acronyms}{155}{chapter*.68}

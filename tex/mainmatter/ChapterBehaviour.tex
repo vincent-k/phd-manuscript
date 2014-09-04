@@ -25,9 +25,58 @@ For last, Section \ref{sec:behaviourdiscussion} discusses the final remarks abou
 mechanization.
 
 
+
+\section{Groundwork: Infinite data structures}
+\label{sec:groundwork}
+
+	In this section we briefly discuss the concepts involved in the definition of infinite data structures such as lazy lists.	
+	For a more detailed coverage of these topics the interested
+	reader is pointed to \cite[chap. 13]{opac-b1101046}.
+
+
+	As discussed in Section \ref{sec:coq}, values from an inductive type are obtained by repeated application of
+	its constructors. Further, the type's induction principle constrains this sequence of constructor application
+	to be finite. On the other hand, while values from \textit{co-inductive} types are also obtained via repeated 
+	application of its constructors, there is no such infinity restriction.
+
+	One of the most basic co-inductive types is the one encoding \textit{lazy lists}. Listing \ref{lst:llist}
+	encodes its datatype.
+	
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={\textsf{LList} datatype}, 
+	                      %firstnumber=19,
+	                      label=lst:llist]{listings/chapter6/llist.tex}	
+	
+	\noindent Indeed, its definition follows the definition of an inductive list.	
+	Its only difference lies in the use of the \textsf{CoInductive} keyword.
+	Yet, there is a fundamental distinction in that this datatype allows to build
+	infinite lists.
+	
+		For instance, one can easily build a list holding the infinity of natural numbers as
+	depicted by Listing \ref{lst:nats}.
+	
+	
+				\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Lazy list holding all natural numbers}, 
+	                      %firstnumber=19,
+	                      label=lst:nats]{listings/chapter6/nats.tex}	
+	
+	\noindent Any attempt to reproduce the above with an inductive list would be rejected by
+	Coq. Further, the careful reader may notice the use of the \textsf{CoFixpoint} keyword. Indeed,
+	it is used in a similar fashion as the \textsf{Fixpoint} keyword, yet, it does not impose
+	restrictions forbidding the construction of infinite structures, and thus is very handy when dealing
+	with the infinity.
+
+
+
 \section{Labelled transition systems, and traces}
 \label{sec:pLTS}
 
+\subsection{Encoding labelled transitions systems}
+\label{sub:lts}
+	
+	Let us start by the basic constituent of an \ac{LTS}: a state. Listing \ref{lst:ltsstate} depicts
+	its mechanization.	
 	
 	\lstinputlisting[language=Coq, stepnumber=1, 
 	                      caption={\textsf{lts\_state} datatype}, 
@@ -67,6 +116,11 @@ mechanization.
 	                      caption={\textsf{LTS} datatype}, 
 	                      %firstnumber=19,
 	                      label=lst:lts]{listings/chapter6/LTS.tex}	
+
+
+\subsection{LTS traces}
+\label{sub:ltstrace}
+
 
 	Having defined the \textsf{LTS} datatype, we can now define \textsf{traces}. A trace is a sequence of actions 
 	resulting from the sequence of \textsf{transitions} taken by the \textsf{LTS}. It can either be finite or
@@ -120,16 +174,19 @@ mechanization.
 	and \textsf{-$>>$} notation, respectively. Otherwise it recurs on the tail of the list of 
 	\textsf{transitions} (line 13).
 
-	
-
-
 
 \section{Synchronization of LTS, and traces}
 \label{sec:pnet}
 
+
 	In the previous Section we saw how to model a single \ac{LTS}. However, it is often the case
 	that we want to be able to have several \ac{LTS} communicate with each other.	This is achieved
 	by synchronizing their \textsf{actions}.
+
+
+\subsection{Encoding synchronizations between LTSs}	
+\label{sub:synchencode}	
+	
 	
 		First, let us formalize the notion of a synchronization vector. Listing \ref{lst:synchvectors}
 	depicts its datatype.	
@@ -181,6 +238,9 @@ mechanization.
 	
 	%indexed_membership
 	%attainable
+	
+  \subsection{Net traces}	
+\label{sub:net traces}		
 	
 	Before proceeding to the definition of traces for	\textsf{Net}s, we need to consider
 	how their transitions are performed. For this case, we need to consider the current
@@ -302,18 +362,163 @@ mechanization.
 	
 		
 		
-\subsection{A first synchronization example}	
-\label{sub:synchex}
-
-	
-	
-
-
-
-\subsection{Master \& Slave example }	
+\subsection{Synchronized Master \& Slave example}	
 \label{sub:masterslave}
 
-fiacre tutorial
+	
+		First, let us define a convenient notation for reasoning over execution traces.
+	Listing \ref{lst:sat} depicts such definition.
+	
+					\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the \textsf{satisfies} predicate}, 
+	                      %firstnumber=19,
+	                      label=lst:sat]{listings/chapter6/sat.tex}	
+
+
+	\noindent Basically, it permits to use the convenient and familiar notation \textsf{t $\vDash$ p}, meaning
+	"trace \textsf{t} satisfies property \textsf{p}". As expected, we shall use a temporal logic in order to reason 
+	about such traces. In particular, we take advantage of the encoding in Coq of \ac{LTL} from
+	\cite[sec. 13.9]{opac-b1101046}. For the sake of completeness, we demonstrate here a part of 
+	this formalization. For instance, Listing \ref{lst:always} depicts the \textsf{Always} predicate.
+	
+	%Listing \ref{lst:atomic} depicts the \textsf{Atomic} predicate.
+
+	%\lstinputlisting[language=Coq, stepnumber=1, 
+	 %                     caption={Definition of the \textsf{atomic} predicate}, 
+	                      %firstnumber=19,
+	  %                    label=lst:atomic]{listings/chapter6/atomic.tex}	
+
+
+	%\noindent This is a rather simple predicate. Basically, a stream satisfies the \textsf{Atomic}
+	%predicate provided that its head element satisfies the \textsf{At} predicate given as parameter.
+
+  \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the \textsf{Always} predicate}, 
+	                      %firstnumber=19,
+	                     label=lst:always]{listings/chapter6/always.tex}	
+	
+	\noindent Basically, the \textsf{Always} predicate holds if the trace  
+	satisfies the predicate \textsf{P} given as parameter (line 3), and the \textsf{Always} predicate
+	itself must hold for the tail of the trace (line 4). Naturally, it is implicit that this 
+	predicate only holds for infinite traces.
+
+	In Section \ref{sec:fiacre} we discussed the Fiacre specification language by illustrating a 
+	Master/Slave example from the online Fiacre tutorial. In the following, we show how to encode
+	and reason about such system.
+	
+	
+\subsubsection{The slave process}	
+\label{subsub:slave}
+	
+		Let us start by encoding the slave process. It possesses two states. Listing \ref{lst:slavestates}
+		depicts their mechanization.
+		
+  \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the slave process \textsf{lts\_states}}, 
+	                      %firstnumber=19,
+	                     label=lst:slavestates]{listings/chapter6/slavestates.tex}	
+
+
+	\noindent Further, it features three kinds of \textsf{actions}: parameterless \textsf{ready} and \textsf{order:MakeSandwich},
+	and \textsf{order:MakeCoffee} taking one natural number specifying a kind of coffee. These are encoded as depicted by
+	Listing \ref{lst:slaveactions}
+
+	 \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the slave process \textsf{actions}}, 
+	                      %firstnumber=19,
+	                     label=lst:slaveactions]{listings/chapter6/slaveactions.tex}	
+
+	\noindent Moreover, we need to specify its transitions. This is achieved by the function depicted
+	by Listing \ref{lst:slavetransitions}.
+
+		 \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the slave process \textsf{transitions}}, 
+	                      %firstnumber=19,
+	                     label=lst:slavetransitions]{listings/chapter6/slavetransitions.tex}	
+
+	\noindent Finally, we can now define the \textsf{LTS} representing the slave process as
+	demonstrated by Listing \ref{lst:slavelts}.
+	
+			 \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the slave process \textsf{LTS}}, 
+	                      %firstnumber=19,
+	                     label=lst:slavelts]{listings/chapter6/slavelts.tex}	
+
+
+\subsubsection{The master process}	
+\label{subsub:master}
+
+	The master process follows the same rationale, except that it emits orders whereas the slave
+	receives them. Listing \ref{lst:masterstates} depicts its states.
+	
+			 \lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the master process \textsf{lts\_states}}, 
+	                      %firstnumber=19,
+	                     label=lst:masterstates]{listings/chapter6/masterstates.tex}	
+
+	\noindent Listing \ref{lst:masteractions} depicts its \textsf{actions}.
+
+	\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the master process \textsf{actions}}, 
+	                      %firstnumber=19,
+	                     label=lst:masteractions]{listings/chapter6/masteractions.tex}	
+
+	\noindent Its transitions are also encoded via a function as demonstrated by 
+	Listing \ref{lst:mastertransitions}.
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the master process \textsf{transitions}}, 
+	                      %firstnumber=19,
+	                     label=lst:mastertransitions]{listings/chapter6/mastertransitions.tex}		
+	
+	\noindent And finally Listing \ref{lst:masterlts} depicts the \textsf{LTS} of the master process.
+	
+	
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the master process \textsf{LTS}}, 
+	                      %firstnumber=19,
+	                     label=lst:masterlts]{listings/chapter6/masterlts.tex}			
+	
+	
+	\noindent 	
+	
+	
+\subsubsection{Synchronization and a first proof}	
+\label{subsub:synch}	
+	
+	
+	Having defined the slave and master processes we now need to specify how they synchronize.
+	Listing \ref{lst:mssynch}	depicts their synchronization.	
+	
+				\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the master process \textsf{LTS}}, 
+	                      %firstnumber=19,
+	                     label=lst:mssynch]{listings/chapter6/mssynch.tex}		
+	
+	\noindent Indeed, by using the previously defined notation we can easily specify
+	the adequate synchronization vectors. Moreover, specifying the \textsf{Net} of the
+	overall system is now a rather simple task.	
+	It is depicted by Listing \ref{lst:msnet}.
+
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the overall \textsf{Net}}, 
+	                      %firstnumber=19,
+	                     label=lst:msnet]{listings/chapter6/msnet.tex}		
+
+	\noindent Having defined this parametrized master/coffee \textsf{Net}, we can
+	now try to prove properties about it. For instance, we can show that all traces
+	of this system are an infinite interleaving between \textsf{ready} and \textsf{order}
+	\textsf{actions}. For this, we first need to define a predicate expressing
+	this interleaving. Listing \ref{lst:interleaving} depicts such predicate.
+
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the \textsf{interleaving} predicate}, 
+	                      %firstnumber=19,
+	                     label=lst:interleaving]{listings/chapter6/interleaving.tex}		
+
+	\noindent Its definition may seem
+	
+
 
 
 %%%

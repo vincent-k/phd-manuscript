@@ -1,0 +1,12 @@
+Inductive interleaving (X:Type) (Y:Type) (R:Y->X->Prop) 
+                       (a b : Y) : LList X -> Prop :=
+   InterleavingOne: forall l' l a' b', 
+                           l = LCons a' (LCons b' l') ->
+                           R a a' ->
+                           R b b' ->
+                           interleaving R a b l
+ | InterleavingTwo: forall l' l a' b', 
+                           l = LCons b' (LCons a' l') ->
+                           R a a' ->
+                           R b b' ->
+                           interleaving R a b l.

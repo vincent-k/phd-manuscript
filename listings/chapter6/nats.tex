@@ -1,0 +1,2 @@
+CoFixpoint from (n:nat) : LList nat := LCons n (from (S n)).
+Definition Nats : LList nat := from 0.

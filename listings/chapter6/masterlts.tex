@@ -1,0 +1,3 @@
+Definition masterlts n : LTS := 
+    mk_LTS [mst0; mst1] mst0 (master_acts n) 
+             (master_transitions (master_order_acts n)).

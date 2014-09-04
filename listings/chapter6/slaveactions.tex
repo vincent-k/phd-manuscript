@@ -1,0 +1,16 @@
+Definition slave_ready_act := Action (Message "ready" Read nil) nil.
+
+Definition readSandwichOrder : action := 
+  Action (Message "order:MakeSandwich" Read nil) nil.
+
+Definition readCoffeeOrder (n:nat) : action := 
+  Action (Message "order:MakeCoffee" Read (Val(n)::nil)) nil.
+
+Function CoffeeOrders n : actions :=
+  match n with
+    0   => readCoffeeOrder 0 :: nil
+  | S m => readCoffeeOrder n :: CoffeeOrders m
+  end.
+
+Definition slave_order_acts n := readSandwichOrder :: CoffeeOrders n.
+Definition slave_acts n := slave_ready_act :: (slave_order_acts n).

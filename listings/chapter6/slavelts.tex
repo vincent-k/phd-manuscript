@@ -1,0 +1,3 @@
+Definition slavelts n : LTS := 
+ mk_LTS [slv0; slv1] slv0 (slave_acts n) 
+         (slave_transitions (slave_order_acts n)).
