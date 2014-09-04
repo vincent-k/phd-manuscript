@@ -107,23 +107,23 @@
 \contentsline {lstlisting}{\numberline {6.8}\textsf {lts\_target\_state} function definition}{123}{lstlisting.6.8}
 \contentsline {lstlisting}{\numberline {6.9}\textsf {SynchronizationVector} datatype}{125}{lstlisting.6.9}
 \contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf {SynchronizationVector}}{125}{lstlisting.6.10}
-\contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{125}{lstlisting.6.11}
+\contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{126}{lstlisting.6.11}
 \contentsline {lstlisting}{\numberline {6.12}\textsf {net\_state} datatype}{126}{lstlisting.6.12}
 \contentsline {lstlisting}{\numberline {6.13}\textsf {net\_target\_states} function definition}{126}{lstlisting.6.13}
 \contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{127}{lstlisting.6.14}
 \contentsline {lstlisting}{\numberline {6.15}\textsf {attainable} predicate definition}{128}{lstlisting.6.15}
 \contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf {Net}}{129}{lstlisting.6.16}
 \contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf {satisfies} predicate}{130}{lstlisting.6.17}
-\contentsline {lstlisting}{\numberline {6.18}Definition of the \textsf {Always} predicate}{130}{lstlisting.6.18}
+\contentsline {lstlisting}{\numberline {6.18}Definition of the \textsf {Always} predicate}{131}{lstlisting.6.18}
 \contentsline {lstlisting}{\numberline {6.19}Definition of the slave process \textsf {lts\_states}}{131}{lstlisting.6.19}
 \contentsline {lstlisting}{\numberline {6.20}Definition of the slave process \textsf {actions}}{131}{lstlisting.6.20}
 \contentsline {lstlisting}{\numberline {6.21}Definition of the slave process \textsf {transitions}}{132}{lstlisting.6.21}
 \contentsline {lstlisting}{\numberline {6.22}Definition of the slave process \textsf {LTS}}{132}{lstlisting.6.22}
 \contentsline {lstlisting}{\numberline {6.23}Definition of the master process \textsf {lts\_states}}{132}{lstlisting.6.23}
-\contentsline {lstlisting}{\numberline {6.24}Definition of the master process \textsf {actions}}{132}{lstlisting.6.24}
+\contentsline {lstlisting}{\numberline {6.24}Definition of the master process \textsf {actions}}{133}{lstlisting.6.24}
 \contentsline {lstlisting}{\numberline {6.25}Definition of the master process \textsf {transitions}}{133}{lstlisting.6.25}
 \contentsline {lstlisting}{\numberline {6.26}Definition of the master process \textsf {LTS}}{133}{lstlisting.6.26}
-\contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf {LTS}}{133}{lstlisting.6.27}
+\contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf {LTS}}{134}{lstlisting.6.27}
 \contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf {Net}}{134}{lstlisting.6.28}
 \contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{134}{lstlisting.6.29}
 \addvspace {7pt}
