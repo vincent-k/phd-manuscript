@@ -89,13 +89,14 @@
 \contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{121}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}LTS traces}{122}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{124}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{125}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{124}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Net traces}{126}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{130}{subsection.6.3.3}
 \contentsline {subsubsection}{The slave process}{131}{section*.65}
 \contentsline {subsubsection}{The master process}{132}{section*.66}
 \contentsline {subsubsection}{Synchronization and a first proof}{133}{section*.67}
-\contentsline {section}{\numberline {6.4}Modelling GCM internals}{134}{section.6.4}
+\contentsline {section}{\numberline {6.4}Modelling GCM internals}{135}{section.6.4}
 \contentsline {section}{\numberline {6.5}Discussion}{135}{section.6.5}
 \contentsline {chapter}{\numberline {7}Related Work}{137}{chapter.7}
 \contentsline {section}{\numberline {7.1}On the HyperManager use case}{137}{section.7.1}
