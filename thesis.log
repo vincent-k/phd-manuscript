@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  4 SEP 2014 19:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  4 SEP 2014 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3073,6 +3073,9 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
@@ -3129,10 +3132,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (180 pages, 2192425 bytes).
+Output written on thesis.pdf (180 pages, 2192562 bytes).
 PDF statistics:
- 5645 PDF objects out of 6186 (max. 8388607)
- 4592 compressed objects within 46 object streams
+ 5646 PDF objects out of 6186 (max. 8388607)
+ 4593 compressed objects within 46 object streams
  1533 named destinations out of 1728 (max. 500000)
  857 words of extra memory for PDF output out of 10000 (max. 10000000)
 

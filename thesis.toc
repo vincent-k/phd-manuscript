@@ -96,7 +96,7 @@
 \contentsline {subsubsection}{The master process}{132}{section*.66}
 \contentsline {subsubsection}{Synchronization and a first proof}{133}{section*.67}
 \contentsline {section}{\numberline {6.4}Modelling GCM internals}{134}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{134}{section.6.5}
+\contentsline {section}{\numberline {6.5}Discussion}{135}{section.6.5}
 \contentsline {chapter}{\numberline {7}Related Work}{137}{chapter.7}
 \contentsline {section}{\numberline {7.1}On the HyperManager use case}{137}{section.7.1}
 \contentsline {section}{\numberline {7.2}On the Mefresa framework}{138}{section.7.2}
