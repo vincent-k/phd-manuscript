@@ -1,0 +1,7 @@
+Definition Rma (l:string) (act:action) : Prop :=
+  match l, act with
+    "ready", Action (Message l' _ _) _asgns => "ready" = l'
+  | "order", Action (Message l' _ _) _asgns => 
+      "order:Sandwich" = l' \/ "order:Coffee" = l'
+  | _, _ => False
+  end.

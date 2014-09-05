@@ -1,0 +1,191 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\zref@newlabel[2]{}
+\zref@newlabel{thepage143}{\page{119}\pagevalue{119}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\@writefile{lol}{\addvspace {7pt}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{119}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}}
+\@writefile{lot}{\contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}}
+\newlabel{chap:behaviour}{{6}{119}{Mechanized behavioural semantics}{chapter.6}{}}
+\acronymused{GCM}
+\citation{opac-b1101046}
+\zref@newlabel{thepage144}{\page{120}\pagevalue{120}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\acronymused{LTS}
+\acronymused{LTS}
+\acronymused{GCM}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{120}{section.6.1}}
+\newlabel{sec:groundwork}{{6.1}{120}{Groundwork: Infinite data structures}{section.6.1}{}}
+\newlabel{lst:llist}{{6.1}{120}{\textsf {LList} datatype}{lstlisting.6.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.1}\textsf  {LList} datatype}{120}{lstlisting.6.1}}
+\newlabel{lst:nats}{{6.2}{120}{Lazy list holding all natural numbers}{lstlisting.6.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{120}{lstlisting.6.2}}
+\zref@newlabel{thepage145}{\page{121}\pagevalue{121}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{121}{section.6.2}}
+\newlabel{sec:pLTS}{{6.2}{121}{Labelled transition systems, and traces}{section.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{121}{subsection.6.2.1}}
+\newlabel{sub:lts}{{6.2.1}{121}{Encoding labelled transitions systems}{subsection.6.2.1}{}}
+\acronymused{LTS}
+\newlabel{lst:ltsstate}{{6.3}{121}{\textsf {lts\_state} datatype}{lstlisting.6.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.3}\textsf  {lts\_state} datatype}{121}{lstlisting.6.3}}
+\newlabel{lst:action}{{6.4}{121}{\textsf {action} datatype}{lstlisting.6.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.4}\textsf  {action} datatype}{121}{lstlisting.6.4}}
+\newlabel{lst:message}{{6.5}{121}{\textsf {message} datatype}{lstlisting.6.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.5}\textsf  {message} datatype}{121}{lstlisting.6.5}}
+\zref@newlabel{thepage146}{\page{122}\pagevalue{122}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:lts}{{6.6}{122}{\textsf {LTS} datatype}{lstlisting.6.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.6}\textsf  {LTS} datatype}{122}{lstlisting.6.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}LTS traces}{122}{subsection.6.2.2}}
+\newlabel{sub:ltstrace}{{6.2.2}{122}{LTS traces}{subsection.6.2.2}{}}
+\newlabel{lst:ltstrace}{{6.7}{122}{Trace definition for a \textsf {LTS}}{lstlisting.6.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf  {LTS}}{122}{lstlisting.6.7}}
+\zref@newlabel{thepage147}{\page{123}\pagevalue{123}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:ltstargetstate}{{6.8}{123}{\textsf {lts\_target\_state} function definition}{lstlisting.6.8}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.8}\textsf  {lts\_target\_state} function definition}{123}{lstlisting.6.8}}
+\zref@newlabel{thepage148}{\page{124}\pagevalue{124}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\acronymused{LTS}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{124}{section.6.3}}
+\newlabel{sec:pnet}{{6.3}{124}{Synchronization of LTS, and traces}{section.6.3}{}}
+\acronymused{LTS}
+\acronymused{LTS}
+\zref@newlabel{thepage149}{\page{125}\pagevalue{125}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{125}{subsection.6.3.1}}
+\newlabel{sub:synchencode}{{6.3.1}{125}{Encoding synchronizations between LTSs}{subsection.6.3.1}{}}
+\newlabel{lst:synchvectors}{{6.9}{125}{\textsf {SynchronizationVector} datatype}{lstlisting.6.9}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.9}\textsf  {SynchronizationVector} datatype}{125}{lstlisting.6.9}}
+\acronymused{LTS}
+\newlabel{lst:synchvectorsnotation}{{6.10}{125}{A convenient notation for \textsf {SynchronizationVector}}{lstlisting.6.10}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf  {SynchronizationVector}}{125}{lstlisting.6.10}}
+\zref@newlabel{thepage150}{\page{126}\pagevalue{126}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\acronymused{LTS}
+\newlabel{lst:net}{{6.11}{126}{\textsf {Net} datatype}{lstlisting.6.11}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.11}\textsf  {Net} datatype}{126}{lstlisting.6.11}}
+\acronymused{LTS}
+\acronymused{LTS}
+\newlabel{lst:netstate}{{6.12}{126}{\textsf {net\_state} datatype}{lstlisting.6.12}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.12}\textsf  {net\_state} datatype}{126}{lstlisting.6.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Net traces}{126}{subsection.6.3.2}}
+\newlabel{sub:net traces}{{6.3.2}{126}{Net traces}{subsection.6.3.2}{}}
+\newlabel{lst:nettargetstates}{{6.13}{126}{\textsf {net\_target\_states} function definition}{lstlisting.6.13}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.13}\textsf  {net\_target\_states} function definition}{126}{lstlisting.6.13}}
+\zref@newlabel{thepage151}{\page{127}\pagevalue{127}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:initnet}{{6.14}{127}{\textsf {init\_net\_state} function}{lstlisting.6.14}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.14}\textsf  {init\_net\_state} function}{127}{lstlisting.6.14}}
+\zref@newlabel{thepage152}{\page{128}\pagevalue{128}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:attainable}{{6.15}{128}{\textsf {attainable} predicate definition}{lstlisting.6.15}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.15}\textsf  {attainable} predicate definition}{128}{lstlisting.6.15}}
+\zref@newlabel{thepage153}{\page{129}\pagevalue{129}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:nettrace}{{6.16}{129}{Trace definition for \textsf {Net}}{lstlisting.6.16}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf  {Net}}{129}{lstlisting.6.16}}
+\citation{opac-b1101046}
+\zref@newlabel{thepage154}{\page{130}\pagevalue{130}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\acronymused{LTS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{130}{subsection.6.3.3}}
+\newlabel{sub:masterslave}{{6.3.3}{130}{Synchronized Master \& Slave example}{subsection.6.3.3}{}}
+\newlabel{lst:sat}{{6.17}{130}{Definition of the \textsf {satisfies} predicate}{lstlisting.6.17}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf  {satisfies} predicate}{130}{lstlisting.6.17}}
+\undonewlabel{acro:LTL}
+\newlabel{acro:LTL}{{6.3.3}{130}{Synchronized Master \& Slave example}{section*.64}{}}
+\acronymused{LTL}
+\zref@newlabel{thepage155}{\page{131}\pagevalue{131}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:always}{{6.18}{131}{Definition of the \textsf {Always} predicate}{lstlisting.6.18}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.18}Definition of the \textsf  {Always} predicate}{131}{lstlisting.6.18}}
+\@writefile{toc}{\contentsline {subsubsection}{The slave process}{131}{section*.65}}
+\newlabel{subsub:slave}{{6.3.3}{131}{The slave process}{section*.65}{}}
+\newlabel{lst:slavestates}{{6.19}{131}{Definition of the slave process \textsf {lts\_states}}{lstlisting.6.19}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.19}Definition of the slave process \textsf  {lts\_states}}{131}{lstlisting.6.19}}
+\newlabel{lst:slaveactions}{{6.20}{131}{Definition of the slave process \textsf {actions}}{lstlisting.6.20}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.20}Definition of the slave process \textsf  {actions}}{131}{lstlisting.6.20}}
+\zref@newlabel{thepage156}{\page{132}\pagevalue{132}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:slavetransitions}{{6.21}{132}{Definition of the slave process \textsf {transitions}}{lstlisting.6.21}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.21}Definition of the slave process \textsf  {transitions}}{132}{lstlisting.6.21}}
+\newlabel{lst:slavelts}{{6.22}{132}{Definition of the slave process \textsf {LTS}}{lstlisting.6.22}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.22}Definition of the slave process \textsf  {LTS}}{132}{lstlisting.6.22}}
+\@writefile{toc}{\contentsline {subsubsection}{The master process}{132}{section*.66}}
+\newlabel{subsub:master}{{6.3.3}{132}{The master process}{section*.66}{}}
+\newlabel{lst:masterstates}{{6.23}{132}{Definition of the master process \textsf {lts\_states}}{lstlisting.6.23}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.23}Definition of the master process \textsf  {lts\_states}}{132}{lstlisting.6.23}}
+\zref@newlabel{thepage157}{\page{133}\pagevalue{133}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:masteractions}{{6.24}{133}{Definition of the master process \textsf {actions}}{lstlisting.6.24}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.24}Definition of the master process \textsf  {actions}}{133}{lstlisting.6.24}}
+\newlabel{lst:mastertransitions}{{6.25}{133}{Definition of the master process \textsf {transitions}}{lstlisting.6.25}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.25}Definition of the master process \textsf  {transitions}}{133}{lstlisting.6.25}}
+\newlabel{lst:masterlts}{{6.26}{133}{Definition of the master process \textsf {LTS}}{lstlisting.6.26}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.26}Definition of the master process \textsf  {LTS}}{133}{lstlisting.6.26}}
+\@writefile{toc}{\contentsline {subsubsection}{Synchronization and a first proof}{133}{section*.67}}
+\newlabel{subsub:synch}{{6.3.3}{133}{Synchronization and a first proof}{section*.67}{}}
+\zref@newlabel{thepage158}{\page{134}\pagevalue{134}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{453.53622pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\newlabel{lst:mssynch}{{6.27}{134}{Definition of the master process \textsf {LTS}}{lstlisting.6.27}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf  {LTS}}{134}{lstlisting.6.27}}
+\newlabel{lst:msnet}{{6.28}{134}{Definition of the overall \textsf {Net}}{lstlisting.6.28}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf  {Net}}{134}{lstlisting.6.28}}
+\newlabel{lst:interleaving}{{6.29}{134}{Definition of the \textsf {interleaving} predicate}{lstlisting.6.29}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf  {interleaving} predicate}{134}{lstlisting.6.29}}
+\zref@newlabel{thepage159}{\page{135}\pagevalue{135}\mag{1000}\paperwidth{39158276}\paperheight{55380990}\pdfpagewidth{39158276}\pdfpageheight{55380990}\pdfhorigin{4736286}\pdfvorigin{4736286}\hoffset{0}\voffset{0}\topmargin{-179381}\oddsidemargin{-37246}\evensidemargin{2312277}\textwidth{27410673}\textheight{38766523}\headheight{786432}\headsep{1302449}\footskip{1966080}\marginparwidth{5767168}\marginparsep{458752}\columnwidth{27410673}\columnsep{655360}\outputboxwd{417.68535pt}\outputboxht{650.66685pt}\outputboxdp{0.0pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Modelling GCM internals}{135}{section.6.4}}
+\newlabel{sec:gcmpnets}{{6.4}{135}{Modelling GCM internals}{section.6.4}{}}
+\acronymused{GCM}
+\acronymused{FIFO}
+\acronymused{FIFO}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Discussion}{135}{section.6.5}}
+\newlabel{sec:behaviourdiscussion}{{6.5}{135}{Discussion}{section.6.5}{}}
+\acronymused{GCM}
+\@setckpt{tex/mainmatter/ChapterBehaviour}{
+\setcounter{page}{136}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{6}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{float@type}{16}
+\setcounter{Item}{0}
+\setcounter{bookmark@seq@number}{68}
+\setcounter{algorithm}{0}
+\setcounter{ALG@line}{0}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{12}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{parentequation}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lips@count}{0}
+\setcounter{lstnumber}{13}
+\setcounter{currfiledepth}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{@todonotes@numberoftodonotes}{0}
+\setcounter{mtc}{9}
+\setcounter{minitocdepth}{2}
+\setcounter{ptc}{0}
+\setcounter{parttocdepth}{2}
+\setcounter{@highlight}{0}
+\setcounter{@@highlight}{1}
+\setcounter{definition}{0}
+\setcounter{property}{0}
+\setcounter{lemma}{0}
+\setcounter{theorem}{0}
+\setcounter{section@level}{1}
+\setcounter{lstlisting}{29}
+\setcounter{minilofdepth}{2}
+\setcounter{minilotdepth}{2}
+\setcounter{partlofdepth}{2}
+\setcounter{partlotdepth}{2}
+\setcounter{sectlofdepth}{2}
+\setcounter{sectlotdepth}{2}
+}

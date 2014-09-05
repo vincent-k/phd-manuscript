@@ -126,6 +126,9 @@
 \contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf {LTS}}{134}{lstlisting.6.27}
 \contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf {Net}}{134}{lstlisting.6.28}
 \contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{134}{lstlisting.6.29}
+\contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{135}{lstlisting.6.30}
+\contentsline {lstlisting}{listings/chapter6/msproof2.tex}{135}{lstlisting.6.-40}
+\contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{136}{lstlisting.6.31}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

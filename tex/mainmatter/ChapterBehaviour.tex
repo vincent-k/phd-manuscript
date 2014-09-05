@@ -241,7 +241,7 @@ mechanization.
 	%attainable
 	
   \subsection{Net traces}	
-\label{sub:net traces}		
+\label{sub:nettraces}		
 	
 	Before proceeding to the definition of traces for	\textsf{Net}s, we need to consider
 	how their transitions are performed. For this case, we need to consider the current
@@ -517,11 +517,63 @@ mechanization.
 	                      %firstnumber=19,
 	                     label=lst:interleaving]{listings/chapter6/interleaving.tex}		
 
-	\noindent Its definition may seem
+	\noindent It is defined in a polymorphic manner for the sake of genericness.
+	As we shall see later, the types \textsf{X} and \textsf{Y} will be instantiated to
+	\textsf{action} and \textsf{string}, respectively.			
+	Moreover, it features two constructors: \textsf{InterleavingOne} and \textsf{InterleavingTwo}.
+	Both possess a similar structure, their only difference lies in the order
+	by which the \textsf{actions} occur (lines 4 and 9). Further, the reader may wonder about
+	the predicate \textsf{R : Y $\rightarrow$ X $\rightarrow$ Prop} declared as parameter.
+	This has the purpose of comparing the actual \textsf{actions} occurring in the
+	trace --- \textsf{a'} and \textsf{b'} --- with labels passed as parameter --- \textsf{a} and \textsf{b}. 
+	For instance, for the purposes of this example the relation that we use is depicted by Listing \ref{lst:rel}.	
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the \textsf{Rma} relation}, 
+	                      %firstnumber=19,
+	                     label=lst:rel]{listings/chapter6/rel.tex}		
+
+	\noindent Its understanding should pose no doubt. Basically, it pattern matches
+	the parameters \textsf{l} and \textsf{act}, and checks if \textsf{l} matches 
+	the label of the \textsf{message} composing \textsf{act}.
+	
+	Finally, we are in a position to establish our first proof about traces. Theorem
+	\ref{th:msproof2} expresses that from all states, all traces of \textsf{MasterSlaveCoffeepNet} instantiated with three --- 0, 1 and 2 ---
+	coffee kinds, satisfy an infinite interleaving between \textsf{ready} \textsf{actions} and \textsf{order}
+	\textsf{actions}.
 	
 
+\begin{theorem} \label{th:msproof2} 
+	\lstinputlisting[language=Coq, numbers=none]{listings/chapter6/msproof2.tex}		
+		Establishing... \qed
+\end{theorem}
 
 
+	The above theorem gives an example on how we can use a proof assistant like Coq to formally reason about
+	synchronized transitions systems. Indeed, this is usually achieved by means of automatic techniques such
+	as model-checking. Yet, it should be noted that in system like Coq we need not to constrain ourselves
+	with finite instances, and can directly reason about parametrized systems. 
+	For instance, Listing \ref{lst:msproofn} enunciates the same interleaving property for a parametrized
+	\textsf{MasterSlaveCoffeepNet}.
+
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the \textsf{Rma} relation}, 
+	                      %firstnumber=19,
+	                     label=lst:msproofn]{listings/chapter6/msproofn.tex}		
+
+	Proving the above theorem requires more care as we no longer deal with a closed term.
+	In particular, we cannot explicitly enumerate all the \textsf{actions} as they depend on 
+	the parameter \textsf{n}.	We perform induction on \textsf{n} and show that
+	the set of target states and message labels from the emitted \textsf{actions} never depend on it. 
+	In practice, this proof\footnote{At the time of writing, there are still admitted lemmas in the development of this proof. 
+	Yet, we feel sufficiently confident on their veracity.}
+	follows the same structure as seen for Theorem \ref{th:msproof2} but 	uses auxiliary lemmas 
+	dealing with the non-interference of \textsf{n} with the interleaving behaviour.
+	
+	
+	
+		
+		
 %%%
 \section{Modelling GCM internals}
 \label{sec:gcmpnets}
@@ -540,7 +592,8 @@ mechanization.
 \label{sec:behaviourdiscussion}
 
 	
-	
+	model-check need to be finite...
+	or abstraction...then need to prove that abstraction is sound..
 
 
 \chapbreak
