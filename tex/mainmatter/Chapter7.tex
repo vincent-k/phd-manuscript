@@ -1,9 +1,9 @@
 % Chapter 7
 
-\chapter{Final Remarks} 
+\chapter{Final remarks} 
 \label{chap:conclusion} 
 
-\epigraph{\textit{“Yet, ..."}}{Nuno Gaspar}
+\epigraph{\textit{“Success is not final, failure is not fatal: it is the courage to continue that counts."}}{Winston Churchill}
 
 
 
@@ -15,21 +15,34 @@
 %----------------------------------------------------------------------------------------
 
 
-	This thesis discussed the application of formal methods techniques in the context of 
+		This thesis discussed the application of formal methods techniques in the context of 
 	component-based engineering. In particular, we focused on the \ac{GCM} and its reference 
 	implementation GCM/ProActive.    	
 
-	Our industrial case study about 
+		Our industrial case study about 
 	\textsc{The HyperManager} application demonstrated the pragmatic rationale of
 	formal verification by means of model-checking techniques. Indeed, the degree of automation
 	offered by this approach makes it appealing for the purposes of increasing the confidence
-	one can put on the properties of a verified software system. However, it is also fair to say that
+	one can put on the properties of a verified software system. However, it is also fair to say that,
+	by itself, remains a rather hopeless approach for verifying parametrized systems dealing
+	with infinite data structures. Indeed, one can try to define finite abstractions of 
+	the system to model. However, then one needs to prove that these abstractions are sound 
+	w.r.t. the original system semantics, and that is seldom a trivial task.
 	
-	Moreover, it is limited to finite systems,
+		To this end, we developed \textsc{Mefresa}, a mechanized framework for reasoning on software 
+	architectures. Behavioural concerns are addressed by a formalization of
+	a semantics based on execution traces of synchronized transition systems.
+	This, provides the first steps towards a complete specification and verification
+	platform addressing both architectural and behavioural properties. 
 	
-	defining finite abstractions in order to cope
-	
-	However, one needs to prove that these abstractions are a sound representation
-	
-
+		Moreover, we further leverage \textsc{Mefresa} by using its \textsf{operation} language
+	as a target for the evaluation of \textsc{Painless} specifications. Using Coq's extraction
+	mechanism we get certified code checking well-formedness and well-typedness compliance.	
+	In conjunction with a \textsc{Painless} interpreter, it is subsequently integrated with 
+	ProActive, yielding a library for the safe deployment and reconfiguration of
+	 \ac{GCM} applications.
+		
+		
+	To conclude, we use Coq to address the specification, verification and deployment of
+	distributed and reconfigurable \ac{GCM} applications. 
 

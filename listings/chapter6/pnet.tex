@@ -1,0 +1,3 @@
+Inductive Net : Type :=
+  | mk_SingletonNet: LTS -> Net
+  | mk_Net         : (list Net * list SynchronizationVector) -> Net.

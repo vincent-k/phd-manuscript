@@ -3,7 +3,7 @@
 \chapter{Mechanized behavioural semantics} 
 \label{chap:behaviour} 
 
-\epigraph{\textit{“Yet, ..."}}{Nuno Gaspar}
+\epigraph{\textit{“The greater danger for most of us lies not in setting our aim too high and falling short; but in setting our aim too low, and achieving our mark."}}{Michelangelo}
 
 
 
@@ -590,10 +590,90 @@ mechanization.
 
 \section{Discussion}
 \label{sec:behaviourdiscussion}
-
 	
-	model-check need to be finite...
-	or abstraction...then need to prove that abstraction is sound..
+	
+	It is common to use automata-based formalisms to specify software systems. In fact,		
+	as seen in Chapter \ref{chap:hyper}, we adopted such an approach for the specification
+	of \textsc{The HyperManager} application. Indeed, the hierarchical nature of pNets
+	make it a suitable choice for modelling \ac{GCM} applications. Here, however,
+	our mechanization does not handle hierarchical specifications. This is unfortunate
+	since composing \ac{GCM} applications naturally yield multi-layered systems.
+	Adapting our mechanization to cope with hierarchical specifications would
+	require some effort. The first step concerns the \textsf{Net} datatype: it
+	needs to be recursive. Listing \ref{lst:pnet} depicts its mechanization.
+	
+		
+				\lstinputlisting[language=Coq, stepnumber=1, 
+	                      caption={Definition of the recursive \textsf{Net} datatype}, 
+	                      %firstnumber=19,
+	                     label=lst:pnet]{listings/chapter6/pnet.tex}		
+
+	\noindent The sole difference between this definition and the original \textsf{Net}
+	definition (see Listing \ref{lst:net}) is that the \textsf{mk\_Net} constructor
+	contains \textsf{Net} values rather than \textsf{LTS} values. As expected, the same kind
+	of modification is necessary for the \textsf{net\_state} datatype. Finally,
+	the function 
+	\textsf{net\_target\_states : Net $\rightarrow$ net\_state $\rightarrow$ SynchronizationVector : 
+	list (action * net\_state)} (see Listing \ref{lst:nettargetstates}) 
+	needs to be able to handle the recursive structure of these two
+	re-defined datatypes. In particular, a synchronization vector potentially triggers 
+	several other synchronizations: for each synchronization element it needs to recursively
+	descend the hierarchy until it reaches a leaf --- a \textsf{LTS} ---, and carry back the 
+	resulting global \textsf{action}. 
+	
+	
+	Furthermore, providing a completely mechanized specification and verification platform for \textsc{GCM}
+	applications would require another step. We would need to establish a connection
+	with the architectural aspects presented in Chapter \ref{chap:mefresa}. One way to achieve this
+	is by enriching the \textsf{interface} datatype (see Listing \ref{lst:interface}) with
+	a field holding a list of \textsf{LTS}s. This symbolizes the modelling 
+	of the behaviour of the \textsf{interface}'s service methods. Then, a function
+	\textsf{build\_model : component $\rightarrow$ Net} would compute a \textsf{Net}
+	synchronizing the component internals and the specified service methods. The main
+	technical obstacle in the definition of such a function concerns the generation
+	of the appropriate synchronization vectors. For instance, a primitive \textsf{component} is 
+	modelled by a \textsf{Net} holding a \textsf{LTS} for each \textsf{component} internal process
+	and service methods. Generating their synchronization vectors poses no special difficulty as
+	it mainly reflects the order by which requests are treated --- first into the \textsf{queue} process, 
+	then 	dispatched by the \textsf{body} process, etc.
+	However, generating the synchronizations vectors resulting from the 
+	\textsf{binding}s between \textsf{component}s is slightly more involved as it requires
+	synchronizing \textsf{Net} objects --- rather than \textsf{LTS}s ---, and 
+	potentially of different hierarchical levels --- for \textsf{import} and \textsf{export} 
+	\textsf{bindings}. Further, deciding a 
+	\textsf{component}'s adequate place in the \textsf{Net}
+	hierarchy would be achieved directly through its \textsf{path} field.	
+			
+		%well-formed
+		It should also be noted that this approach could be further leveraged 
+	by exploiting well-formedness and well-typedness aspects. That is, we 
+	only need to care about execution traces coming from well-formed and 
+	well-typed architectures. Moreover, an integration with 
+	\textsc{Painless} could also be envisaged. Extending our \ac{ADL}
+	to support the behavioural
+	specification of service methods enables formal verification	
+	of \ac{GCM} applications directly through a format understandable by
+	software architects. Further, its translation to
+	\textsc{Mefresa}'s \textsf{operation} language would remain
+	rather unchanged as it solely regards a field added to the \textsf{interface} datatype.
+				
+	
+	To conclude, we believe that there is sufficient evidence regarding the
+	feasibility of using a proof assistant like Coq to specify and reason
+	about parametrized \ac{GCM} applications. Yet, it is fair to say that there 
+	remains a significant amount of work in order to provide a full-featured
+	specification and verification framework. 
+	
+	%Nevertheless, despite 
+	
+	%and challenges
+	
+		
+	%model-check need to be finite...
+	%or abstraction...then need to prove that abstraction is sound..
+
+
+	%and seldom a trivial task.
 
 
 \chapbreak

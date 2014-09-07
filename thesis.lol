@@ -98,19 +98,19 @@
 \addvspace {7pt}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {6.1}\textsf {LList} datatype}{120}{lstlisting.6.1}
-\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{120}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{121}{lstlisting.6.2}
 \contentsline {lstlisting}{\numberline {6.3}\textsf {lts\_state} datatype}{121}{lstlisting.6.3}
 \contentsline {lstlisting}{\numberline {6.4}\textsf {action} datatype}{121}{lstlisting.6.4}
-\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{121}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{122}{lstlisting.6.5}
 \contentsline {lstlisting}{\numberline {6.6}\textsf {LTS} datatype}{122}{lstlisting.6.6}
-\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{122}{lstlisting.6.7}
+\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{123}{lstlisting.6.7}
 \contentsline {lstlisting}{\numberline {6.8}\textsf {lts\_target\_state} function definition}{123}{lstlisting.6.8}
 \contentsline {lstlisting}{\numberline {6.9}\textsf {SynchronizationVector} datatype}{125}{lstlisting.6.9}
 \contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf {SynchronizationVector}}{125}{lstlisting.6.10}
 \contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{126}{lstlisting.6.11}
 \contentsline {lstlisting}{\numberline {6.12}\textsf {net\_state} datatype}{126}{lstlisting.6.12}
 \contentsline {lstlisting}{\numberline {6.13}\textsf {net\_target\_states} function definition}{126}{lstlisting.6.13}
-\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{127}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{128}{lstlisting.6.14}
 \contentsline {lstlisting}{\numberline {6.15}\textsf {attainable} predicate definition}{128}{lstlisting.6.15}
 \contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf {Net}}{129}{lstlisting.6.16}
 \contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf {satisfies} predicate}{130}{lstlisting.6.17}
@@ -129,7 +129,7 @@
 \contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{135}{lstlisting.6.30}
 \contentsline {lstlisting}{listings/chapter6/msproof2.tex}{135}{lstlisting.6.-40}
 \contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{136}{lstlisting.6.31}
-\addvspace {7pt}
+\contentsline {lstlisting}{\numberline {6.32}Definition of the recursive \textsf {Net} datatype}{137}{lstlisting.6.32}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}
