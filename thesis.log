@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  8 SEP 2014 09:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 SEP 2014 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2241,7 +2241,7 @@ Chapter 2.
 \openout4 = `thesis.mtc'.
 
 (./thesis.mtc5 [7])
-<figures/chapter2/gcm.pdf, id=943, 624.3325pt x 462.72874pt>
+<figures/chapter2/gcm.pdf, id=963, 624.3325pt x 462.72874pt>
 File: figures/chapter2/gcm.pdf Graphic file (type pdf)
 
 <use figures/chapter2/gcm.pdf>
@@ -2251,7 +2251,7 @@ Package pdftex.def Info: figures/chapter2/gcm.pdf used on input line 50.
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 101.
  [10]
-<figures/chapter2/normalbinding.pdf, id=1086, 347.7531pt x 375.24823pt>
+<figures/chapter2/normalbinding.pdf, id=1106, 347.7531pt x 375.24823pt>
 File: figures/chapter2/normalbinding.pdf Graphic file (type pdf)
 
 <use figures/chapter2/normalbinding.pdf>
@@ -2263,7 +2263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--147
 []\T1/lmr/m/n/12 Figure 2.2: |Nor-mal
  []
 
-<figures/chapter2/importbinding.pdf, id=1087, 347.7531pt x 375.24823pt>
+<figures/chapter2/importbinding.pdf, id=1107, 347.7531pt x 375.24823pt>
 File: figures/chapter2/importbinding.pdf Graphic file (type pdf)
 
 <use figures/chapter2/importbinding.pdf>
@@ -2275,7 +2275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []\T1/lmr/m/n/12 Figure 2.3: |Im-port
  []
 
-<figures/chapter2/exportbinding.pdf, id=1088, 347.7531pt x 375.24823pt>
+<figures/chapter2/exportbinding.pdf, id=1108, 347.7531pt x 375.24823pt>
 File: figures/chapter2/exportbinding.pdf Graphic file (type pdf)
 
 <use figures/chapter2/exportbinding.pdf>
@@ -2303,14 +2303,14 @@ Overfull \hbox (16.07884pt too wide) in paragraph at lines 235--236
 o-vided by the com-po-nent. (0-unlimited); 
  []
 
-[13] [14] <figures/chapter2/asynch1.pdf, id=1351, 543.02875pt x 309.155pt>
+[13] [14] <figures/chapter2/asynch1.pdf, id=1371, 543.02875pt x 309.155pt>
 File: figures/chapter2/asynch1.pdf Graphic file (type pdf)
 
 <use figures/chapter2/asynch1.pdf>
 Package pdftex.def Info: figures/chapter2/asynch1.pdf used on input line 350.
 (pdftex.def)             Requested size: 209.12683pt x 119.06041pt.
 
-<figures/chapter2/asynch2.pdf, id=1352, 543.02875pt x 309.155pt>
+<figures/chapter2/asynch2.pdf, id=1372, 543.02875pt x 309.155pt>
 File: figures/chapter2/asynch2.pdf Graphic file (type pdf)
 
 <use figures/chapter2/asynch2.pdf>
@@ -2327,14 +2327,14 @@ Overfull \hbox (16.27098pt too wide) has occurred while \output is active
 1/lmr/m/n/12 15
  []
 
-[15] <figures/chapter2/asynch3.pdf, id=1359, 543.02875pt x 309.155pt>
+[15] <figures/chapter2/asynch3.pdf, id=1379, 543.02875pt x 309.155pt>
 File: figures/chapter2/asynch3.pdf Graphic file (type pdf)
 
 <use figures/chapter2/asynch3.pdf>
 Package pdftex.def Info: figures/chapter2/asynch3.pdf used on input line 373.
 (pdftex.def)             Requested size: 209.12683pt x 119.06041pt.
 
-<figures/chapter2/asynch4.pdf, id=1360, 543.02875pt x 309.155pt>
+<figures/chapter2/asynch4.pdf, id=1380, 543.02875pt x 309.155pt>
 File: figures/chapter2/asynch4.pdf Graphic file (type pdf)
 
 <use figures/chapter2/asynch4.pdf>
@@ -2350,7 +2350,7 @@ Underfull \vbox (badness 6542) has occurred while \output is active []
 
  [16 <./figures/chapter2/asynch1.pdf> <./figures/chapter2/asynch2.pdf> <./figur
 es/chapter2/asynch3.pdf> <./figures/chapter2/asynch4.pdf>]
-<figures/chapter2/starter.pdf, id=1765, 162.6075pt x 56.21pt>
+<figures/chapter2/starter.pdf, id=1785, 162.6075pt x 56.21pt>
 File: figures/chapter2/starter.pdf Graphic file (type pdf)
 
 <use figures/chapter2/starter.pdf>
@@ -2365,7 +2365,7 @@ Overfull \hbox (16.27098pt too wide) has occurred while \output is active
  []
 
 [17 <./figures/chapter2/starter.pdf>]
-<figures/chapter2/composite.pdf, id=1816, 295.1025pt x 156.585pt>
+<figures/chapter2/composite.pdf, id=1837, 295.1025pt x 156.585pt>
 File: figures/chapter2/composite.pdf Graphic file (type pdf)
 
 <use figures/chapter2/composite.pdf>
@@ -2406,7 +2406,7 @@ eps>
 (epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/chapter2/pNets-primitiveComponent-eps-converted-to.pdf, id=1962, 631.3
+<figures/chapter2/pNets-primitiveComponent-eps-converted-to.pdf, id=1983, 631.3
 5875pt x 365.365pt>
 File: figures/chapter2/pNets-primitiveComponent-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -2416,14 +2416,14 @@ Package pdftex.def Info: figures/chapter2/pNets-primitiveComponent-eps-converte
 d-to.pdf used on input line 621.
 (pdftex.def)             Requested size: 378.81818pt x 219.22069pt.
  [22]
-<figures/chapter2/proxy.png, id=1973, 308.15125pt x 305.14pt>
+<figures/chapter2/proxy.png, id=1993, 308.15125pt x 305.14pt>
 File: figures/chapter2/proxy.png Graphic file (type png)
 
 <use figures/chapter2/proxy.png>
 Package pdftex.def Info: figures/chapter2/proxy.png used on input line 654.
 (pdftex.def)             Requested size: 167.2989pt x 165.6671pt.
 
-<figures/chapter2/pm.png, id=1974, 383.4325pt x 420.57124pt>
+<figures/chapter2/pm.png, id=1994, 383.4325pt x 420.57124pt>
 File: figures/chapter2/pm.png Graphic file (type png)
 
 <use figures/chapter2/pm.png>
@@ -2451,7 +2451,7 @@ mitiveBC-eps-converted-to.pdf figures/chapter2/pNets-primitiveBC.eps>
 (epstopdf)             \includegraphics on input line 706.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/chapter2/pNets-primitiveBC-eps-converted-to.pdf, id=2003, 681.54625pt 
+<figures/chapter2/pNets-primitiveBC-eps-converted-to.pdf, id=2023, 681.54625pt 
 x 333.245pt>
 File: figures/chapter2/pNets-primitiveBC-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2475,7 +2475,7 @@ ticastExample-eps-converted-to.pdf figures/chapter2/pNets-MulticastExample.eps>
 (epstopdf)             \includegraphics on input line 726.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/chapter2/pNets-MulticastExample-eps-converted-to.pdf, id=2009, 798.985
+<figures/chapter2/pNets-MulticastExample-eps-converted-to.pdf, id=2029, 798.985
 pt x 410.53375pt>
 File: figures/chapter2/pNets-MulticastExample-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -2545,7 +2545,7 @@ Overfull \hbox (8.07565pt too wide) in paragraph at lines 10--13
 Package acronym Info: Label `acro:ECW' newly defined as it shall be overridden
 although it is yet undefined on input line 38.
 
-<figures/chapter3/architecture.pdf, id=2309, 557.08125pt x 333.245pt>
+<figures/chapter3/architecture.pdf, id=2329, 557.08125pt x 333.245pt>
 File: figures/chapter3/architecture.pdf Graphic file (type pdf)
 
 <use figures/chapter3/architecture.pdf>
@@ -2553,7 +2553,7 @@ Package pdftex.def Info: figures/chapter3/architecture.pdf used on input line 6
 0.
 (pdftex.def)             Requested size: 278.53995pt x 166.62209pt.
  [40] [41 <./figures/chapter3/architecture.pdf>]
-<figures/chapter3/HMServer-comp-v2.pdf, id=2446, 651.43375pt x 364.36125pt>
+<figures/chapter3/HMServer-comp-v2.pdf, id=2467, 651.43375pt x 364.36125pt>
 File: figures/chapter3/HMServer-comp-v2.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMServer-comp-v2.pdf>
@@ -2563,7 +2563,7 @@ ne 102.
 Package acronym Info: Label `acro:JMX' newly defined as it shall be overridden
 although it is yet undefined on input line 113.
  [42 <./figures/chapter3/HMServer-comp-v2.pdf>]
-<figures/chapter3/HMGateway-comp-v2.pdf, id=2665, 651.43375pt x 364.36125pt>
+<figures/chapter3/HMGateway-comp-v2.pdf, id=2685, 651.43375pt x 364.36125pt>
 File: figures/chapter3/HMGateway-comp-v2.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMGateway-comp-v2.pdf>
@@ -2577,7 +2577,7 @@ Overfull \hbox (3.22533pt too wide) in paragraph at lines 154--154
 
 [43 <./figures/chapter3/HMGateway-comp-v2.pdf>]
 (./listings/chapter3/jmxqueue.tex [44]) (./listings/chapter3/jmxbody.tex
-[45]) <figures/chapter3/mc.pdf, id=2911, 895.345pt x 405.515pt>
+[45]) <figures/chapter3/mc.pdf, id=2931, 895.345pt x 405.515pt>
 File: figures/chapter3/mc.pdf Graphic file (type pdf)
 
 <use figures/chapter3/mc.pdf>
@@ -2614,7 +2614,7 @@ Underfull \vbox (badness 2970) has occurred while \output is active []
 
  [49]
 (./listings/chapter3/jmxm.tex) [50]
-<figures/chapter3/JMXIndicatorsMethod.pdf, id=3077, 523.9575pt x 233.87375pt>
+<figures/chapter3/JMXIndicatorsMethod.pdf, id=3097, 523.9575pt x 233.87375pt>
 File: figures/chapter3/JMXIndicatorsMethod.pdf Graphic file (type pdf)
 
 <use figures/chapter3/JMXIndicatorsMethod.pdf>
@@ -2626,7 +2626,7 @@ Package pdftex.def Info: figures/chapter3/JMXIndicatorsMethod.pdf used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [52])
-<figures/chapter3/HMGatewayMethod.pdf, id=3151, 440.64626pt x 275.0275pt>
+<figures/chapter3/HMGatewayMethod.pdf, id=3171, 440.64626pt x 275.0275pt>
 File: figures/chapter3/HMGatewayMethod.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMGatewayMethod.pdf>
@@ -2634,7 +2634,7 @@ Package pdftex.def Info: figures/chapter3/HMGatewayMethod.pdf used on input lin
 e 383.
 (pdftex.def)             Requested size: 264.38979pt x 165.01776pt.
 
-<figures/chapter3/HMStartMethod.pdf, id=3153, 420.57124pt x 197.73875pt>
+<figures/chapter3/HMStartMethod.pdf, id=3173, 420.57124pt x 197.73875pt>
 File: figures/chapter3/HMStartMethod.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMStartMethod.pdf>
@@ -2642,7 +2642,7 @@ Package pdftex.def Info: figures/chapter3/HMStartMethod.pdf used on input line
 409.
 (pdftex.def)             Requested size: 188.21288pt x 88.49281pt.
 
-<figures/chapter3/HMStopMethod.pdf, id=3154, 431.6125pt x 173.64874pt>
+<figures/chapter3/HMStopMethod.pdf, id=3174, 431.6125pt x 173.64874pt>
 File: figures/chapter3/HMStopMethod.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMStopMethod.pdf>
@@ -2657,7 +2657,7 @@ mss/m/n/12 Guard-Query\T1/lmr/m/n/12 , \T1/lmss/m/n/12 GuardReply?b:bool\T1/lmr
  []
 
 
-<figures/chapter3/HMLoopMethodatGateway.pdf, id=3187, 729.72626pt x 397.485pt>
+<figures/chapter3/HMLoopMethodatGateway.pdf, id=3207, 729.72626pt x 397.485pt>
 File: figures/chapter3/HMLoopMethodatGateway.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMLoopMethodatGateway.pdf>
@@ -2683,7 +2683,7 @@ Overfull \hbox (32.52155pt too wide) in paragraph at lines 532--532
 IdOne))")* .[] 
  []
 
-[56] <figures/chapter3/HMServerMethod.pdf, id=3284, 728.7225pt x 204.765pt>
+[56] <figures/chapter3/HMServerMethod.pdf, id=3305, 728.7225pt x 204.765pt>
 File: figures/chapter3/HMServerMethod.pdf Graphic file (type pdf)
 
 <use figures/chapter3/HMServerMethod.pdf>
@@ -2691,7 +2691,7 @@ Package pdftex.def Info: figures/chapter3/HMServerMethod.pdf used on input line
  569.
 (pdftex.def)             Requested size: 364.36035pt x 102.38223pt.
  [57 <./figures/chapter3/HMServerMethod.pdf>]
-<figures/chapter3/HMLoopMethodatServer2.pdf, id=3316, 817.0525pt x 450.68375pt>
+<figures/chapter3/HMLoopMethodatServer2.pdf, id=3336, 817.0525pt x 450.68375pt>
 File: figures/chapter3/HMLoopMethodatServer2.pdf Graphic file (type pdf)
 <use figures/chapter3/HMLoopMethodatServer2.pdf>
 Package pdftex.def Info: figures/chapter3/HMLoopMethodatServer2.pdf used on inp
@@ -2755,7 +2755,7 @@ ss/m/n/12 com-po-nent\T1/lmr/m/n/12 s. Search-ing through
  []
 
 [73] (./listings/chapter4/cmpindex.tex) (./listings/chapter4/binding.tex)
-<figures/chapter4/bindings.pdf, id=3539, 490.83376pt x 263.98625pt>
+<figures/chapter4/bindings.pdf, id=3559, 490.83376pt x 263.98625pt>
 File: figures/chapter4/bindings.pdf Graphic file (type pdf)
 
 <use figures/chapter4/bindings.pdf>
@@ -2855,7 +2855,7 @@ ec-ify it in a parametrized
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [111]
-<figures/chapter4/usecasearch.pdf, id=4352, 540.10695pt x 272.10376pt>
+<figures/chapter4/usecasearch.pdf, id=4372, 540.10695pt x 272.10376pt>
 File: figures/chapter4/usecasearch.pdf Graphic file (type pdf)
 
 <use figures/chapter4/usecasearch.pdf>
@@ -2929,8 +2929,36 @@ ss/m/n/12 or-der:MakeSandwich\T1/lmr/m/n/12 ,
 (./listings/chapter6/masterlts.tex) (./listings/chapter6/mssynch.tex [133])
 (./listings/chapter6/msnet.tex) (./listings/chapter6/interleaving.tex) [134]
 (./listings/chapter6/rel.tex) (./listings/chapter6/msproof2.tex)
-(./listings/chapter6/msproofn.tex [135]) (./listings/chapter6/pnet.tex [136])
-[137]) [138]
+(./listings/chapter6/msproofn.tex [135])
+<figures/chapter6/gcmqueue2.pdf, id=5046, 629.35126pt x 171.64125pt>
+File: figures/chapter6/gcmqueue2.pdf Graphic file (type pdf)
+
+<use figures/chapter6/gcmqueue2.pdf>
+Package pdftex.def Info: figures/chapter6/gcmqueue2.pdf used on input line 590.
+
+(pdftex.def)             Requested size: 377.61366pt x 102.98552pt.
+ [136 <./figures/chapter6/gcmqueue2.pdf>]
+Overfull \hbox (1.35065pt too wide) in paragraph at lines 601--603
+[]\T1/lmr/m/n/12 The mech-a-niza-tion of the above queue is eas-ily achieved us
+-ing our \T1/lmss/m/n/12 LTS \T1/lmr/m/n/12 datatype.
+ []
+
+(./listings/chapter6/gcmqueue2states.tex)
+(./listings/chapter6/gcmqueue2transitions.tex)
+(./listings/chapter6/gcmqueue2init.tex) (./listings/chapter6/queue2.tex
+[137]) <figures/chapter6/gcmbody.pdf, id=5106, 418.56375pt x 152.57pt>
+File: figures/chapter6/gcmbody.pdf Graphic file (type pdf)
+
+<use figures/chapter6/gcmbody.pdf>
+Package pdftex.def Info: figures/chapter6/gcmbody.pdf used on input line 645.
+(pdftex.def)             Requested size: 251.14018pt x 91.5427pt.
+ (./listings/chapter6/gcmbodytransitions.tex) (./listings/chapter6/gcmbodydef.t
+ex [138 <./figures/chapter6/gcmbody.pdf>])
+(./listings/chapter6/gcmjmx.tex [139]) (./listings/chapter6/gcmnet.tex)
+Underfull \vbox (badness 3209) has occurred while \output is active []
+
+ [140]
+(./listings/chapter6/pnet.tex) [141]) [142]
 \openout2 = `tex/mainmatter/Chapter6.aux'.
 
  (./tex/mainmatter/Chapter6.tex
@@ -2945,18 +2973,18 @@ Overfull \hbox (44.98051pt too wide) in paragraph at lines 26--29
 d Ap-pli-ca-tion http://www-
  []
 
-[139
+[143
 
 
 
-] [140]
+] [144]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [141]
-[142]) [143]
+ [145]
+[146]) [147]
 \openout2 = `tex/mainmatter/Chapter7.aux'.
 
- (./tex/mainmatter/Chapter7.tex [144
+ (./tex/mainmatter/Chapter7.tex [148
 
 
 
@@ -2964,18 +2992,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 8.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc11 is empty on input line 11.
-[145]) [146] (./thesis.bbl [147
+[149]) [150] (./thesis.bbl [151
 
 
 
-] [148]
+] [152]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-[149]
+[153]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -2997,7 +3025,7 @@ Package minitoc Info: I0006
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[150] [151] [152]
+[154] [155] [156]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -3007,13 +3035,13 @@ Package minitoc Info: I0006
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-) [153]
+) [157]
 \openout2 = `tex/backmatter/acronyms.aux'.
 
- (./tex/backmatter/acronyms.tex [154
+ (./tex/backmatter/acronyms.tex [158
 
 
-]) [155]
+]) [159]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 181.
 See the caption package documentation for explanation.
@@ -3039,7 +3067,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the thesis.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-[156
+[160
 
 ]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 136.
@@ -3054,21 +3082,18 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 136.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 15CEE7775DA835AADF6CB468B4CF2284;5913.
+(rerunfilecheck)             Checksum: 862081EBA8BAC8DFF16DC5BDE0C1A331;5920.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 32636 strings out of 493633
- 567173 string characters out of 3143378
- 996492 words of memory out of 3000000
- 32919 multiletter control sequences out of 15000+200000
+ 32791 strings out of 493633
+ 570041 string characters out of 3143378
+ 990760 words of memory out of 3000000
+ 32967 multiletter control sequences out of 15000+200000
  181057 words of font info for 139 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  63i,27n,78p,932b,2159s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3118,10 +3143,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (180 pages, 2204386 bytes).
+Output written on thesis.pdf (184 pages, 2242741 bytes).
 PDF statistics:
- 5694 PDF objects out of 6186 (max. 8388607)
- 4640 compressed objects within 47 object streams
- 1556 named destinations out of 1728 (max. 500000)
- 849 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5882 PDF objects out of 6186 (max. 8388607)
+ 4812 compressed objects within 49 object streams
+ 1636 named destinations out of 1728 (max. 500000)
+ 859 words of extra memory for PDF output out of 10000 (max. 10000000)
 

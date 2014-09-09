@@ -1,0 +1,5 @@
+Definition body_transitions : transitions :=
+  [ (LTS_State 0 [], Action (Message "Serve_m1" Read [Var("v1")]) [], LTS_State 1 []) ;
+    (LTS_State 1 [], Action (Message "Call_m1" Emit [Var("v1")]) [] , LTS_State 2 []) ;
+    (LTS_State 2 [], Action (Message "R_m1" Read [Var("v1")]) []    , LTS_State 0 []) 
+  ].

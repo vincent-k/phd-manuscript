@@ -1,0 +1,10 @@
+Definition queue_transitions : transitions :=
+ [ (LTS_State 0 [], Action (Message "Q_m1" Read [Var("v1")]) [], LTS_State 1 []) ;
+   (LTS_State 1 [], Action (Message "Q_m1" Read [Var("v2")]) [], LTS_State 2 []) ;
+   (LTS_State 2 [], Action (Message "Q_m1" Read [Var("v3")]) [], LTS_State 3 []) ;
+   
+   (LTS_State 3 [], Action (Message "Error" Emit [Var("v3")]) [], LTS_State 3 []) ;
+   
+   (LTS_State 2 [], Action (Message "Serve_m1" Emit [Var("v1")]) [AssignmentVar "v2" "v1"], LTS_State 1 []) ;
+   (LTS_State 1 [], Action (Message "Serve_m1" Emit [Var("v1")]) [], LTS_State 0 [])
+ ].

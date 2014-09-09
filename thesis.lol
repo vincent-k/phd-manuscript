@@ -129,7 +129,15 @@
 \contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{135}{lstlisting.6.30}
 \contentsline {lstlisting}{listings/chapter6/msproof2.tex}{135}{lstlisting.6.-40}
 \contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{136}{lstlisting.6.31}
-\contentsline {lstlisting}{\numberline {6.32}Definition of the recursive \textsf {Net} datatype}{137}{lstlisting.6.32}
+\contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{137}{lstlisting.6.32}
+\contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{137}{lstlisting.6.33}
+\contentsline {lstlisting}{\numberline {6.34}Encoding of the initial \textsf {lts\_state} for the queue process}{137}{lstlisting.6.34}
+\contentsline {lstlisting}{\numberline {6.35}Encoding of the queue process}{138}{lstlisting.6.35}
+\contentsline {lstlisting}{\numberline {6.36}Encoding of the body \textsf {transitions}}{138}{lstlisting.6.36}
+\contentsline {lstlisting}{\numberline {6.37}Remaining definitions encoding body process}{138}{lstlisting.6.37}
+\contentsline {lstlisting}{\numberline {6.38}Encoding of \textsf {JMX Indicators} method}{139}{lstlisting.6.38}
+\contentsline {lstlisting}{\numberline {6.39}Encoding of the component system}{140}{lstlisting.6.39}
+\contentsline {lstlisting}{\numberline {6.40}Definition of the recursive \textsf {Net} datatype}{141}{lstlisting.6.40}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

@@ -1,0 +1,14 @@
+Definition body_states : lts_states := 
+  [LTS_State 0 [] ; LTS_State 1 [] ; LTS_State 2 []].
+
+Definition body_mem : state_mem := ("v1", 0) :: nil.
+Definition body_init : lts_state := LTS_State 0 body_mem.
+
+Definition body_actions : actions := 
+  [ Action (Message "Serve_m1" Read [Var("v1")]) [] ;
+    Action (Message "Call_m1" Emit [Var("v1")]) [] ;
+    Action (Message "R_m1" Read [Var("v1")]) []
+  ].
+
+Definition body : LTS := 
+  mk_LTS body_states body_init body_actions body_transitions.

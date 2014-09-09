@@ -480,9 +480,7 @@ mechanization.
 	                      %firstnumber=19,
 	                     label=lst:masterlts]{listings/chapter6/masterlts.tex}			
 	
-	
-	\noindent 	
-	
+
 	
 \subsubsection{Synchronization and a first proof}	
 \label{subsub:synch}	
@@ -545,7 +543,7 @@ mechanization.
 
 \begin{theorem} \label{th:msproof2} 
 	\lstinputlisting[language=Coq, numbers=none]{listings/chapter6/msproof2.tex}		
-		Establishing... \qed
+		Establishing... TODO \qed
 \end{theorem}
 
 
@@ -573,7 +571,7 @@ mechanization.
 		
 		
 %%%
-\section{Modelling GCM internals}
+\section{Towards GCM behavioural models}
 \label{sec:gcmpnets}
 
 
@@ -581,8 +579,128 @@ mechanization.
    \ac{GCM} components are internally composed by a set of processes --- \ac{FIFO} \textit{queue}, \textit{body}, 
    etc. These can be modelled with our \textsf{LTS} datatype.
    
-   	For instance, let us see how we can model the \ac{FIFO} \textit{queue} process.  
+   
+	For the sake of clarity, Figure \ref{fig:gcmqueue2} depicts a queue, bounded at two requests, and accepting
+	requests for method \textsf{m$_1$}.
+	
+	\begin{figure}[H]
+		 \centering
+		\includegraphics[scale=0.6]{figures/chapter6/gcmqueue2.pdf}
+		\caption{LTS of a queue, bounded by two requests}
+		\label{fig:gcmqueue2}		
+	\end{figure}		
+	
+	\noindent Its understanding should pose no doubt. \textsf{Action} \textsf{messages} are written
+	in \textit{light oblique black} and \textsf{assignments} in blue. Basically, by assigning \textsf{v2} to
+	\textsf{v1} after emitting \textsf{Server\_m1 ! v1} it is guaranteed that requests are treated following
+	a \ac{FIFO} policy.
+		
+	
+		The mechanization of the above queue is easily achieved using our \textsf{LTS} datatype. First,
+		let us see its \textsf{lts\_states} as depicted by Listing \ref{lst:gcmqueue2states}.
+		
+				
+	   	\lstinputlisting[language=Coq, stepnumber=1, 
+	                     caption={Encoding of the \textsf{lts\_states} for the queue process}, 
+	                     %firstnumber=19,
+	                    label=lst:gcmqueue2states]{listings/chapter6/gcmqueue2states.tex}		
+	   
+   	\noindent Next, Listing \ref{lst:gcmqueue2transitions} illustrates its \textsf{transitions}.
+   	
+   	 	\lstinputlisting[language=Coq, stepnumber=1, 
+	                     caption={Encoding of the \textsf{transitions} for the queue process}, 
+	                     %firstnumber=19,
+	                    label=lst:gcmqueue2transitions]{listings/chapter6/gcmqueue2transitions.tex}	
  	
+ 	
+	\noindent  Since we use local variables we need to specify them in the initial state as
+	shown by Listing \ref{lst:gcmqueue2init}.	
+	 	
+ 	   	 	\lstinputlisting[language=Coq, stepnumber=1, 
+	                     caption={Encoding of the initial \textsf{lts\_state} for the queue process}, 
+	                     %firstnumber=19,
+	                    label=lst:gcmqueue2init]{listings/chapter6/gcmqueue2init.tex}	
+
+
+	\noindent The last remaining piece is a simple list holding the \textsf{actions}. We omit it
+	since they are already represented by the \textsf{transitions} depicted in Listing \ref{lst:gcmqueue2transitions}.
+	Finally, we can compose the \textsf{LTS} modelling the queue process. Listing \ref{lst:gcmqueue2}
+	illustrates its definition.
+	
+	\lstinputlisting[language=Coq, stepnumber=1, 
+	                       caption={Encoding of the queue process}, 
+	                       %firstnumber=19,
+	                       label=lst:gcmqueue2]{listings/chapter6/queue2.tex}	
+
+
+	\noindent A \ac{GCM} component is also composed by a \textit{body} process. Basically, this process
+	ensures that \ac{GCM} components are mono-threaded. For instance, a body process handling
+	requests for a method \textsf{m$_1$} is depicted by Figure \ref{fig:gcmbody}.
+
+
+	\begin{figure}[H]
+		 \centering
+		\includegraphics[scale=0.6]{figures/chapter6/gcmbody.pdf}
+		\caption{LTS of a body process handling one method}
+		\label{fig:gcmbody}		
+	\end{figure}		
+
+
+	\noindent From the above \ac{LTS} we can see that no second process can be \textit{served} without the
+	previous one having returned.
+	
+		The mechanization of the body process follows the same rationale as seen for the queue process.
+	Listing \ref{lst:gcmbodytransitions} depicts its transitions.
+
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                       caption={Encoding of the body \textsf{transitions}}, 
+	                       %firstnumber=19,
+	                       label=lst:gcmbodytransitions]{listings/chapter6/gcmbodytransitions.tex}	
+	
+
+	\noindent Further, Listing \ref{lst:gcmbodydef} illustrates the remaining definition of the body process. 
+
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                       caption={Remaining definitions encoding body process}, 
+	                       %firstnumber=19,
+	                       label=lst:gcmbodydef]{listings/chapter6/gcmbodydef.tex}	
+
+	
+	For the sake of simplicity,	we omit the models of the remaining \ac{GCM} component internal processes (proxies, etc).
+	Instead, we mechanize the method from the \textsf{JMX Indicators} component discussed in Chapter \ref{chap:hyper}.
+	Basically, it simply accepts a query for one of its \ac{JMX} indicators, and replies with its current status (see Figure \ref{fig:JMX}).
+		
+	
+		\lstinputlisting[language=Coq, stepnumber=1, 
+	                       caption={Encoding of \textsf{JMX Indicators} method}, 
+	                       %firstnumber=19,
+	                       label=lst:gcmjmx]{listings/chapter6/gcmjmx.tex}	
+	
+		
+	\noindent In the above definition we omitted definition of \textsf{jmx\_actions} as it
+	holds the list of \textsf{actions} that can be seen in \textsf{jmx\_transitions} definition.
+	
+		Building the	overall model for this simplified \ac{GCM} component is achieved by synchronizing
+		the above processes, and instantiating the adequate \textsf{Net} constructor. This is achieved
+		as depicted by Listing \ref{lst:gcmnet}.
+		
+		
+			\lstinputlisting[language=Coq, stepnumber=1, 
+	                       caption={Encoding of the component system}, 
+	                       %firstnumber=19,
+	                       label=lst:gcmnet]{listings/chapter6/gcmnet.tex}	
+	
+	
+	
+		Having synchronized the processes constituting the component as a \textsf{Net} value,
+		one can attempt to establish proofs regarding its traces of execution as we demonstrated in
+		Section \ref{sec:pnet}. Other components, including more details about the internal 
+		aspects, and with more sophisticated service methods can be modelled
+		in the same manner. Indeed, this example is rather simple and only shows
+		an instantiated component system. Having functions as models for parametrized
+		queue and body processes would have been more interesting.		
+		Yet, it should provide enough insight on how to go about more complex
+		mechanizations.
 
 
 
@@ -629,7 +747,7 @@ mechanization.
 	\textsf{build\_model : component $\rightarrow$ Net} would compute a \textsf{Net}
 	synchronizing the component internals and the specified service methods. The main
 	technical obstacle in the definition of such a function concerns the generation
-	of the appropriate synchronization vectors. For instance, a primitive \textsf{component} is 
+	of the appropriate "application-dependent" synchronization vectors. For instance, a primitive \textsf{component} is 
 	modelled by a \textsf{Net} holding a \textsf{LTS} for each \textsf{component} internal process
 	and service methods. Generating their synchronization vectors poses no special difficulty as
 	it mainly reflects the order by which requests are treated --- first into the \textsf{queue} process, 

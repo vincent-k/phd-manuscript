@@ -64,7 +64,7 @@
 \BOOKMARK [2][-]{subsection.6.3.1}{Encoding synchronizations between LTSs}{section.6.3}% 64
 \BOOKMARK [2][-]{subsection.6.3.2}{Net traces}{section.6.3}% 65
 \BOOKMARK [2][-]{subsection.6.3.3}{Synchronized Master \046 Slave example}{section.6.3}% 66
-\BOOKMARK [1][-]{section.6.4}{Modelling GCM internals}{chapter.6}% 67
+\BOOKMARK [1][-]{section.6.4}{Towards GCM behavioural models}{chapter.6}% 67
 \BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 68
 \BOOKMARK [0][-]{chapter.7}{Related work}{}% 69
 \BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 70
@@ -72,4 +72,4 @@
 \BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 72
 \BOOKMARK [0][-]{chapter.8}{Final remarks}{}% 73
 \BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 74
-\BOOKMARK [0][-]{chapter*.68}{List of Acronyms}{}% 75
+\BOOKMARK [0][-]{chapter*.70}{List of Acronyms}{}% 75

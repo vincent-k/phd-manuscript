@@ -1,0 +1,21 @@
+Definition jmx_transitions : transitions :=
+  [ (LTS_State 0 [], Action (Message "Call_m1" Read [Val(1)])  [], LTS_State 1 []) ;
+    (LTS_State 0 [], Action (Message "Call_m1" Read [Val(21)]) [], LTS_State 2 []) ;
+    (LTS_State 0 [], Action (Message "Call_m1" Read [Val(22)]) [], LTS_State 2 []) ;
+  
+    (LTS_State 1 [], Action (Message "R_m1" Emit [Val(10)]) [], LTS_State 0 []) ; 
+    (LTS_State 1 [], Action (Message "R_m1" Emit [Val(11)]) [], LTS_State 0 []) ; 
+
+    (LTS_State 2 [], Action (Message "R_m1" Emit [Val(210)]) [], LTS_State 0 []) ;
+    (LTS_State 2 [], Action (Message "R_m1" Emit [Val(211)]) [], LTS_State 0 []) ;
+    (LTS_State 2 [], Action (Message "R_m1" Emit [Val(220)]) [], LTS_State 0 []) ;
+    (LTS_State 2 [], Action (Message "R_m1" Emit [Val(221)]) [], LTS_State 0 []) 
+  ].
+
+Definition jmx_states : lts_states := 
+  [LTS_State 0 [] ; LTS_State 1 [] ; LTS_State 2 []].
+
+Definition jmx_init : lts_state := LTS_State 0 [].
+
+Definition jmx : LTS := 
+  mk_LTS jmx_states jmx_init jmx_actions jmx_transitions.

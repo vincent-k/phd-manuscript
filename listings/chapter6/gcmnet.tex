@@ -1,0 +1,9 @@
+Definition synch_vectors : list SynchronizationVector := 
+  [ << "Q_m1"    , "-"       , "-"       >> -> "Q_m1"     ;
+    << "Serve_m1", "Serve_m1", "-"       >> -> "Serve_m1" ;
+    << "-"       , "Call_m1" , "Call_m1" >> -> "Call_m1"  ;
+    << "-"       , "R_m1"    , "R_m1"    >> -> "R_m1"     ;
+    << "Error"   , "-"       , "-"       >> -> "Error"    ].
+
+Definition gcm_component : Net :=
+  mk_Net ([queue; body; jmx], synch_vectors).
