@@ -536,14 +536,63 @@ mechanization.
 	the label of the \textsf{message} composing \textsf{act}.
 	
 	Finally, we are in a position to establish our first proof about traces. Theorem
-	\ref{th:msproof2} expresses that from all states, all traces of \textsf{MasterSlaveCoffeepNet} instantiated with three --- 0, 1 and 2 ---
+	\ref{th:msproof2} expresses that from all states, all traces of \textsf{MasterSlaveCoffeeNet} instantiated with three --- 0, 1 and 2 ---
 	coffee kinds, satisfy an infinite interleaving between \textsf{ready} \textsf{actions} and \textsf{order}
 	\textsf{actions}.
 	
 
 \begin{theorem} \label{th:msproof2} 
 	\lstinputlisting[language=Coq, numbers=none]{listings/chapter6/msproof2.tex}		
-		Establishing... TODO \qed
+		We start by applying the infamous \textsf{cofix} tactic as this is a proof by co-induction. This
+		introduces a hypothesis in our context with the same type as the theorem we are trying to prove.
+		We cannot directly use this hypothesis as it would violate Coq's guardedness condition.		
+		Instead, we consider all \textsf{Net} trace constructors: \textsf{lts\_trace},
+		\textsf{net\_empty\_trace} and \textsf{net\_lcons\_trace}.
+		
+		For the first case, \textsf{lts\_trace}, the proof is easily discharged as \textsf{MasterSlaveCoffeeNet}
+		is a \textsf{Net} value obtained via the \textsf{mk\_Net} constructor, and not with 
+		\textsf{NetSingleton\_State}. Thus, we have contradiction in our context.
+				
+		The second case concerns the \textsf{net\_empty\_trace} constructor. This requires to establish that
+		an empty trace, \textsf{LNil}, satisfies the aforementioned infinite interleaving property. Clearly, this is not the
+		case, since the trace is empty. Thus, establishing this proof requires to demonstrate a contradiction in our context.
+		Since we are universally quantifying over \textsf{q}, we need to consider all possible \textsf{net\_states}. This yields
+		four subgoals. For the first subgoal, we consider \textsf{Net_State [slv0; mst0]}	as the source \textsf{net\_state}.
+		One of  \textsf{net\_empty\_trace}'s premisses is that \textsf{net\_target\_states} yields no target \textsf{net\_state} for all
+		synchronization vectors. This is clearly false, as the can show that \textsf{$<<$ "ready", "ready" $>>$ -> "ready"}
+		does indeed permit to attain  \textsf{Net_State [slv1; mst1]}. And thus this subgoal is discharged. For the
+		second and third subgoals we have \textsf{Net_State [slv0; mst1]} and \textsf{Net_State [slv1; mst0]}  
+		as source \textsf{net\_state}, respectively. Both are supposed to be \textsf{attainable} from \textsf{MasterSlaveCoffeeNet}'s initial
+		\textsf{net\_state}. Indeed, this is clearly not the case and we can demonstrate a contradiction.
+		The fourth and last subgoal possesses  \textsf{Net_State [slv1; mst1]} as source \textsf{net\_state}, and discharging it follows the rationale
+		of the first subgoal except that we use \textsf{$<<$ "order:MakeSandwich", "MakeSandwich" $>>$ -> "order:Sandwich"}
+		or \textsf{$<<$ "order:MakeCoffee", "MakeCoffee" $>>$ -> "order:Coffee"} to demonstrate the contradiction.
+						
+		For last, the third case regards the \textsf{net\_lcons\_trace} constructor. As seen for previous case,
+		we need to consider all possible \textsf{net\_states}, thus four subgoals. the third and fourth subgoal
+		possess \textsf{Net_State [slv0; mst1]} and \textsf{Net_State [slv1; mst0]}  
+		as source \textsf{net\_state}, respectively. By the same reasoning as discussed above, we can demonstrate a contradiction
+		in our context. The first subgoal has \textsf{Net_State [slv0; mst0]} as the source \textsf{net\_state}.
+		From the three specified synchronization vectors, only 	\textsf{$<<$ "ready", "ready" $>>$ -> "ready"}
+		permits the trace to progress: \textsf{Net_State [slv1; mst1]} is reached as target \textsf{net\_state},
+		and the global \textsf{action} \textsf{(Action (Message "ready" Emit []) [])} is emitted. We can now apply
+		the \textsf{Always\_LCons} constructor, yielding two subgoals. For the first subgoal we need to demonstrate
+		that the \textsf{interleaving} predicate holds. For this we make the trace further progress by induction on the
+		\textsf{Net\_Trace} predicate in our context, yielding the respective three subgoals. The two first subgoals
+		are easily discharged by contradiction in the same manner we discussed above. for the third subgoal
+		we need to consider the two synchronization vectors that can be activated: 
+		\textsf{$<<$ "order:MakeSandwich", "MakeSandwich" $>>$ -> "order:Sandwich"} and
+		\textsf{$<<$ "order:MakeCoffee", "MakeCoffee" $>>$ -> "order:Coffee"}. Since there are three kinds of
+		coffee, we need to consider four \textsf{actions}. In all cases we apply the \textsf{InterleavingOne} constructor
+		with the adequate \textsf{actions} as parameters, and discharge it by reflexivity. The second subgoal
+		for the  \textsf{Always\_LCons} constructor requires to prove the same goal for the tail of the
+		trace. For this, we simply use the co-induction hypothesis with \textsf{q} instantiated to
+		\textsf{Net_State [slv1; mst1]}. This concludes the first subgoal of the \textsf{net\_lcons\_trace} 
+		constructor case. The second and third subgoal were already discussed above, and the fourth is
+		discharged analogously. The main difference lies in the fact that  \textsf{Net_State [slv1; mst1]}  
+		is the source \textsf{net\_state}, thus the constructor \textsf{InterleavingTwo} is used instead,		
+		and a similar reasoning is applied w.r.t. the activated synchronization
+		vectors. \qed
 \end{theorem}
 
 

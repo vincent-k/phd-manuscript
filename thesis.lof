@@ -45,11 +45,11 @@
 \contentsline {xchapter}{\textsf {Painless} integration with ProActive}{117}{chapter.5}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{136}{figure.caption.68}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{138}{figure.caption.69}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{138}{figure.caption.68}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{139}{figure.caption.69}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related work}{143}{chapter.7}
+\contentsline {xchapter}{Related work}{145}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final remarks}{149}{chapter.8}
+\contentsline {xchapter}{Final remarks}{151}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{159}{chapter*.70}
+\contentsline {xchapter}{List of Acronyms}{161}{chapter*.70}

@@ -68,11 +68,11 @@
 \contentsline {subsubsection}{Well-formedness decidability}{88}{section*.59}
 \contentsline {subsubsection}{Well-typedness decidability}{93}{section*.60}
 \contentsline {section}{\numberline {4.2}An \textsc {operation} language for composing architectures}{99}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{99}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{100}{subsection.4.2.1}
 \contentsline {subsubsection}{A first architecture through an \textsf {operation}}{103}{section*.62}
 \contentsline {subsection}{\numberline {4.2.2}Building well-formed architectures}{106}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Proving Properties}{108}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{108}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.3}Proving Properties}{109}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{109}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Supporting Parametrized ADLs}{110}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Structural Reconfigurations}{112}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Discussion}{115}{section.4.4}
@@ -95,12 +95,12 @@
 \contentsline {subsubsection}{The slave process}{131}{section*.65}
 \contentsline {subsubsection}{The master process}{132}{section*.66}
 \contentsline {subsubsection}{Synchronization and a first proof}{133}{section*.67}
-\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{136}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{141}{section.6.5}
-\contentsline {chapter}{\numberline {7}Related work}{143}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{143}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{144}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{146}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final remarks}{149}{chapter.8}
-\contentsline {chapter}{Bibliography}{151}{chapter.8}
-\contentsline {chapter}{List of Acronyms}{159}{chapter*.70}
+\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{138}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{142}{section.6.5}
+\contentsline {chapter}{\numberline {7}Related work}{145}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{145}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{146}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{148}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final remarks}{151}{chapter.8}
+\contentsline {chapter}{Bibliography}{153}{chapter.8}
+\contentsline {chapter}{List of Acronyms}{161}{chapter*.70}

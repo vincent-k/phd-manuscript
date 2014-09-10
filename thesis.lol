@@ -71,30 +71,30 @@
 \contentsline {lstlisting}{listings/chapter4/cltintmandcorrect.tex}{96}{lstlisting.4.-25}
 \contentsline {lstlisting}{listings/chapter4/wtcorrect.tex}{98}{lstlisting.4.-26}
 \contentsline {lstlisting}{listings/chapter4/wtdec.tex}{98}{lstlisting.4.-27}
-\contentsline {lstlisting}{\numberline {4.30}\textsf {state} datatype}{99}{lstlisting.4.30}
+\contentsline {lstlisting}{\numberline {4.30}\textsf {state} datatype}{100}{lstlisting.4.30}
 \contentsline {lstlisting}{\numberline {4.31}\textsf {operation} datatype}{100}{lstlisting.4.31}
-\contentsline {lstlisting}{\numberline {4.32}Notation for sequence of \textsf {operation}s}{100}{lstlisting.4.32}
-\contentsline {lstlisting}{\numberline {4.33}Reflexive transitive closure definition of \textsf {step}}{102}{lstlisting.4.33}
-\contentsline {lstlisting}{\numberline {4.34}\textsf {operation} for the \textsf {component} \textit {"Component N"}}{103}{lstlisting.4.34}
+\contentsline {lstlisting}{\numberline {4.32}Notation for sequence of \textsf {operation}s}{101}{lstlisting.4.32}
+\contentsline {lstlisting}{\numberline {4.33}Reflexive transitive closure definition of \textsf {step}}{103}{lstlisting.4.33}
+\contentsline {lstlisting}{\numberline {4.34}\textsf {operation} for the \textsf {component} \textit {"Component N"}}{104}{lstlisting.4.34}
 \contentsline {lstlisting}{\numberline {4.35}\textsf {operation} for the \textsf {component} \textit {"C"}}{104}{lstlisting.4.35}
-\contentsline {lstlisting}{\numberline {4.36}\textsf {operation} for the \textsf {component} \textit {"S"}}{104}{lstlisting.4.36}
+\contentsline {lstlisting}{\numberline {4.36}\textsf {operation} for the \textsf {component} \textit {"S"}}{105}{lstlisting.4.36}
 \contentsline {lstlisting}{\numberline {4.37}\textsf {operation} for binding the \textsf {component}s}{105}{lstlisting.4.37}
 \contentsline {lstlisting}{\numberline {4.38}Overall \textsf {operation} for \textsf {component} \textit {"Compoennt N"}}{105}{lstlisting.4.38}
-\contentsline {lstlisting}{\numberline {4.39}Logical statement regarding the reduction of \textsf {build\_running\_example}}{105}{lstlisting.4.39}
+\contentsline {lstlisting}{\numberline {4.39}Logical statement regarding the reduction of \textsf {build\_running\_example}}{106}{lstlisting.4.39}
 \contentsline {lstlisting}{\numberline {4.40}\textsf {well\_formed} predicate definition}{106}{lstlisting.4.40}
-\contentsline {lstlisting}{listings/chapter4/wfempty.tex}{106}{lstlisting.4.-28}
+\contentsline {lstlisting}{listings/chapter4/wfempty.tex}{107}{lstlisting.4.-28}
 \contentsline {lstlisting}{\numberline {4.41}\textsf {validity} statement}{107}{lstlisting.4.41}
 \contentsline {lstlisting}{listings/chapter4/crossexport.tex}{109}{lstlisting.4.-29}
-\contentsline {lstlisting}{listings/chapter4/crossnotvalid.tex}{109}{lstlisting.4.-30}
+\contentsline {lstlisting}{listings/chapter4/crossnotvalid.tex}{110}{lstlisting.4.-30}
 \contentsline {lstlisting}{listings/chapter4/nocross.tex}{110}{lstlisting.4.-31}
-\contentsline {lstlisting}{listings/chapter4/generation.tex}{110}{lstlisting.4.-32}
+\contentsline {lstlisting}{listings/chapter4/generation.tex}{111}{lstlisting.4.-32}
 \contentsline {lstlisting}{listings/chapter4/wellgeneration.tex}{111}{lstlisting.4.-33}
-\contentsline {lstlisting}{listings/chapter4/usecase.tex}{112}{lstlisting.4.-34}
+\contentsline {lstlisting}{listings/chapter4/usecase.tex}{113}{lstlisting.4.-34}
 \contentsline {lstlisting}{listings/chapter4/usecasearch.tex}{113}{lstlisting.4.-35}
-\contentsline {lstlisting}{listings/chapter4/mkcomponents.tex}{113}{lstlisting.4.-36}
+\contentsline {lstlisting}{listings/chapter4/mkcomponents.tex}{114}{lstlisting.4.-36}
 \contentsline {lstlisting}{listings/chapter4/mkmulticast.tex}{114}{lstlisting.4.-37}
 \contentsline {lstlisting}{listings/chapter4/usecasereconfig.tex}{114}{lstlisting.4.-38}
-\contentsline {lstlisting}{listings/chapter4/usecaseproof.tex}{114}{lstlisting.4.-39}
+\contentsline {lstlisting}{listings/chapter4/usecaseproof.tex}{115}{lstlisting.4.-39}
 \addvspace {7pt}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {6.1}\textsf {LList} datatype}{120}{lstlisting.6.1}
@@ -128,16 +128,16 @@
 \contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{134}{lstlisting.6.29}
 \contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{135}{lstlisting.6.30}
 \contentsline {lstlisting}{listings/chapter6/msproof2.tex}{135}{lstlisting.6.-40}
-\contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{136}{lstlisting.6.31}
-\contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{137}{lstlisting.6.32}
-\contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{137}{lstlisting.6.33}
-\contentsline {lstlisting}{\numberline {6.34}Encoding of the initial \textsf {lts\_state} for the queue process}{137}{lstlisting.6.34}
-\contentsline {lstlisting}{\numberline {6.35}Encoding of the queue process}{138}{lstlisting.6.35}
-\contentsline {lstlisting}{\numberline {6.36}Encoding of the body \textsf {transitions}}{138}{lstlisting.6.36}
-\contentsline {lstlisting}{\numberline {6.37}Remaining definitions encoding body process}{138}{lstlisting.6.37}
-\contentsline {lstlisting}{\numberline {6.38}Encoding of \textsf {JMX Indicators} method}{139}{lstlisting.6.38}
-\contentsline {lstlisting}{\numberline {6.39}Encoding of the component system}{140}{lstlisting.6.39}
-\contentsline {lstlisting}{\numberline {6.40}Definition of the recursive \textsf {Net} datatype}{141}{lstlisting.6.40}
+\contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{137}{lstlisting.6.31}
+\contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{138}{lstlisting.6.32}
+\contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{138}{lstlisting.6.33}
+\contentsline {lstlisting}{\numberline {6.34}Encoding of the initial \textsf {lts\_state} for the queue process}{139}{lstlisting.6.34}
+\contentsline {lstlisting}{\numberline {6.35}Encoding of the queue process}{139}{lstlisting.6.35}
+\contentsline {lstlisting}{\numberline {6.36}Encoding of the body \textsf {transitions}}{140}{lstlisting.6.36}
+\contentsline {lstlisting}{\numberline {6.37}Remaining definitions encoding body process}{140}{lstlisting.6.37}
+\contentsline {lstlisting}{\numberline {6.38}Encoding of \textsf {JMX Indicators} method}{140}{lstlisting.6.38}
+\contentsline {lstlisting}{\numberline {6.39}Encoding of the component system}{141}{lstlisting.6.39}
+\contentsline {lstlisting}{\numberline {6.40}Definition of the recursive \textsf {Net} datatype}{142}{lstlisting.6.40}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

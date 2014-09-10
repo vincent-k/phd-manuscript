@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 SEP 2014 19:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  10 SEP 2014 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2740,7 +2740,7 @@ Chapter 4.
 
 
 ])
-Underfull \hbox (badness 1668) in paragraph at lines 34--34
+Underfull \hbox (badness 1668) in paragraph at lines 35--35
 [][]\T1/lmr/m/sc/10 Mefresa \T1/lmr/m/n/10 is avail-able on-line at: []$\T1/lmt
 t/m/n/10 http : / / www-[]sop . inria . fr / members / Nuno . Gaspar /
  []
@@ -2748,35 +2748,32 @@ t/m/n/10 http : / / www-[]sop . inria . fr / members / Nuno . Gaspar /
 [70] (./listings/chapter4/interface.tex) (./listings/chapter4/path.tex)
 [71] (./listings/chapter4/role.tex) (./listings/chapter4/contingency.tex)
 (./listings/chapter4/beqrole.tex) [72] (./listings/chapter4/component.tex)
-(./listings/chapter4/projid.tex)
-Overfull \hbox (8.57555pt too wide) in paragraph at lines 161--164
+(./listings/chapter4/projid.tex) [73]
+Overfull \hbox (8.57555pt too wide) in paragraph at lines 162--165
 []\T1/lmr/m/n/12 Another use-ful func-tion re-gards the in-dex-a-tion of \T1/lm
 ss/m/n/12 com-po-nent\T1/lmr/m/n/12 s. Search-ing through
  []
 
-[73] (./listings/chapter4/cmpindex.tex) (./listings/chapter4/binding.tex)
+(./listings/chapter4/cmpindex.tex) (./listings/chapter4/binding.tex)
 <figures/chapter4/bindings.pdf, id=3559, 490.83376pt x 263.98625pt>
 File: figures/chapter4/bindings.pdf Graphic file (type pdf)
 
 <use figures/chapter4/bindings.pdf>
-Package pdftex.def Info: figures/chapter4/bindings.pdf used on input line 197.
+Package pdftex.def Info: figures/chapter4/bindings.pdf used on input line 198.
 (pdftex.def)             Requested size: 343.58128pt x 184.78911pt.
-
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
- [74]
-(./listings/chapter4/bindings.tex) (./listings/chapter4/rex1of3.tex [75 <./figu
-res/chapter4/bindings.pdf>]) (./listings/chapter4/rex2of3.tex [76])
-(./listings/chapter4/rex3of3.tex) [77] (./listings/chapter4/wfcomp.tex)
-(./listings/chapter4/uniqueids.tex [78]) (./listings/chapter4/unique.tex
-[79]) (./listings/chapter4/itfindex.tex) [80]
-(./listings/chapter4/wfbinding.tex) (./listings/chapter4/normalbinding.tex)
-[81] (./listings/chapter4/wflemmaC.tex)
+ [74] (./listings/chapter4/bindings.tex)
+(./listings/chapter4/rex1of3.tex [75 <./figures/chapter4/bindings.pdf>])
+(./listings/chapter4/rex2of3.tex [76]) (./listings/chapter4/rex3of3.tex)
+[77] (./listings/chapter4/wfcomp.tex) (./listings/chapter4/uniqueids.tex
+[78]) (./listings/chapter4/unique.tex [79]) (./listings/chapter4/itfindex.tex)
+[80] (./listings/chapter4/wfbinding.tex) (./listings/chapter4/normalbinding.tex
+) [81] (./listings/chapter4/wflemmaC.tex)
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 428.
- [82] (./listings/chapter4/wflemmaN.tex) [83] (./listings/chapter4/wtyped.tex) 
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 429.
+ [82]
+(./listings/chapter4/wflemmaN.tex) [83] (./listings/chapter4/wtyped.tex)
 (./listings/chapter4/scont.tex)
-Overfull \hbox (8.1374pt too wide) in paragraph at lines 507--511
+Overfull \hbox (8.1374pt too wide) in paragraph at lines 508--512
 \T1/lmss/m/n/12 client_-ex-ter-nal_-manda-tory_-itfs_-are_-bound \T1/lmr/m/n/12
  and \T1/lmss/m/n/12 client_-in-ter-nal_-manda-tory_-itfs_-are_-
  []
@@ -2791,86 +2788,93 @@ Overfull \hbox (8.1374pt too wide) in paragraph at lines 507--511
 ) (./listings/chapter4/cltintmandboolaux.tex [94])
 (./listings/chapter4/cltintmandboolaux2.tex) [95]
 (./listings/chapter4/cltintmandcorrect.tex)
-Overfull \hbox (35.6617pt too wide) in paragraph at lines 945--952
+Overfull \hbox (35.6617pt too wide) in paragraph at lines 946--953
 []\T1/lmr/m/it/12 For the sec-ond sub-goal, we need to cope with the nested re-
 cur-sion on the sub\T1/lmss/m/sl/12 component\T1/lmr/m/it/12 s.
  []
 
 [96] [97] (./listings/chapter4/wtcorrect.tex) (./listings/chapter4/wtdec.tex)
-[98] (./listings/chapter4/state.tex)
+[98]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (3.70107pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/12 4.2.  AN \T1/lmr/m/sc/12 OPERATION \T1/lmr/m/sl/12 LANGUAGE FOR
  COMPOSING ARCHITECTURES \T1/lmr/m/n/12 99
  []
 
-[99] (./listings/chapter4/operation.tex) (./listings/chapter4/seq.tex) [100]
+[99] (./listings/chapter4/state.tex) (./listings/chapter4/operation.tex)
+[100] (./listings/chapter4/seq.tex)
 Overfull \hbox (9.57605pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/12 4.2.  AN \T1/lmr/m/sc/12 OPERATION \T1/lmr/m/sl/12 LANGUAGE FOR
  COMPOSING ARCHITECTURES \T1/lmr/m/n/12 101
  []
 
-[101] (./listings/chapter4/rsc.tex [102]) (./listings/chapter4/opn.tex
+[101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+(./listings/chapter4/rsc.tex)
 Overfull \hbox (9.57605pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/12 4.2.  AN \T1/lmr/m/sc/12 OPERATION \T1/lmr/m/sl/12 LANGUAGE FOR
  COMPOSING ARCHITECTURES \T1/lmr/m/n/12 103
  []
 
-[103]) (./listings/chapter4/opc.tex) (./listings/chapter4/ops.tex [104])
-(./listings/chapter4/opbind.tex) (./listings/chapter4/opf.tex)
-(./listings/chapter4/opproof.tex)
+[103] (./listings/chapter4/opn.tex) (./listings/chapter4/opc.tex) [104]
+(./listings/chapter4/ops.tex) (./listings/chapter4/opbind.tex)
+(./listings/chapter4/opf.tex) (./listings/chapter4/opproof.tex)
 Overfull \hbox (9.57605pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/12 4.2.  AN \T1/lmr/m/sc/12 OPERATION \T1/lmr/m/sl/12 LANGUAGE FOR
  COMPOSING ARCHITECTURES \T1/lmr/m/n/12 105
  []
 
-[105] (./listings/chapter4/wf.tex) (./listings/chapter4/wfempty.tex)
-Overfull \hbox (24.62787pt too wide) in paragraph at lines 1350--1357
+[105] (./listings/chapter4/wf.tex) [106] (./listings/chapter4/wfempty.tex)
+Overfull \hbox (24.62787pt too wide) in paragraph at lines 1360--1367
 \T1/lmr/m/it/12 ond sub-goals con-cern the well-formedness and the \T1/lmss/m/s
 l/12 iden-ti-fier \T1/lmr/m/it/12 unic-ity of the sub\T1/lmss/m/sl/12 component
 \T1/lmr/m/it/12 s.
  []
 
-[106] (./listings/chapter4/validity.tex)
+(./listings/chapter4/validity.tex)
 Overfull \hbox (9.57605pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/12 4.2.  AN \T1/lmr/m/sc/12 OPERATION \T1/lmr/m/sl/12 LANGUAGE FOR
  COMPOSING ARCHITECTURES \T1/lmr/m/n/12 107
  []
 
 [107]
-Overfull \hbox (9.4508pt too wide) in paragraph at lines 1430--1430
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
+Overfull \hbox (9.4508pt too wide) in paragraph at lines 1440--1440
 []\T1/lmr/bx/n/14.4 Meeting the Spec-i-fi-ca-tion: Ab-sence of \T1/lmr/bx/it/14
 .4 Cross-Bindings 
  []
 
-[108] (./listings/chapter4/crossexport.tex)
-(./listings/chapter4/crossnotvalid.tex) [109] (./listings/chapter4/nocross.tex)
-
-Overfull \hbox (15.93929pt too wide) in paragraph at lines 1499--1504
+(./listings/chapter4/crossexport.tex) [109]
+(./listings/chapter4/crossnotvalid.tex) (./listings/chapter4/nocross.tex)
+[110]
+Overfull \hbox (15.93929pt too wide) in paragraph at lines 1509--1514
 []\T1/lmr/m/n/12 For this kind of sys-tems, it would be more con-ve-nient to sp
 ec-ify it in a parametrized
  []
 
-(./listings/chapter4/generation.tex [110])
-(./listings/chapter4/wellgeneration.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [111]
-<figures/chapter4/usecasearch.pdf, id=4372, 540.10695pt x 272.10376pt>
+(./listings/chapter4/generation.tex) (./listings/chapter4/wellgeneration.tex)
+[111] <figures/chapter4/usecasearch.pdf, id=4375, 540.10695pt x 272.10376pt>
 File: figures/chapter4/usecasearch.pdf Graphic file (type pdf)
 
 <use figures/chapter4/usecasearch.pdf>
 Package pdftex.def Info: figures/chapter4/usecasearch.pdf used on input line 15
-58.
+68.
 (pdftex.def)             Requested size: 270.05281pt x 136.05154pt.
- (./listings/chapter4/usecase.tex
-[112 <./figures/chapter4/usecasearch.pdf>])
-(./listings/chapter4/usecasearch.tex) (./listings/chapter4/mkcomponents.tex)
-[113] (./listings/chapter4/mkmulticast.tex)
-(./listings/chapter4/usecasereconfig.tex) (./listings/chapter4/usecaseproof.tex
-[114]) [115]) [116]
+ [112 <./figures/chapter4/usecasearch.pdf>] (./listings/chapter4/usecase.tex) (
+./listings/chapter4/usecasearch.tex)
+[113] (./listings/chapter4/mkcomponents.tex)
+(./listings/chapter4/mkmulticast.tex) (./listings/chapter4/usecasereconfig.tex)
+[114] (./listings/chapter4/usecaseproof.tex) [115]) [116]
 \openout2 = `tex/mainmatter/Chapter5.aux'.
 
- (./tex/mainmatter/Chapter5.tex
+
+(./tex/mainmatter/Chapter5.tex
 Chapter 5.
 \openout4 = `thesis.mtc'.
 
@@ -2928,37 +2932,39 @@ ss/m/n/12 or-der:MakeSandwich\T1/lmr/m/n/12 ,
 [132]) (./listings/chapter6/mastertransitions.tex)
 (./listings/chapter6/masterlts.tex) (./listings/chapter6/mssynch.tex [133])
 (./listings/chapter6/msnet.tex) (./listings/chapter6/interleaving.tex) [134]
-(./listings/chapter6/rel.tex) (./listings/chapter6/msproof2.tex)
-(./listings/chapter6/msproofn.tex [135])
-<figures/chapter6/gcmqueue2.pdf, id=5046, 629.35126pt x 171.64125pt>
+(./listings/chapter6/rel.tex) (./listings/chapter6/msproof2.tex) [135]
+Underfull \vbox (badness 5091) has occurred while \output is active []
+
+ [136]
+(./listings/chapter6/msproofn.tex) [137]
+<figures/chapter6/gcmqueue2.pdf, id=5061, 629.35126pt x 171.64125pt>
 File: figures/chapter6/gcmqueue2.pdf Graphic file (type pdf)
 
 <use figures/chapter6/gcmqueue2.pdf>
-Package pdftex.def Info: figures/chapter6/gcmqueue2.pdf used on input line 590.
+Package pdftex.def Info: figures/chapter6/gcmqueue2.pdf used on input line 637.
 
 (pdftex.def)             Requested size: 377.61366pt x 102.98552pt.
- [136 <./figures/chapter6/gcmqueue2.pdf>]
-Overfull \hbox (1.35065pt too wide) in paragraph at lines 601--603
+
+Overfull \hbox (1.35065pt too wide) in paragraph at lines 648--650
 []\T1/lmr/m/n/12 The mech-a-niza-tion of the above queue is eas-ily achieved us
 -ing our \T1/lmss/m/n/12 LTS \T1/lmr/m/n/12 datatype.
  []
 
 (./listings/chapter6/gcmqueue2states.tex)
-(./listings/chapter6/gcmqueue2transitions.tex)
-(./listings/chapter6/gcmqueue2init.tex) (./listings/chapter6/queue2.tex
-[137]) <figures/chapter6/gcmbody.pdf, id=5106, 418.56375pt x 152.57pt>
+(./listings/chapter6/gcmqueue2transitions.tex [138 <./figures/chapter6/gcmqueue
+2.pdf>]) (./listings/chapter6/gcmqueue2init.tex)
+(./listings/chapter6/queue2.tex)
+<figures/chapter6/gcmbody.pdf, id=5106, 418.56375pt x 152.57pt>
 File: figures/chapter6/gcmbody.pdf Graphic file (type pdf)
 
 <use figures/chapter6/gcmbody.pdf>
-Package pdftex.def Info: figures/chapter6/gcmbody.pdf used on input line 645.
+Package pdftex.def Info: figures/chapter6/gcmbody.pdf used on input line 692.
 (pdftex.def)             Requested size: 251.14018pt x 91.5427pt.
- (./listings/chapter6/gcmbodytransitions.tex) (./listings/chapter6/gcmbodydef.t
-ex [138 <./figures/chapter6/gcmbody.pdf>])
-(./listings/chapter6/gcmjmx.tex [139]) (./listings/chapter6/gcmnet.tex)
-Underfull \vbox (badness 3209) has occurred while \output is active []
-
- [140]
-(./listings/chapter6/pnet.tex) [141]) [142]
+ [139 <./figures/chapter6/gcmbody.pdf>]
+(./listings/chapter6/gcmbodytransitions.tex)
+(./listings/chapter6/gcmbodydef.tex) (./listings/chapter6/gcmjmx.tex [140])
+(./listings/chapter6/gcmnet.tex [141]) (./listings/chapter6/pnet.tex) [142]
+[143]) [144]
 \openout2 = `tex/mainmatter/Chapter6.aux'.
 
  (./tex/mainmatter/Chapter6.tex
@@ -2973,18 +2979,18 @@ Overfull \hbox (44.98051pt too wide) in paragraph at lines 26--29
 d Ap-pli-ca-tion http://www-
  []
 
-[143
+[145
 
 
 
-] [144]
+] [146]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [145]
-[146]) [147]
+ [147]
+[148]) [149]
 \openout2 = `tex/mainmatter/Chapter7.aux'.
 
- (./tex/mainmatter/Chapter7.tex [148
+ (./tex/mainmatter/Chapter7.tex [150
 
 
 
@@ -2992,18 +2998,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 8.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc11 is empty on input line 11.
-[149]) [150] (./thesis.bbl [151
+[151]) [152] (./thesis.bbl [153
 
 
 
-] [152]
+] [154]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-[153]
+[155]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -3025,7 +3031,7 @@ Package minitoc Info: I0006
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[154] [155] [156]
+[156] [157] [158]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
@@ -3035,13 +3041,13 @@ Package minitoc Info: I0006
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Anglais'. Using the pattern for
 ** the default language instead.
-) [157]
+) [159]
 \openout2 = `tex/backmatter/acronyms.aux'.
 
- (./tex/backmatter/acronyms.tex [158
+ (./tex/backmatter/acronyms.tex [160
 
 
-]) [159]
+]) [161]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 181.
 See the caption package documentation for explanation.
@@ -3067,7 +3073,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the thesis.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-[160
+[162
 
 ]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 136.
@@ -3090,10 +3096,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 32791 strings out of 493633
- 570041 string characters out of 3143378
- 990760 words of memory out of 3000000
- 32967 multiletter control sequences out of 15000+200000
+ 32796 strings out of 493633
+ 570083 string characters out of 3143378
+ 999174 words of memory out of 3000000
+ 32970 multiletter control sequences out of 15000+200000
  181057 words of font info for 139 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  63i,27n,78p,932b,2159s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3143,10 +3149,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (184 pages, 2242741 bytes).
+Output written on thesis.pdf (186 pages, 2248096 bytes).
 PDF statistics:
- 5882 PDF objects out of 6186 (max. 8388607)
- 4812 compressed objects within 49 object streams
- 1636 named destinations out of 1728 (max. 500000)
+ 5893 PDF objects out of 6186 (max. 8388607)
+ 4821 compressed objects within 49 object streams
+ 1638 named destinations out of 1728 (max. 500000)
  859 words of extra memory for PDF output out of 10000 (max. 10000000)
 

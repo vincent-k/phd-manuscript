@@ -1,4 +1,4 @@
 Theorem Infinite_interleaving':
   forall n t q,
-   Net_Trace (MasterSlaveCoffeepNet n) q t ->
+   Net_Trace (MasterSlaveCoffeeNet n) q t ->
    t |= (Always (interleaving Rma "ready" "order")).

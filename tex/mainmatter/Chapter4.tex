@@ -22,7 +22,8 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	Section \ref{sec:coqgcm} discusses the mechanization of the \ac{GCM} with the Coq
 	proof assistant. In particular, we show how we use inductive definitions to model
 	the \ac{GCM} core elements, and predicates to formally specify their structure
-	and \textit{typing} requisites.
+	and \textit{typing} requisites.  Further, we demonstrate the decidability
+	of the involved predicates.	
 	A language for conveniently manipulating \ac{GCM} architectures
 	is presented in Section \ref{sec:op}. Examples on mechanically proven properties
 	are illustrated in Section \ref{sub:ex}.	For last, Section \ref{sec:mesfresadiscussion} gives
@@ -887,7 +888,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	\noindent  The parameter \textsf{li} holds a list of \textsf{interface}s. From these, it recovers those
 	that are \textsf{client}, \textsf{internal}, and \textsf{mandatory} (line 3). If there are none meeting
 	this criteria,  it simply returns \textit{true} (line 4): it means that there are no \textsf{interface}s that need
-	to be checked. Otherwise, there is the need to check if the recipients of these \textsf{interface}s are indeed
+	to be checked. Otherwise, there is the need to check if the recipients of the \textsf{binding}s of these \textsf{interface}s are indeed
 	of \textsf{mandatory} contingency (line 5). This is achieved by yet another auxiliary function depicted by
 	Listing \ref{lst:cimitfsaux2}.
 	
@@ -965,7 +966,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	we now need to take care of the \textsf{interface} \textbf{a}. We need to consider three cases.
 	If \textbf{a} is not of \textsf{client},
 	\textsf{internal} and \textsf{mandatory} nature then it is irrelevant for the sake of this proof, and we can
-	proceed to the subsequent case. If it is indeed of such nature, then it may or may not possess recipients
+	proceed to the subsequent case. If it is indeed of such nature, then it may or may not possess bounded recipients
 	of \textsf{mandatory} \textsf{contingency}. If it is the case, then we can show our goal by computation, i.e.,
 	we can reduce the term and eventually we get a \textsf{true = true} goal that is proved by reflexivity.
 	If it is not the case, then we have a contradiction in our context w.r.t. 
@@ -1015,6 +1016,15 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	specifications, and a completeness proof seems out of reach.
 
 
+		In this Section we discussed the mechanization of the \ac{GCM}. In particular, we discussed how 
+	we used inductive definitions to model its core elements, and predicates to formally
+	specify structure and typing requirements. Further, decidability of these predicates was also
+	covered, ensuring that we can always determine whether a given component is compliant
+	w.r.t. the \ac{GCM} specification. The remaining of this Chapter builds on top of these definitions 
+	to develop a convenient language for manipulating  \ac{GCM} architectures, and to show
+	pertinent examples.	
+	
+
 %% @@@@@@@@@@@@ Manipulating architectures with a simple \textsc{Operation} language
 \section{An \textsc{operation} language for composing architectures}
 \label{sec:op}
@@ -1024,7 +1034,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 
 		In the previous section, we saw how to use the \textsf{component} datatype to model a component hierarchy.
 	 Yet, for more complex architectures, directly manipulating the  \textsf{component} datatype is not very convenient.
-	 This is further	 exasperated if we consider reconfigurations: the software architecture evolves 
+	 This is even more evident if we consider reconfigurations: the software architecture evolves 
 	 and one needs a simple and elegant solution for coping with such structural changes. Moreover,
 	 as mentioned in \cite{BHN:ICAS09} composing an architecture in a arbitrary manner can lead to an 
 	 ”uncontrolled” architectural modification. Ensuring the consistency of the application's structure, both at 
@@ -1077,7 +1087,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 
 	
 	\noindent The intended meaning of each constructor should raise no doubt. Basically, 
-	our \textsc{operation} language allows to make and remove components, make interfaces, and make and remove 
+	our \textsc{operation} language allows us to make and remove components, make interfaces, and make and remove 
 	bindings. Further, we can naturally compose \textsf{operation}s as a sequence. For this, we define a convenient
 	notation as depicted by Listing \ref{lst:seq}.
 	
@@ -1222,14 +1232,14 @@ $$\\
  \textsf{component}. This removal occurs by the use of the 
  \textsf{rm\_comp : state $\rightarrow$ path $\rightarrow$ ident $\rightarrow$ state} function.
 
-
+	%precises correct word
 		The remaining rules concern \textsf{operation} composition. Rule (6), named \textsf{SSeqFinish},
 	formalizes the intuitive idea that we can skip the idempotent \textsf{Done} operation. Next,
 	rule (7), named \textsf{SSeq1}, precises that $op_1$ can itself be a composed \textsf{operation}.
 	Orthogonally, rule (8), named \textsf{SSeq2}, is meant for the cases where
 	$op_1$ is an \textsf{operation} that can be fully reduced in one step. Finally,
-	rule (9) is named \textsf{SDoneRefl} and simply attests the reflexive nature of the
-	\textsf{step} predicate.
+	rule (9) is named \textsf{SDoneRefl} and simply attests that \textsf{Done} produces
+	no effects.
 
 
  The rules from Table \ref{tab:semantics} only define a one step transition. 
@@ -1281,7 +1291,7 @@ $$\\
 	the \textsf{path} of an \textsf{interface} should indicate the \textsf{component} it belongs to, thus we append
 	\textsf{pN} to the \textsf{identifier} \textsf{id}.
 	
-		The \textsf{operation} for creating sub\textsf{component} \textit{"S"} follows the same spirit and his depicted
+		The \textsf{operation} for creating sub\textsf{component} \textit{"S"} follows the same spirit and is depicted
 		by Listing \ref{lst:ops}.	
 	
 	\lstinputlisting[language=Coq, label=lst:ops, caption=\textsf{operation} for the \textsf{component} \textit{"S"}, numbers=left]{listings/chapter4/ops.tex}	
@@ -1290,14 +1300,14 @@ $$\\
 	
 	\lstinputlisting[language=Coq, label=lst:opbind, caption=\textsf{operation} for binding the \textsf{component}s, numbers=left]{listings/chapter4/opbind.tex}		
 	
-	For convenience, we put everything together in Listing \ref{lst:opf}. Basically, we simply use the sequence constructor
+	We put everything together in Listing \ref{lst:opf}. Basically, we simply use the sequence constructor
 	to compose the overall \textsf{operation}.
 	
 	
 	\lstinputlisting[language=Coq, label=lst:opf, caption=Overall \textsf{operation} for \textsf{component} \textit{"Compoennt N"}, numbers=left]{listings/chapter4/opf.tex}		
 	
 	
-	\noindent So far, we only put together an \textsf{operation}, we do not possess an actual representation of the
+	\noindent So far, we only have an \textsf{operation}, we do not possess an actual representation of the
 	\textsf{component} architecture. For this, we must \textit{reduce} the \textsf{build\_running\_example} \textsf{operation}. 
 	This is achieved demonstrating the statement depicted by Listing 
 	\ref{lst:opproof}. 
@@ -1431,7 +1441,7 @@ $$\\
 \label{subsub:cross}
 
 	As mentioned in Subsection \ref{sub:core},  there are three types of \textsf{binding}s allowed:
-	\textit{normal}, \textit{export} and \textit{import}. Regarding this, it is said
+	\textit{normal}, \textit{export}, and \textit{import}. Regarding this, it is said
 	that establishing one of these types of \textsf{binding}s 
 	"\textit{ensure that primitive bindings cannot cross component
 boundaries except through interfaces}" \cite{fractalSpec}. 

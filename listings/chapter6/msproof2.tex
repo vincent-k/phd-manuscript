@@ -1,5 +1,5 @@
 Infinite_interleaving:
   forall t q,
-   Net_Trace (MasterSlaveCoffeepNet 2) q t ->
+   Net_Trace (MasterSlaveCoffeeNet 2) q t ->
    t |= (Always (interleaving Rma "ready" "order")).
 Proof.
