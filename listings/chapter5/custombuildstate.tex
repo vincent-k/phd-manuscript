@@ -1,26 +1,29 @@
-Function custom_build_state (op:operation) (init:state) : (option state * option wf_error_msg) :=
+Function custom_build_state (op:operation) (init:state) 
+                       : (option state * option wf_error_msg) :=
  match op with
-   | Mk_component i p ic cl lc li lb => 
-           match valid_component_path_bool p init with
-              false  => (None, Some(ErrorMkComponent i p PathError))
-            | true   => match no_id_clash_bool i p init with
-                            false => (None, Some (ErrorMkComponent i p ClashError))
-                          | true  => match dec_component (Component i p ic cl lc li lb) with
-                                       false => (None, Some (ErrorMkComponent i p IllFormed))
-                                     | true  => (add_component init p i ic cl lc li lb, None)
-                                     end
-                          end
-              end
-
-    ...
-    
-    | Seq          a1 a2              =>
-       let s := custom_build_state a1 init in
-       match s with
-         | (None , Some err)    => (None, Some err)
-         | (Some s', _)  => custom_build_state a2 s'
-         | (_, _)          => (None, None) (*should not happen*)
-       end
+  | Mk_component i p ic cl lc li lb => 
+     match valid_component_path_bool p init with
+       false => (None, Some(ErrorMkComponent i p PathError))
+     | true => 
+        match no_id_clash_bool i p init with
+          false => (None, Some (ErrorMkComponent i p ClashError))
+        | true  => 
+           match dec_component (Component i p ic cl lc li lb) with
+             false => (None, Some (ErrorMkComponent i p IllFormed))
+           | true => (add_component init p i ic cl lc li lb, None)
+           end
+        end
+     end
+     
+ ...
+     
+ | Seq    op1 op2              =>
+    let s := custom_build_state op1 init in
+    match s with
+     | (None, Some err)    => (None, Some err)
+     | (Some s', _)  => custom_build_state op2 s'
+     | (_, _)          => (None, None) (*should not happen*)
+    end
        
-    | Done                            => (Some init, None)
-  end.
+ | Done                        => (Some init, None)
+end.

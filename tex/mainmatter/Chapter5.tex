@@ -21,6 +21,13 @@
 	The syntax and semantics of \textsc{Painless} are presented in Section \ref{sec:painless}. Specification
 	examples are also explained. Finally, Section \ref{sec:painlessdiscussion} concludes this Chapter.
 
+	Our GCM/ProActive extension implementation	 is freely available online, and contains
+	the examples discussed in this Chapter and several others. The interested reader 
+	is pointed to website\footnote{The \textsc{Painless} extension for the ProActive middleware
+	is available online at: \url{http://www-sop.inria.fr/members/Nuno.Gaspar/Painless.php}} 
+	of its development for more details.
+
+
 %----------------------------------------------------------------------------------------
 
 
@@ -176,30 +183,84 @@
                           {listings/chapter5/errormsg.tex}			 				
                           
                           
-	\noindent            
-           
+	\noindent Basically, it defines a constructor for each \textsf{operation} constructor whose reduction
+	actually produces an effect to the current \textsf{state} (liens 7-11). Further, their elements hold all the
+	relevant information for adequately identifying the origin of an issue in an \textsf{operation} reduction.        
+    For instance, the \textsf{ErrorMkComponent} (line 7) holds the identifier, \textsf{path}, 
+    and \textsf{wf\_error} value of the involved \textsf{component}.          
+                          
+	For the sake of clarity, Listing \ref{lst:custombuildstate} depicts an excerpt of the
+	\textsf{custom\_build\_state} illustrating how error-reporting is handled.                          
                           
                           
         \lstinputlisting[language=Coq, numbers=left, label=lst:custombuildstate, caption=\textsf{custom_build_state} function definition]
                           {listings/chapter5/custombuildstate.tex}			                   
+                    
+                    
+	\noindent Indeed, it is a rather simple approach: at each boolean check, it returns its 
+	associated cause if a \textit{false} value is obtained  (lines 6, 9, 12).                    
+                    
+                    
+     While this error-reporting approach is simple enough, it is important to ensure that it causes no
+     conflict with the behaviour of the original \textsf{build\_state} function. Moreover, we also expect it
+     to be able to always report back an error message whenever it is not possible to
+     reduce an \textsf{operation}. This addressed by Lemma \textsf{custom\_build\_state\_correct} 
+     as depicted by Listing \ref{lst:custombuildstatecorrect}.                
                           
 	 				
-		\lstinputlisting[language=Coq, numbers=left, label=lst:custombuildstatecorrect, caption=\textsf{custom\_build\_state\_correct} lemma]
-                          {listings/chapter5/custombuildstatecorrect.tex}			 				
+	\lstinputlisting[language=Coq, numbers=left, label=lst:custombuildstatecorrect, caption=\textsf{custom\_build\_state\_correct} lemma]
+                      {listings/chapter5/custombuildstatecorrect.tex}			 				
 	 				
-	 				
+	\noindent The above lemma is proved by case analysis of the \textsf{operation} datatype.
+	It poses no particular challenge, as indeed both functions have a similar structure.	
+	
+	As expected, an analogous approach is used regarding the \textsf{well\_typed\_bool} function,
+	that is, we have a function \textsf{custom_well_typed_bool : state $\rightarrow$ option wt_error_msg},
+	reporting back the cause of a well-typedness non-compliance.
+	
+
+	As discussed in Subsection \ref{sub:coqextract}, Coq is able to extract functional code
+	into OCaml. We use this feature to extract both \textsf{custom\_build\_state} and 
+	\textsf{custom\_well\_typed\_bool}. Then, through \textit{OCaml-Java} \cite{conf/sfp/Clerc12}, 
+	we obtain a Java library implementing these two functions. 
+	
+	Figure \ref{fig:integration} depicts the overall approach for providing an
+	extension to the ProActive middleware coping with \textsc{Painless} specifications.
+						
 					
-				\textit{OCaml-Java} \cite{conf/sfp/Clerc12}, a set of tools for
-					
-								
-	%	Finally, we use Coq's extraction mechanism to obtain certified OCaml
-	%code	concerning the evaluation of \textsf{operations} on \textsf{component}
-	%architectures. Indeed, together, the \textit{build\_state} and 
-	%\textit{well\_typed\_bool} functions act as a decision procedure for the
-	%validity of a given operation. 
-
-
-
+	\begin{figure}[H]
+	\centering
+	 \includegraphics[scale=1]{figures/chapter5/starter.pdf} 	
+   	\caption{Simple GCM application example}
+   	\label{fig:integration}
+	\end{figure}
+	
+	
+	\noindent The \textsc{Painless} interpreter is directly written in OCaml, and also
+	compiled to Java bytecode with OCaml-Java. 	
+	Basically, its only task is to interpret a \textsc{Painless} expression to 
+	\textsc{Mefresa}'s \textsf{operation} language. This is the case for both
+	deployment and reconfiguration expressions.	
+	Then, the resulting
+	\textsf{operation} is reduced with \textsf{custom\_build\_state}. If
+	no issue is reported back, then the returned \textsf{state} is checked
+	with \textsf{custom\_well\_typed\_bool}. Provided that no well-typedness
+	issue is detected, the \textsf{operation} is mapped to the adequate methods	
+	composing the GCM/ProActive API. Further, the object holding the
+	\textsf{state}'s structure is kept for subsequent reconfiguration
+	tasks.
+		
+		It should also be noted that whenever an error is reported back,
+	from \textsf{custom\_build\_state} or \textsf{custom\_well\_typed\_bool},
+	a Java exception holding all the relevant information is thrown. This
+	permits to adequately react without stopping the application. Indeed,
+	a GCM/ProActive application requires a component 
+	to stop its execution in order to perform
+	a structural reconfiguration. In our case, we evaluate
+	its compliance with the \ac{GCM} specification before actually
+	starting the deployment/reconfiguration.
+		
+	
 \section{The \textsc{Painless} architecture description language}
 \label{sec:painless}
 
@@ -210,7 +271,7 @@
 	its grammar is defined by Table \ref{tab:xyz}.
 
 		%\begin{center}
-		\begin{table}
+		\begin{table}[h!]
 		\begin{tabular}{ l c l }
 		 % \textbf{btype}  & ::= & \ \ \blue{Normal} 	\textbf{exp} \textbf{exp} \textbf{exp} \textbf{exp} \textbf{exp}\\	
           %                        &      & 	\textbar\ \blue{Import} 	\textbf{exp} \textbf{exp} \textbf{exp} \textbf{exp}\\		
@@ -454,13 +515,13 @@ $$
 	all the declarations \textit{decl$_i$}. Naturally, $\alpha$ must be of type $operation$. 
 	
 	From here on \textsc{Mefresa}'s extracted  functions are used. Firstly,
-	\textsf{build\_state'} is applied to $\alpha$ and on an empty \textit{state}. If a \textit{state} $\sigma$
-	is returned we know it is \textsf{well formed}. Then, we apply \textsf{well\_typed\_bool'} to $\sigma$,
+	\textsf{custom\_build\_state} is applied to $\alpha$ and on an empty \textsf{state}. If a \textsf{state} $\sigma$
+	is returned we know it is well-formed. Then, we apply \textsf{custom\_well\_typed\_bool} to $\sigma$,
 	completing the deployment evaluation. In case of an error an exception with its cause is thrown. 
 	
 	Dealing with reconfigurations is performed analogously. The expression to be evaluated is reduced on a context including
 	the deployment declarations, the ones defined locally, and its instantiated parameters. 
-	Upon reduction to an \textsf{operation}, its validity is checked on the current \textit{state} $\sigma$ of the application.
+	Upon reduction to an \textsf{operation}, its validity is checked on the current \textsf{state} $\sigma$ of the application.
 	
 		
 		
@@ -468,17 +529,17 @@ $$
 \label{sub:hello}	
 
 	 The ProActive manual proposes its \textit{starter} and \textit{composite}
-	 tutorials by explaining the deployment of the applications shown by Figure \ref{fig:starter} and
-	 Figure \ref{fig:composite}, respectively.
+	 tutorials by explaining the deployment of the applications shown by Figure \ref{fig:painlessstarter} and
+	 Figure \ref{fig:painlesscomposite}, respectively.
 	 
-	 \vspace{-0.6cm}
-    \begin{figure}[ht]
+
+    \begin{figure}[h!]
 	\begin{minipage}[b]{0.35\linewidth} 
 	\centering
 	
 		\includegraphics[scale=1]{figures/chapter5/starter.pdf}
 		\caption{\textit{starter} application }		
-		\label{fig:starter}
+		\label{fig:painlessstarter}
 
 	\end{minipage}
 	\hspace{0.25cm}
@@ -487,11 +548,11 @@ $$
  
 		\includegraphics[scale=0.5]{figures/chapter5/composite.pdf}
 		\caption{\textit{composite} application }		
-		\label{fig:composite}
+		\label{fig:painlesscomposite}
  
 	\end{minipage}
 	\end{figure}	  		
-\vspace{-0.5cm}
+
 
 	\noindent The \textit{starter} application is simply a primitive component named \textit{Slave},
 	containing an external, server interface named \textit{i1}. Listing \ref{lst:helloworld} exemplifies one way to define  
@@ -539,10 +600,7 @@ $$
 	%the operations in an adequate order. An invalid reconfiguration is rejected and yields 
 	%an exception containing its cause.
 	
-		Our GCM/ProActive extension implementation	 is freely available online, and contains
-		the examples discussed here and several others. The interested reader 
-		is pointed to following website for more details
-		\url{http://www-sop.inria.fr/members/Nuno.Gaspar/Painless.php}.
+		
 	
 	%Last, it should be seen that from a programming perspective, applying this reconfiguration is achieved by a simple method call,
 	%while all the machinery involving \textsf{well formed} and \textsf{well typed} concerns
@@ -590,12 +648,9 @@ $$
 \section{Discussion}
 \label{sec:painlessdiscussion}
 
-architectural classes
-
-scalability -> further examples
 
 
-In this paper we presented \textsc{Painless} and its related novel approach for the
+In this Chapter we presented \textsc{Painless} and its related novel approach for the
  specification of software architectures. Its declarative trait allows for intuitive
  and concise specifications, liberating the software architect from 
  highly verbose specifications such as the ones obtained via 
@@ -617,7 +672,7 @@ In this paper we presented \textsc{Painless} and its related novel approach for 
  perspective: through a simple method call with the name of the desired reconfiguration.
  Furthermore, reconfiguration specifications are evaluated	 at runtime.
  The clear benefit is that one can be highly confident that the reconfiguration will
- not let the application in a \textit{ill formed} or \textit{ill typed} state as
+ not let the application in a ill-formed or ill-typed state as
  the evaluation process is carried out by provably correct code extracted from
  \textsc{Mefresa}.
  
@@ -634,14 +689,21 @@ In this paper we presented \textsc{Painless} and its related novel approach for 
 %	code for \textsc{Painless} is usuall`y achieved by a one-line adjustment: one should
 %	use the \textit{PainlessFactory} to instantiate the application.
   
-
+  
+	Composing architecture specifications through the \textsf{Require}
+	command fosters reuse, and further contributes to the conciseness
+	of \textsc{Painless} specifications. Yet, it is fair to say that
+	additional experimentation remains to be done in order to fully
+	assess the scalability of the approach. 
+	  
+  
 	At last, an interesting direction for future work concerns ensuring provably safe
 	reconfigurations, statically. While runtime checks are useful, one may
 	desire stronger guarantees statically. This could be achieved by
 	identifying useful classes of architectures that would feature
 	provably safe reconfiguration operations. This could be achieved
-	by leveraring \textsc{Mefresa}'s apparatus so that all specified reconfigurations provably
-	yield \textsf{well formed} and \textsf{well typed} states, for all 
+	by leveraging \textsc{Mefresa}'s apparatus so that all specified reconfigurations provably
+	yield well-formed and well-typed states, for all 
 	possible execution traces.
 
 

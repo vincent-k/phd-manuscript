@@ -1,3 +1,8 @@
+Inductive wf_error : Type :=
+  | PathError: wf_error | ClashError: wf_error
+  | IllFormed: wf_error | NotConnected: wf_error
+  | Invalid: wf_error   | Duplicate : wf_error.
+
 Inductive wf_error_msg : Type :=
   | ErrorMkComponent: ident -> path -> wf_error -> wf_error_msg
   | ErrorRmComponent: ident -> path -> wf_error -> wf_error_msg

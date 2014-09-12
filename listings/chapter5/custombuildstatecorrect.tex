@@ -1,7 +1,7 @@
 Lemma custom_build_state_correct:
    forall op s s',
-      (build_state op s = Some s' <->
-      custom_build_state op s = (Some s', None))
-      /\
-      (build_state op s = None <->
-      exists err_msg, custom_build_state op s = (None, Some err_msg)).
+     (build_state op s = Some s' <->
+     custom_build_state op s = (Some s', None))
+     /\
+     (build_state op s = None <->
+     exists err_msg, custom_build_state op s = (None, Some err_msg)).

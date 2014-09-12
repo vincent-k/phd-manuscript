@@ -9,7 +9,7 @@
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Preliminaries}{7}{chapter.2}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Rules for the \textsf {permut} predicate\relax }}{35}{table.caption.20}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Rules for the \textsf {permut} predicate\relax }}{36}{table.caption.20}
 \addvspace {10\p@ }
 \contentsline {xchapter}{The HyperManager}{39}{chapter.3}
 \contentsline {table}{\numberline {3.1}{\ignorespaces State-space information for the \textsf {HyperManager Gateway} component\relax }}{55}{table.caption.38}
@@ -24,13 +24,13 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Semantics of our \textit {operation} language\relax }}{101}{table.caption.61}
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textsf {Painless} integration with ProActive}{117}{chapter.5}
-\contentsline {table}{\numberline {5.1}{\ignorespaces \textsc {Painless} syntax (excerpt)\relax }}{123}{table.caption.64}
-\contentsline {table}{\numberline {5.2}{\ignorespaces \textsc {Painless} semantic rules (excerpt)\relax }}{125}{table.caption.66}
+\contentsline {table}{\numberline {5.1}{\ignorespaces \textsc {Painless} syntax (excerpt)\relax }}{125}{table.caption.65}
+\contentsline {table}{\numberline {5.2}{\ignorespaces \textsc {Painless} semantic rules (excerpt)\relax }}{126}{table.caption.67}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mechanized behavioural semantics}{131}{chapter.6}
+\contentsline {xchapter}{Mechanized behavioural semantics}{133}{chapter.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related work}{157}{chapter.7}
+\contentsline {xchapter}{Related work}{159}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final remarks}{163}{chapter.8}
+\contentsline {xchapter}{Final remarks}{165}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{173}{chapter*.74}
+\contentsline {xchapter}{List of Acronyms}{175}{chapter*.75}

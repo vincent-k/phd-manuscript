@@ -891,9 +891,10 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	here is that even these canonical data types can be seen as 
 	ordinary user code.
 			
-	 For instance, in Coq natural numbers are inductively defined as follows:
+	 For instance, in Coq natural numbers are inductively defined as depicted by Listing \ref{lst:nat}:
 	
-		\lstinputlisting[language=Coq]{listings/chapter2/nat.tex}
+		\lstinputlisting[language=Coq, label=lst:nat, caption=\textsf{nat} datatype]{listings/chapter2/nat.tex}
+		
 	
 	\noindent An inductive type is defined by a number of constructors, each with
 	its own arity. For \textsf{nat}, these are \textsf{O}, with arity equal to zero,
@@ -911,9 +912,10 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 			
 	%%lists
 	
-	In a similar fashion, the standard library also provides a definition for the list data type.	
+	In a similar fashion, the standard library also provides a definition for the list data type
+	as show by Listing \ref{lst:list}.
 	
-	\lstinputlisting[language=Coq]{listings/chapter2/list.tex}
+	\lstinputlisting[language=Coq, label=lst:list, caption=\textsf{list} datatype]{listings/chapter2/list.tex}
 
 	\noindent A \textsf{list} is also defined by two constructors: \textsf{nil} and \textsf{cons}. These,
 	possess arity zero and two, respectively.
@@ -941,9 +943,9 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	
 	Adding natural numbers can be seen as rather \textit{intriguing}. This is directly
 	related to how natural numbers are defined in Coq. The implementation of 
-	the \textsf{plus} function is given below.
+	the \textsf{plus} function is given by Listing \ref{lst:plus}.
 	
-		\lstinputlisting[language=Coq]{listings/chapter2/plus.tex}	
+		\lstinputlisting[language=Coq, label=lst:plus, caption=\textsf{plus} function definition]{listings/chapter2/plus.tex}	
 	
 	\noindent The first thing to note is the use of the keyword \textsf{Fixpoint}. This
 	 means that we are defining a recursive function. Looking at its signature
@@ -971,9 +973,10 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	typing information whenever it is obvious from the context.
 	
 	Defining functions over lists follow the same principle. For instance, the rather
-	common function computing the length of a list is defined as follows.
+	common function computing the length of a list is defined as
+	depicted by Listing \ref{lst:sizelist}.
 	
-		\lstinputlisting[language=Coq]{listings/chapter2/sizelist.tex}
+		\lstinputlisting[language=Coq, label=lst:sizelist, caption=\textsf{length} function definition]{listings/chapter2/sizelist.tex}
 
 	\noindent Basically, at each recursion step we define the length of the list
 	as being the successor of the length of its tail. The recursion is performed
@@ -989,37 +992,39 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	what can be returned in the input list is empty? In standard programming languages, one
 	usually handles such situations by raising an exception, but this is not possible in Coq.
 		
-		One way to deal with these cases is through the \textsf{option} type.
+		One way to deal with these cases is through the \textsf{option} type as demonstrated
+		by Listing \ref{lst:option}.
 		
-		\lstinputlisting[language=Coq]{listings/chapter2/option.tex}
+		\lstinputlisting[language=Coq, label=lst:option, caption=\textsf{option} datatype]{listings/chapter2/option.tex}
 			
-	\noindent The best way to understand its use is to see it in action. Below, we exemplify
+	\noindent The best way to understand its use is to see it in action. In Listing \ref{lst:head}, 
+	we exemplify
 	it with the \textsf{head} function. Notice that we use the \textsf{Definition} keyword, and
 	not \textsf{Fixpoint}. This is due to the fact that this function is not recursive.
 
-	\lstinputlisting[language=Coq]{listings/chapter2/head.tex}
+	\lstinputlisting[language=Coq, label=lst:head, caption=\textsf{head} function definition]{listings/chapter2/head.tex}
 
 	\noindent Two other approaches to cope with partial functions are the use default values, and
 	\textit{dependent types}. The former consists simply in associating a predefined return value for 
 	the "undesired" inputs. Clearly, this solution is not ideal, and sometimes even infeasible.	 
 	The latter represents a more powerful feature of Coq. Basically, a dependent type is 
 	a type that depends on a value. For instance, we can define the \textsf{vector} type, 
-	that characterizes lists of a specific length.
+	that characterizes lists of a specific length as shown by Listing \ref{lst:vector}.
 	
-	\lstinputlisting[language=Coq]{listings/chapter2/vector.tex}
+	\lstinputlisting[language=Coq, label=lst:vector, caption=\textsf{vector} datatype]{listings/chapter2/vector.tex}
 	
 	\noindent Such type definition ensures that a list of type \textsf{(vector n)} has
 	always length \textbf{n}. This facilitates the definition of partial functions such as the
-	one returning the head of a vector.
+	one returning the head of a vector as depicted by Listing \ref{lst:vhead}.
 	
 	%Compute (vhead (Vcons 1 (Vnil nat))).
     %Compute (vhead (Vnil nat)).
-	\lstinputlisting[language=Coq]{listings/chapter2/vhead.tex}
+	\lstinputlisting[language=Coq, label=lst:vhead, caption=\textsf{vhead} function definition]{listings/chapter2/vhead.tex}
 
 	\noindent Note that we need not to cope with the case of a empty vector, as this is directly
 	discarded by typing! Indeed, dependent types are an extremely powerful feature. In the context
 	of this thesis however, we do not make an extensive use of it. The interested reader is pointed
-	to Chlipala's excellent book \cite{chlipalacpdt2011} for a more in-depth account on the subject.
+	to Chlipala's book \cite{chlipalacpdt2011} for a more in-depth account on the subject.
 
 	 
 	%pure functional language, unlike OCaml
@@ -1033,9 +1038,9 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	defined in the same manner as  data types, except that their \textit{sort},
 	i.e. type of their type, is \textsf{Prop}. 
 	As an example, consider a definition regarding the 
-	\textit{parity} of a natural number.
+	\textit{parity} of a natural number as illustrated by Listing \ref{lst:even}.
 	
-	\lstinputlisting[language=Coq]{listings/chapter2/even.tex}		
+	\lstinputlisting[language=Coq, label=lst:even, caption=\textsf{is\_even} predicate definition]{listings/chapter2/even.tex}		
 	
 	
 	%\todo[inline]{sort explain}
@@ -1045,9 +1050,9 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	or if \textbf{(n-2)} is even. 
 	
 	Using this predicate constructors one can perform proofs. For instance,
-	let us see how one could prove that 4 is even.
+	Listing \ref{lst:even4} depicts how one could prove that 4 is even.
 	
-	\lstinputlisting[language=Coq]{listings/chapter2/even4.tex}
+	\lstinputlisting[language=Coq, label=lst:even4, caption=Proof that 4 is even]{listings/chapter2/even4.tex}
 			
 	
 	\noindent Proving properties in a interactive system like Coq
@@ -1060,9 +1065,10 @@ A pLTS is a parametrized LTS defined by a tuple $pLTS \triangleq (P, S, s_0, L, 
 	trivially proved by reflexivity (line 7).
 	
 	The above predicate and proof were rather simple. Let us now see a more interesting
-	predicate attesting that two lists are a permutation of each other.
+	predicate attesting that two lists are a permutation of each other as shown
+	by Listing \ref{lst:permut}.
 		 
-	\lstinputlisting[language=Coq]{listings/chapter2/permut.tex}
+	\lstinputlisting[language=Coq, label=lst:permut, caption=\textsf{permut} predicate definition]{listings/chapter2/permut.tex}
 	
 	\noindent This predicate is slightly more elaborated and requires a closer
 	look. Indeed, in the realm of formal methods it is common that
@@ -1134,9 +1140,9 @@ $$ \\
 	
 	Indeed, the graphical intuition provided by a proof tree can be of great value. However,
 	with more complex goals it rapidly becomes an exercise of style. The equivalent proof in
-	Coq is shown below.	
+	Coq is shown by Listing \ref{lst:permutproof}.
 	
-	\lstinputlisting[language=Coq]{listings/chapter2/permutproof.tex}	
+	\lstinputlisting[language=Coq, label=lst:permutproof, caption=Permutation proof example]{listings/chapter2/permutproof.tex}	
 		
 	\noindent As expected, the proof follows the same approach --- the \textbf{+} symbols
 	on the proof script serve the purpose of highlighting the subgoals.
@@ -1182,13 +1188,13 @@ $$ \\
 	\begin{figure}[H]
 	\begin{minipage}[b]{0.515\linewidth} 
 	\centering
-	\lstinputlisting[language=Coq, frame=1rb]{listings/chapter2/vhead2.tex}
+	\lstinputlisting[language=Coq, frame=1rb, caption=original \textsf{vhead} function]{listings/chapter2/vhead2.tex}
 	%\label{lst:component}
 	\end{minipage}
 	\hspace{0.05cm}
 	\begin{minipage}[b]{0.5\linewidth} 
 	\centering
-	\lstinputlisting[language=OCaml, stepnumber=0, frame=1rb]{listings/chapter2/vheadex.tex}
+	\lstinputlisting[language=OCaml, stepnumber=0, frame=1rb, caption=Extracted \textsf{vhead} function]{listings/chapter2/vheadex.tex}
 	%\label{lst:binding}
 	\end{minipage}
 	\end{figure}	  		

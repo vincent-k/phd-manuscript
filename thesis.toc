@@ -31,8 +31,8 @@
 \contentsline {section}{\numberline {2.5}A brief overview of the Coq Proof Assistant}{29}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Data types}{30}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Functional programming in Coq}{31}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Proving properties}{33}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{36}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.3}Proving properties}{34}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{37}{subsection.2.5.4}
 \contentsline {chapter}{\numberline {3}The HyperManager}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}The HyperManager architecture}{41}{section.3.1}
 \contentsline {section}{\numberline {3.2}Formal specification and verification methodology}{44}{section.3.2}
@@ -68,40 +68,40 @@
 \contentsline {subsubsection}{Well-formedness decidability}{88}{section*.59}
 \contentsline {subsubsection}{Well-typedness decidability}{93}{section*.60}
 \contentsline {section}{\numberline {4.2}An \textsc {operation} language for composing architectures}{99}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{100}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Syntax and semantics}{99}{subsection.4.2.1}
 \contentsline {subsubsection}{A first architecture through an \textsf {operation}}{103}{section*.62}
 \contentsline {subsection}{\numberline {4.2.2}Building well-formed architectures}{106}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Proving Properties}{109}{section.4.3}
+\contentsline {section}{\numberline {4.3}Proving Properties}{108}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{109}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Supporting Parametrized ADLs}{110}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Structural Reconfigurations}{112}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Discussion}{115}{section.4.4}
 \contentsline {chapter}{\numberline {5}\textsf {Painless} integration with ProActive}{117}{chapter.5}
 \contentsline {section}{\numberline {5.1}Integration approach}{118}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{118}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{119}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{121}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{123}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}\textsc {Painless} Semantics}{124}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{126}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Discussion}{128}{section.5.3}
-\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{131}{chapter.6}
-\contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{132}{section.6.1}
-\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{133}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{133}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}LTS traces}{134}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{136}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{137}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Net traces}{138}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{142}{subsection.6.3.3}
-\contentsline {subsubsection}{The slave process}{143}{section*.69}
-\contentsline {subsubsection}{The master process}{144}{section*.70}
-\contentsline {subsubsection}{Synchronization and a first proof}{145}{section*.71}
-\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{150}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{154}{section.6.5}
-\contentsline {chapter}{\numberline {7}Related work}{157}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{157}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{158}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{160}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final remarks}{163}{chapter.8}
-\contentsline {chapter}{Bibliography}{165}{chapter.8}
-\contentsline {chapter}{List of Acronyms}{173}{chapter*.74}
+\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{124}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}\textsc {Painless} Semantics}{126}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{127}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Discussion}{130}{section.5.3}
+\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{133}{chapter.6}
+\contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{134}{section.6.1}
+\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{135}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{135}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}LTS traces}{136}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{138}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{139}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Net traces}{140}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{144}{subsection.6.3.3}
+\contentsline {subsubsection}{The slave process}{145}{section*.70}
+\contentsline {subsubsection}{The master process}{146}{section*.71}
+\contentsline {subsubsection}{Synchronization and a first proof}{147}{section*.72}
+\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{152}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{156}{section.6.5}
+\contentsline {chapter}{\numberline {7}Related work}{159}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{159}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{160}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{162}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final remarks}{165}{chapter.8}
+\contentsline {chapter}{Bibliography}{167}{chapter.8}
+\contentsline {chapter}{List of Acronyms}{175}{chapter*.75}
