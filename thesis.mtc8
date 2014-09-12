@@ -1,6 +1,7 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Extracting a certified \textsf {Painless} interpreter}{\reset@font\mtcSfont 118}{section.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Certified functional code from logical specifications}{\reset@font\mtcSSfont 118}{subsection.5.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}The remaining bits: adjusting to OCaml native types}{\reset@font\mtcSSfont 118}{subsection.5.1.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}\textsf {Painless} support for the static and runtime verification of GCM/ProActive Applications}{\reset@font\mtcSfont 118}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Architectural classes for statically ensuring safe reconfigurations}{\reset@font\mtcSfont 118}{section.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Discussion}{\reset@font\mtcSfont 118}{section.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Integration approach}{\reset@font\mtcSfont 118}{section.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{\reset@font\mtcSSfont 118}{subsection.5.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{\reset@font\mtcSSfont 121}{subsection.5.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}The \textsc {Painless} architecture description language}{\reset@font\mtcSfont 123}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}\textsc {Painless} Semantics}{\reset@font\mtcSSfont 124}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}\textsc {Painless} hello world and beyond}{\reset@font\mtcSSfont 126}{subsection.5.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Discussion}{\reset@font\mtcSfont 128}{section.5.3}}

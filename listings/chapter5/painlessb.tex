@@ -1,0 +1,5 @@
+let interface_symmetry i = match i with
+   Interface id si p v r f co ca -> 
+     let vs = visibility_symmetry v in
+     let rs = role_symmetry r in
+     Interface id si p vs rs f co ca end

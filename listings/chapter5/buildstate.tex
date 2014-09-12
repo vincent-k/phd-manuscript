@@ -1,0 +1,21 @@
+Function build_state (op:operation) (init:state) : option state :=
+ match op with
+  | Mk_component i p ic cl lc li lb => 
+      if beq_bool ( valid_component_path_bool p init &&
+            no_id_clash_bool i p init       && 
+            dec_component (Component i p ic cl lc li lb)) false then
+          None
+      else
+          add_component init p i ic cl lc li lb 
+
+   ...
+
+  | Seq          op1 op2              =>
+       let s := build_state op1 init in
+       match s with
+         | None    => None
+         | Some s  => build_state op2 s
+       end
+       
+  | Done                            => Some init
+ end.

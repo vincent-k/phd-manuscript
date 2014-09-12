@@ -1,0 +1,50 @@
+public class Main {
+
+	 public static void main(String[] args) throws Exception {
+	        
+	    	org.ocaml.painless.ocamljavaMain.mainWithReturn(args);
+	        
+	    	
+	    	//Our Painless ADL supports severals flavours of specifications: 
+	    	//more functional-like or imperative-like oriented.
+	    	//String name = "org.painless.examples.lightscontrol.adl.Arch";
+	    	String name = "org.painless.examples.lightscontrol.adl.Arch2";
+	    	
+	    	PainlessFactory painless_factory = new PainlessFactory(name);
+	        Component lightscontrol = painless_factory.newComponent();
+	    	
+	    	
+	        GCM.getGCMLifeCycleController(lightscontrol).startFc();
+	        
+	        //..call interfaces..
+	        
+	        CollectBrightnessInfo cbi = (CollectBrightnessInfo) lightscontrol.getFcInterface("CollectBrightnessInfo");
+	        CollectLightInfo cli = (CollectLightInfo) lightscontrol.getFcInterface("CollectLightInfo");
+	        
+	        
+	        System.out.println("Let us perform a Multicast on the deployed Street Lights");
+	        cli.collectLightInfo();
+	        
+	        waitAFew(2000);
+	        
+	        //let us try some reconfigurations!
+	        System.out.println("We added a Light, and performed another Multicast");
+	        painless_factory.reconfigureArchitecture("add_light");
+	        cli.collectLightInfo();
+	        
+	        waitAFew(2000);
+	        
+	        
+	        System.out.println("We removed a Light, and performed another Multicast");
+	        painless_factory.reconfigureArchitecture("remove_light");
+	        cli.collectLightInfo();
+	                
+	   
+
+	 
+	        
+	        GCM.getGCMLifeCycleController(lightscontrol).stopFc();
+	        System.exit(0);
+	    }
+	 
+	 

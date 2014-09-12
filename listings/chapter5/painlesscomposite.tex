@@ -1,0 +1,15 @@
+Require "org.painless.examples.sbmf2014.adl.starter.painless"
+Architecture "Painless Composite Tutorial":
+
+let runner = 
+	itf "Runner" "org.painless.examples.sbmf2014.Runner" []
+
+let master_itfs = [runner ; clientof i1] 
+
+let master = Component "Master" "org.painless.examples.sbmf2014.MasterImpl" [] [] master_itfs []
+
+let composite = Component "Composite" [] "null" [] [runner; interface_symmetry runner] [] 
+
+deploy mk (add_subcomponents composite [master; slave]);
+	     mk normal ["Composite"] "Master" "i1" "Slave" "i1";
+	     mk export ["Composite"] "Runner" "Master" "Runner"

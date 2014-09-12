@@ -43,13 +43,15 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Use-Case Architecture\relax }}{112}{figure.caption.63}
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textsf {Painless} integration with ProActive}{117}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \textit {starter} application \relax }}{126}{figure.caption.67}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {composite} application \relax }}{126}{figure.caption.67}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mechanized behavioural semantics}{119}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{138}{figure.caption.68}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{139}{figure.caption.69}
+\contentsline {xchapter}{Mechanized behavioural semantics}{131}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{150}{figure.caption.72}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{151}{figure.caption.73}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related work}{145}{chapter.7}
+\contentsline {xchapter}{Related work}{157}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final remarks}{151}{chapter.8}
+\contentsline {xchapter}{Final remarks}{163}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{161}{chapter*.70}
+\contentsline {xchapter}{List of Acronyms}{173}{chapter*.74}

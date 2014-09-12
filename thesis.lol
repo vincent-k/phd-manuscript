@@ -96,48 +96,59 @@
 \contentsline {lstlisting}{listings/chapter4/usecasereconfig.tex}{114}{lstlisting.4.-38}
 \contentsline {lstlisting}{listings/chapter4/usecaseproof.tex}{115}{lstlisting.4.-39}
 \addvspace {7pt}
+\contentsline {lstlisting}{\numberline {5.1}Excerpt of the \textsf {build\_state} function definition}{119}{lstlisting.5.1}
+\contentsline {lstlisting}{\numberline {5.2}\textsf {validity} statement}{120}{lstlisting.5.2}
+\contentsline {lstlisting}{\numberline {5.3}\textsf {wf_error_msg} type definition}{121}{lstlisting.5.3}
+\contentsline {lstlisting}{\numberline {5.4}\textsf {custom_build_state} function definition}{121}{lstlisting.5.4}
+\contentsline {lstlisting}{\numberline {5.5}\textsf {custom\_build\_state\_correct} lemma}{122}{lstlisting.5.5}
+\contentsline {lstlisting}{\numberline {5.6}Shorthand for interfaces}{124}{lstlisting.5.6}
+\contentsline {lstlisting}{\numberline {5.7}Role symmetry}{124}{lstlisting.5.7}
+\contentsline {lstlisting}{\numberline {5.8}Interface symmetry}{124}{lstlisting.5.8}
+\contentsline {lstlisting}{\numberline {5.9}A first \textsc {Painless} specification}{126}{lstlisting.5.9}
+\contentsline {lstlisting}{\numberline {5.10}\textsc {Painless} specification for the \textit {composite} tutorial}{127}{lstlisting.5.10}
+\contentsline {lstlisting}{\numberline {5.11}\textsc {Painless} reconfigurations}{128}{lstlisting.5.11}
 \addvspace {7pt}
-\contentsline {lstlisting}{\numberline {6.1}\textsf {LList} datatype}{120}{lstlisting.6.1}
-\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{121}{lstlisting.6.2}
-\contentsline {lstlisting}{\numberline {6.3}\textsf {lts\_state} datatype}{121}{lstlisting.6.3}
-\contentsline {lstlisting}{\numberline {6.4}\textsf {action} datatype}{121}{lstlisting.6.4}
-\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{122}{lstlisting.6.5}
-\contentsline {lstlisting}{\numberline {6.6}\textsf {LTS} datatype}{122}{lstlisting.6.6}
-\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{123}{lstlisting.6.7}
-\contentsline {lstlisting}{\numberline {6.8}\textsf {lts\_target\_state} function definition}{123}{lstlisting.6.8}
-\contentsline {lstlisting}{\numberline {6.9}\textsf {SynchronizationVector} datatype}{125}{lstlisting.6.9}
-\contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf {SynchronizationVector}}{125}{lstlisting.6.10}
-\contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{126}{lstlisting.6.11}
-\contentsline {lstlisting}{\numberline {6.12}\textsf {net\_state} datatype}{126}{lstlisting.6.12}
-\contentsline {lstlisting}{\numberline {6.13}\textsf {net\_target\_states} function definition}{126}{lstlisting.6.13}
-\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{128}{lstlisting.6.14}
-\contentsline {lstlisting}{\numberline {6.15}\textsf {attainable} predicate definition}{128}{lstlisting.6.15}
-\contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf {Net}}{129}{lstlisting.6.16}
-\contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf {satisfies} predicate}{130}{lstlisting.6.17}
-\contentsline {lstlisting}{\numberline {6.18}Definition of the \textsf {Always} predicate}{131}{lstlisting.6.18}
-\contentsline {lstlisting}{\numberline {6.19}Definition of the slave process \textsf {lts\_states}}{131}{lstlisting.6.19}
-\contentsline {lstlisting}{\numberline {6.20}Definition of the slave process \textsf {actions}}{131}{lstlisting.6.20}
-\contentsline {lstlisting}{\numberline {6.21}Definition of the slave process \textsf {transitions}}{132}{lstlisting.6.21}
-\contentsline {lstlisting}{\numberline {6.22}Definition of the slave process \textsf {LTS}}{132}{lstlisting.6.22}
-\contentsline {lstlisting}{\numberline {6.23}Definition of the master process \textsf {lts\_states}}{132}{lstlisting.6.23}
-\contentsline {lstlisting}{\numberline {6.24}Definition of the master process \textsf {actions}}{133}{lstlisting.6.24}
-\contentsline {lstlisting}{\numberline {6.25}Definition of the master process \textsf {transitions}}{133}{lstlisting.6.25}
-\contentsline {lstlisting}{\numberline {6.26}Definition of the master process \textsf {LTS}}{133}{lstlisting.6.26}
-\contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf {LTS}}{134}{lstlisting.6.27}
-\contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf {Net}}{134}{lstlisting.6.28}
-\contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{134}{lstlisting.6.29}
-\contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{135}{lstlisting.6.30}
-\contentsline {lstlisting}{listings/chapter6/msproof2.tex}{135}{lstlisting.6.-40}
-\contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{137}{lstlisting.6.31}
-\contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{138}{lstlisting.6.32}
-\contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{138}{lstlisting.6.33}
-\contentsline {lstlisting}{\numberline {6.34}Encoding of the initial \textsf {lts\_state} for the queue process}{139}{lstlisting.6.34}
-\contentsline {lstlisting}{\numberline {6.35}Encoding of the queue process}{139}{lstlisting.6.35}
-\contentsline {lstlisting}{\numberline {6.36}Encoding of the body \textsf {transitions}}{140}{lstlisting.6.36}
-\contentsline {lstlisting}{\numberline {6.37}Remaining definitions encoding body process}{140}{lstlisting.6.37}
-\contentsline {lstlisting}{\numberline {6.38}Encoding of \textsf {JMX Indicators} method}{140}{lstlisting.6.38}
-\contentsline {lstlisting}{\numberline {6.39}Encoding of the component system}{141}{lstlisting.6.39}
-\contentsline {lstlisting}{\numberline {6.40}Definition of the recursive \textsf {Net} datatype}{142}{lstlisting.6.40}
+\contentsline {lstlisting}{\numberline {6.1}\textsf {LList} datatype}{132}{lstlisting.6.1}
+\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{133}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.3}\textsf {lts\_state} datatype}{133}{lstlisting.6.3}
+\contentsline {lstlisting}{\numberline {6.4}\textsf {action} datatype}{133}{lstlisting.6.4}
+\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{134}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.6}\textsf {LTS} datatype}{134}{lstlisting.6.6}
+\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{135}{lstlisting.6.7}
+\contentsline {lstlisting}{\numberline {6.8}\textsf {lts\_target\_state} function definition}{135}{lstlisting.6.8}
+\contentsline {lstlisting}{\numberline {6.9}\textsf {SynchronizationVector} datatype}{137}{lstlisting.6.9}
+\contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf {SynchronizationVector}}{137}{lstlisting.6.10}
+\contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{138}{lstlisting.6.11}
+\contentsline {lstlisting}{\numberline {6.12}\textsf {net\_state} datatype}{138}{lstlisting.6.12}
+\contentsline {lstlisting}{\numberline {6.13}\textsf {net\_target\_states} function definition}{138}{lstlisting.6.13}
+\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{140}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.15}\textsf {attainable} predicate definition}{140}{lstlisting.6.15}
+\contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf {Net}}{141}{lstlisting.6.16}
+\contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf {satisfies} predicate}{142}{lstlisting.6.17}
+\contentsline {lstlisting}{\numberline {6.18}Definition of the \textsf {Always} predicate}{143}{lstlisting.6.18}
+\contentsline {lstlisting}{\numberline {6.19}Definition of the slave process \textsf {lts\_states}}{143}{lstlisting.6.19}
+\contentsline {lstlisting}{\numberline {6.20}Definition of the slave process \textsf {actions}}{143}{lstlisting.6.20}
+\contentsline {lstlisting}{\numberline {6.21}Definition of the slave process \textsf {transitions}}{144}{lstlisting.6.21}
+\contentsline {lstlisting}{\numberline {6.22}Definition of the slave process \textsf {LTS}}{144}{lstlisting.6.22}
+\contentsline {lstlisting}{\numberline {6.23}Definition of the master process \textsf {lts\_states}}{144}{lstlisting.6.23}
+\contentsline {lstlisting}{\numberline {6.24}Definition of the master process \textsf {actions}}{145}{lstlisting.6.24}
+\contentsline {lstlisting}{\numberline {6.25}Definition of the master process \textsf {transitions}}{145}{lstlisting.6.25}
+\contentsline {lstlisting}{\numberline {6.26}Definition of the master process \textsf {LTS}}{145}{lstlisting.6.26}
+\contentsline {lstlisting}{\numberline {6.27}Definition of the master process \textsf {LTS}}{146}{lstlisting.6.27}
+\contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf {Net}}{146}{lstlisting.6.28}
+\contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{146}{lstlisting.6.29}
+\contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{147}{lstlisting.6.30}
+\contentsline {lstlisting}{listings/chapter6/msproof2.tex}{147}{lstlisting.6.-40}
+\contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{149}{lstlisting.6.31}
+\contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{150}{lstlisting.6.32}
+\contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{150}{lstlisting.6.33}
+\contentsline {lstlisting}{\numberline {6.34}Encoding of the initial \textsf {lts\_state} for the queue process}{151}{lstlisting.6.34}
+\contentsline {lstlisting}{\numberline {6.35}Encoding of the queue process}{151}{lstlisting.6.35}
+\contentsline {lstlisting}{\numberline {6.36}Encoding of the body \textsf {transitions}}{152}{lstlisting.6.36}
+\contentsline {lstlisting}{\numberline {6.37}Remaining definitions encoding body process}{152}{lstlisting.6.37}
+\contentsline {lstlisting}{\numberline {6.38}Encoding of \textsf {JMX Indicators} method}{152}{lstlisting.6.38}
+\contentsline {lstlisting}{\numberline {6.39}Encoding of the component system}{153}{lstlisting.6.39}
+\contentsline {lstlisting}{\numberline {6.40}Definition of the recursive \textsf {Net} datatype}{154}{lstlisting.6.40}
 \addvspace {7pt}
 \addvspace {7pt}
 \addvspace {7pt}

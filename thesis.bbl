@@ -257,6 +257,11 @@ L.~Lamport, R.~Shostak, and M.~Pease, ``The byzantine generals problem,''
   1982. [Online]. Available: \url{http://doi.acm.org/10.1145/357172.357176}
 \BIBentrySTDinterwordspacing
 
+\bibitem{conf/sfp/Clerc12}
+X.~Clerc, ``{OCaml-Java}: {OCaml} on the {JVM}.'' in \emph{Trends in Functional
+  Programming}, ser. LNCS, H.-W. Loidl and R.~Peña, Eds., vol. 7829.\hskip 1em
+  plus 0.5em minus 0.4em\relax Springer, 2012, pp. 167--181.
+
 \bibitem{BBN+10}
 S.~Bensalem, M.~Bozga, T.-H. Nguyen, and J.~Sifakis, ``Compositional
   verification for component-based systems and application,'' \emph{IET

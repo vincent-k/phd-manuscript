@@ -14,7 +14,6 @@ A level-1 auxiliary file: tex/mainmatter/Chapter5.aux
 A level-1 auxiliary file: tex/mainmatter/ChapterBehaviour.aux
 A level-1 auxiliary file: tex/mainmatter/Chapter6.aux
 A level-1 auxiliary file: tex/mainmatter/Chapter7.aux
-A level-1 auxiliary file: tex/mainmatter/appendices/app1.aux
 The style file: IEEEtran.bst
 A level-1 auxiliary file: tex/backmatter/acronyms.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -40,45 +39,45 @@ Warning--empty year in garavel:inria-00583776
 Warning--empty booktitle in Bruni:2008:GDA:1424922.1424928
 
 Done.
-You've used 54 entries,
+You've used 55 entries,
             4039 wiz_defined-function locations,
-            1216 strings with 20299 characters,
-and the built_in function-call counts, 38641 in all, are:
-= -- 3111
-> -- 983
-< -- 233
-+ -- 505
-- -- 192
-* -- 1997
-:= -- 6163
-add.period$ -- 121
-call.type$ -- 54
-change.case$ -- 68
-chr.to.int$ -- 501
-cite$ -- 57
-duplicate$ -- 2823
-empty$ -- 3202
-format.name$ -- 239
-if$ -- 8757
+            1223 strings with 20427 characters,
+and the built_in function-call counts, 39650 in all, are:
+= -- 3194
+> -- 1003
+< -- 242
++ -- 516
+- -- 195
+* -- 2046
+:= -- 6314
+add.period$ -- 124
+call.type$ -- 55
+change.case$ -- 71
+chr.to.int$ -- 522
+cite$ -- 58
+duplicate$ -- 2893
+empty$ -- 3288
+format.name$ -- 243
+if$ -- 8994
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 580
-newline$ -- 245
-num.names$ -- 69
-pop$ -- 1322
+int.to.str$ -- 55
+missing$ -- 593
+newline$ -- 248
+num.names$ -- 72
+pop$ -- 1347
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2952
+skip$ -- 3033
 stack$ -- 0
-substring$ -- 1222
-swap$ -- 2228
-text.length$ -- 66
+substring$ -- 1272
+swap$ -- 2288
+text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 54
+type$ -- 55
 warning$ -- 3
-while$ -- 150
-width$ -- 56
-write$ -- 626
+while$ -- 155
+width$ -- 57
+write$ -- 638
 (There were 8 warnings)

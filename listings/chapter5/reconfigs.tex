@@ -1,0 +1,6 @@
+Reconfiguration "change slave" impl:
+	reconfigure 
+		rm normal ["Composite"] "Master" "i1" "Slave" "i1";
+		rm ["Composite"]  "Slave";
+		mk_in ["Composite"] (change_class impl slave);
+		mk normal ["Composite"] "Master" "i1" "Slave" "i1"

@@ -49,27 +49,28 @@
 \BOOKMARK [2][-]{subsection.4.3.3}{Structural Reconfigurations}{section.4.3}% 49
 \BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 50
 \BOOKMARK [0][-]{chapter.5}{Painless integration with ProActive}{}% 51
-\BOOKMARK [1][-]{section.5.1}{Extracting a certified Painless interpreter}{chapter.5}% 52
-\BOOKMARK [2][-]{subsection.5.1.1}{Certified functional code from logical specifications}{section.5.1}% 53
-\BOOKMARK [2][-]{subsection.5.1.2}{The remaining bits: adjusting to OCaml native types}{section.5.1}% 54
-\BOOKMARK [1][-]{section.5.2}{Painless support for the static and runtime verification of GCM/ProActive Applications}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.3}{Architectural classes for statically ensuring safe reconfigurations}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 57
-\BOOKMARK [0][-]{chapter.6}{Mechanized behavioural semantics}{}% 58
-\BOOKMARK [1][-]{section.6.1}{Groundwork: Infinite data structures}{chapter.6}% 59
-\BOOKMARK [1][-]{section.6.2}{Labelled transition systems, and traces}{chapter.6}% 60
-\BOOKMARK [2][-]{subsection.6.2.1}{Encoding labelled transitions systems}{section.6.2}% 61
-\BOOKMARK [2][-]{subsection.6.2.2}{LTS traces}{section.6.2}% 62
-\BOOKMARK [1][-]{section.6.3}{Synchronization of LTS, and traces}{chapter.6}% 63
-\BOOKMARK [2][-]{subsection.6.3.1}{Encoding synchronizations between LTSs}{section.6.3}% 64
-\BOOKMARK [2][-]{subsection.6.3.2}{Net traces}{section.6.3}% 65
-\BOOKMARK [2][-]{subsection.6.3.3}{Synchronized Master \046 Slave example}{section.6.3}% 66
-\BOOKMARK [1][-]{section.6.4}{Towards GCM behavioural models}{chapter.6}% 67
-\BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 68
-\BOOKMARK [0][-]{chapter.7}{Related work}{}% 69
-\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 70
-\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 71
-\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 72
-\BOOKMARK [0][-]{chapter.8}{Final remarks}{}% 73
-\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 74
-\BOOKMARK [0][-]{chapter*.70}{List of Acronyms}{}% 75
+\BOOKMARK [1][-]{section.5.1}{Integration approach}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Computing states from operations}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Certified code, Painless interpreter, and the ProActive middleware}{section.5.1}% 54
+\BOOKMARK [1][-]{section.5.2}{The Painless architecture description language}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.2.1}{Painless Semantics}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.2}{Painless hello world and beyond}{section.5.2}% 57
+\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 58
+\BOOKMARK [0][-]{chapter.6}{Mechanized behavioural semantics}{}% 59
+\BOOKMARK [1][-]{section.6.1}{Groundwork: Infinite data structures}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.2}{Labelled transition systems, and traces}{chapter.6}% 61
+\BOOKMARK [2][-]{subsection.6.2.1}{Encoding labelled transitions systems}{section.6.2}% 62
+\BOOKMARK [2][-]{subsection.6.2.2}{LTS traces}{section.6.2}% 63
+\BOOKMARK [1][-]{section.6.3}{Synchronization of LTS, and traces}{chapter.6}% 64
+\BOOKMARK [2][-]{subsection.6.3.1}{Encoding synchronizations between LTSs}{section.6.3}% 65
+\BOOKMARK [2][-]{subsection.6.3.2}{Net traces}{section.6.3}% 66
+\BOOKMARK [2][-]{subsection.6.3.3}{Synchronized Master \046 Slave example}{section.6.3}% 67
+\BOOKMARK [1][-]{section.6.4}{Towards GCM behavioural models}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 69
+\BOOKMARK [0][-]{chapter.7}{Related work}{}% 70
+\BOOKMARK [1][-]{section.7.1}{On the HyperManager use case}{chapter.7}% 71
+\BOOKMARK [1][-]{section.7.2}{On the Mefresa framework}{chapter.7}% 72
+\BOOKMARK [1][-]{section.7.3}{On Painless}{chapter.7}% 73
+\BOOKMARK [0][-]{chapter.8}{Final remarks}{}% 74
+\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 75
+\BOOKMARK [0][-]{chapter*.74}{List of Acronyms}{}% 76

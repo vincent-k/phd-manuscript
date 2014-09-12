@@ -1,0 +1,6 @@
+Inductive wf_error_msg : Type :=
+  | ErrorMkComponent: ident -> path -> wf_error -> wf_error_msg
+  | ErrorRmComponent: ident -> path -> wf_error -> wf_error_msg
+  | ErrorMkInterface: ident -> path -> wf_error -> wf_error_msg
+  | ErrorMkBinding  : binding -> wf_error -> wf_error_msg
+  | ErrorRmBinding  : binding -> wf_error -> wf_error_msg.

@@ -1,0 +1,4 @@
+Theorem build_state_correctness:
+  forall op s s',
+    well_formed s ->
+    (op / s ~~~>* Done / s' <-> build_state op s = Some s').

@@ -1,0 +1,11 @@
+let add_subcomponent comp subcomponent =
+  match comp with
+    Component id p c lc li lb -> 
+           Component id p c (subcomponent :: lc) li lb
+  end
+
+let rec add_subcomponents comp lc =
+  match lc with
+    []     -> comp 
+  | c :: r -> add_subcomponents (add_subcomponent comp c) r
+  end 

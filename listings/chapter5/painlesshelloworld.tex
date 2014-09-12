@@ -1,0 +1,7 @@
+Architecture "Painless Starter Tutorial":
+let i1_class = "org.painless.examples.sbmf2014.Itf1" 
+let impl_class = "org.painless.examples.sbmf2014.SlaveImpl"  
+
+let i1 = itf "i1" i1_class ["Slave"] 
+let slave = Component "Slave" impl_class [] [] [i1] []
+deploy mk slave
