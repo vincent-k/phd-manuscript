@@ -38,18 +38,19 @@
 \contentsline {xchapter}{A mechanized framework for reasoning on software architectures}{69}{chapter.4}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \textsf {binding} examples\relax }}{75}{figure.caption.55}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Use-Case Architecture\relax }}{112}{figure.caption.63}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \textsc {Mefresa} overview from a GCM perspective\relax }}{116}{figure.caption.64}
 \addvspace {10\p@ }
-\contentsline {xchapter}{\textsf {Painless} integration with ProActive}{117}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple GCM application example\relax }}{124}{figure.caption.64}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {starter} application \relax }}{128}{figure.caption.68}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \textit {composite} application \relax }}{128}{figure.caption.68}
+\contentsline {xchapter}{\textsf {Painless} integration with ProActive}{119}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Overall integration of \textsf {Painless} with ProActive\relax }}{126}{figure.caption.65}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {starter} application \relax }}{130}{figure.caption.69}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \textit {composite} application \relax }}{130}{figure.caption.69}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mechanized behavioural semantics}{133}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{152}{figure.caption.73}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{153}{figure.caption.74}
+\contentsline {xchapter}{Mechanized behavioural semantics}{135}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces LTS of a queue, bounded by two requests\relax }}{154}{figure.caption.74}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces LTS of a body process handling one method\relax }}{155}{figure.caption.75}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Related work}{159}{chapter.7}
+\contentsline {xchapter}{Related work}{161}{chapter.7}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Final remarks}{165}{chapter.8}
+\contentsline {xchapter}{Final remarks}{167}{chapter.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{List of Acronyms}{175}{chapter*.75}
+\contentsline {xchapter}{List of Acronyms}{177}{chapter*.76}

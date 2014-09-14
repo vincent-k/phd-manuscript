@@ -74,32 +74,32 @@
 \contentsline {subsection}{\numberline {4.3.2}Supporting Parametrized ADLs}{110}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Structural Reconfigurations}{112}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Discussion}{115}{section.4.4}
-\contentsline {chapter}{\numberline {5}\textsf {Painless} integration with ProActive}{117}{chapter.5}
-\contentsline {section}{\numberline {5.1}Integration approach}{118}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{119}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{121}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{125}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}\textsc {Painless} Semantics}{126}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{128}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Discussion}{130}{section.5.3}
-\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{133}{chapter.6}
-\contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{134}{section.6.1}
-\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{135}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{135}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}LTS traces}{136}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{138}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{139}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Net traces}{140}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{144}{subsection.6.3.3}
-\contentsline {subsubsection}{The slave process}{145}{section*.70}
-\contentsline {subsubsection}{The master process}{146}{section*.71}
-\contentsline {subsubsection}{Synchronization and a first proof}{147}{section*.72}
-\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{152}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{156}{section.6.5}
-\contentsline {chapter}{\numberline {7}Related work}{159}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{160}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{161}{section.7.2}
-\contentsline {section}{\numberline {7.3}On Painless}{162}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final remarks}{165}{chapter.8}
-\contentsline {chapter}{Bibliography}{167}{chapter.8}
-\contentsline {chapter}{List of Acronyms}{175}{chapter*.75}
+\contentsline {chapter}{\numberline {5}\textsf {Painless} integration with ProActive}{119}{chapter.5}
+\contentsline {section}{\numberline {5.1}Integration approach}{120}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{121}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{123}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{127}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}\textsc {Painless} Semantics}{128}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{130}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Discussion}{132}{section.5.3}
+\contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{135}{chapter.6}
+\contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{136}{section.6.1}
+\contentsline {section}{\numberline {6.2}Labelled transition systems, and traces}{137}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Encoding labelled transitions systems}{137}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}LTS traces}{138}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Synchronization of LTS, and traces}{140}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Encoding synchronizations between LTSs}{141}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Net traces}{142}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Synchronized Master \& Slave example}{146}{subsection.6.3.3}
+\contentsline {subsubsection}{The slave process}{147}{section*.71}
+\contentsline {subsubsection}{The master process}{148}{section*.72}
+\contentsline {subsubsection}{Synchronization and a first proof}{149}{section*.73}
+\contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{154}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{158}{section.6.5}
+\contentsline {chapter}{\numberline {7}Related work}{161}{chapter.7}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{162}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{163}{section.7.2}
+\contentsline {section}{\numberline {7.3}On Painless}{164}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final remarks}{167}{chapter.8}
+\contentsline {chapter}{Bibliography}{169}{chapter.8}
+\contentsline {chapter}{List of Acronyms}{177}{chapter*.76}

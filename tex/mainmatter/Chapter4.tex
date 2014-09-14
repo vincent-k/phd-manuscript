@@ -26,7 +26,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	of the involved predicates.	
 	A language for conveniently manipulating \ac{GCM} architectures
 	is presented in Section \ref{sec:op}. Examples on mechanically proven properties
-	are illustrated in Section \ref{sub:ex}.	For last, Section \ref{sec:mesfresadiscussion} gives
+	are illustrated in Section \ref{sec:ex}.	For last, Section \ref{sec:mesfresadiscussion} gives
 	some final remarks about this development.
 	 
 		
@@ -1423,7 +1423,7 @@ $$\\
 
 %% @@@@@@@@@@@@
 \section{Proving Properties}
-\label{sub:ex}
+\label{sec:ex}
 
 
 		In this section we illustrate some more concrete examples on the use of \textsc{Mefresa}
@@ -1665,7 +1665,7 @@ it is a natural consequence of our \textit{validity} theorem (see Listing \ref{l
 
 
 	In this chapter we presented a framework to reason
-	about the structure of \textsf{GCM} applications mechanized in the Coq Proof Assistant. 
+	about the structure of \ac{GCM} applications mechanized in the Coq Proof Assistant. 
     The main novelty of our approach lies in the use of an \textsf{operation} language
     that allows to build software architectures	that are \textit{correct-by-construction}.
     While we lose some of the automation offered by the usual approach followed by the use of 
@@ -1691,18 +1691,68 @@ it is a natural consequence of our \textit{validity} theorem (see Listing \ref{l
 	already discussed in \cite{MERLE:2008:INRIA-00338987:1}.
 	
 	
-	%in the Coq Proof Assistant. Our approach differs from the remaining in that we 
-	%aim at 
-	%providing a semantics that allows the building of  \textit{correct-by-construction} architectures.
+	%%%
+	To wrap up, Figure \ref{fig:mefresa} provides
+	an overview of \textsc{Mefresa} from a \ac{GCM} perspective: unless where explicitly stated
+	otherwise, composite components
+	represent folders, and primitives represent Coq modules.
 
-	%\paragraph{}
-	%adl is the starting point
+	%\vspace{-0.5cm}
+
+	\begin{figure}%[H]
+	\centering
+		\includegraphics[scale=0.4]{figures/chapter5/mefresa.pdf}
+		\caption{\textsc{Mefresa} overview from a GCM perspective}		
+		\label{fig:mefresa}
+	\end{figure}	
+	
+	%\vspace{-0.5cm}
 
 
-	%\paragraph{}
-	%complementary approach
+	\noindent
+	At the top right corner, the \textbf{GCM}
+	composite component contains the core modules of this framework.
+	At the left, the \textbf{Examples} composite holds the examples discussed
+	in Section \ref{sec:ex}. 
+	Below, the \textbf{Operation} composite contains all the machinery concerning
+	\textsf{operations}: its operational semantics, related proofs, 
+	and custom-made tactics to ease proof automation. 
+	
+	The \textbf{Dec} 
+	composite deals with the \textit{decidability} of our main predicates and
+	functional code computing well-formedness and well-typedness valuations. 
+	\textbf{Batteries.v} is a general purpose 
+	Coq library aiming at improving proof scripts' readability and maintainability.	
+	
+	The two last remaining pieces, the \textbf{Extraction} and 
+	\textbf{Behaviour} composites, represent \textsc{Mefresa}'s extensions
+	that will be discussed in detail in Chapter \ref{chap:extraction} and 
+	Chapter \ref{chap:behaviour},	respectively. The former
+	concerns \textsc{Painless}, a new \ac{ADL} for specifying
+	\ac{GCM} architectures. The latter deals with the
+	mechanization of a behavioural semantics.
+	
+	The \textbf{Extraction} composite, deals with 
+	all the intricacies of generating OCaml code that can be run independently or
+	in the shape of a library. The module \textbf{Extraction.v}	specifies
+	some extraction details such as the conversion from Coq datatypes
+	to OCaml primitives types --- for instance, rather than extracting
+	the encoding of Coq's natural datatype, naturals are adequately
+	translated to positive integers. The module \textbf{Painless\_ast.v} holds 
+	the definition of the \textit{abstract syntax tree}
+	for the \textsc{Painless} \ac{ADL}. At last, \textbf{[Painless]} implements a 
+	lexer, parser and interpreter for \textsc{Painless}
+	specifications. These are directly programmed in OCaml.
 
-
+   The \textbf{Behaviour} composite defines a behavioural semantics
+   based on synchronized transition systems. The modules
+   \textbf{CoInductionLib.v} and \textbf{LTL.v} are borrowed 
+   contributions from \cite{opac-b1101046}. \textsf{LTS.v}
+   and \textbf{Net.v} hold the mechanization of the relevant
+   datatypes and predicates of this semantics. Finally,
+   \textbf{TraceExamples.v}, \textbf{MasterSlaveCoffee.v} and 
+   \textbf{GCMExample.v} contain examples on how this semantics
+   can be put to practice.
 
 
 \chapbreak

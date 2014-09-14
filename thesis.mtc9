@@ -1,7 +1,7 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Integration approach}{\reset@font\mtcSfont 118}{section.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{\reset@font\mtcSSfont 119}{subsection.5.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{\reset@font\mtcSSfont 121}{subsection.5.1.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}The \textsc {Painless} architecture description language}{\reset@font\mtcSfont 125}{section.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}\textsc {Painless} Semantics}{\reset@font\mtcSSfont 126}{subsection.5.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}\textsc {Painless} hello world and beyond}{\reset@font\mtcSSfont 128}{subsection.5.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Discussion}{\reset@font\mtcSfont 130}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Integration approach}{\reset@font\mtcSfont 120}{section.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{\reset@font\mtcSSfont 121}{subsection.5.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{\reset@font\mtcSSfont 123}{subsection.5.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}The \textsc {Painless} architecture description language}{\reset@font\mtcSfont 127}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}\textsc {Painless} Semantics}{\reset@font\mtcSSfont 128}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}\textsc {Painless} hello world and beyond}{\reset@font\mtcSSfont 130}{subsection.5.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Discussion}{\reset@font\mtcSfont 132}{section.5.3}}
