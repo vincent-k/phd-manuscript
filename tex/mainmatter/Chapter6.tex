@@ -15,50 +15,52 @@
 
 		This Chapter discusses the works related with this thesis. Section \ref{sec:relhyper} places the industrial
 	case study discussed in Chapter \ref{chap:hyper} in the context of existing literature regarding behavioural
-	specification and verification. Section \ref{sec:relmefresa} discusses other undertakings concerning the formalization
-	of component models using proof assistants or more lightweight specification platforms. For last, 
-	Section \ref{sec:relpainless} compares \textsc{Painless} and its integration with the ProActive middleware
+	specification, and architectural reconfigurations. Section \ref{sec:relmefresa} discusses other undertakings concerning the formalization
+	of component models using proof assistants and other more lightweight specification platforms. Further,
+	we also refer material regarding proof systems for reasoning on distributed systems.
+	For last, Section \ref{sec:relpainless} compares \textsc{Painless} and its integration with the ProActive middleware
 	with other \ac{ADL}s and related tools.
 	
 
 \section{On the HyperManager use case}
 \label{sec:relhyper}
 
-	%byzantine fault : disse que queria reconfig.
-	%use case cadp site...
-	%BIP framework? ou na secao mefresa?
-
-	\cite{BHHM:FACS11} madelaine case study
 	
 	
-	Compositional Verification for Component-Based Systems and Application
-	http://www-verimag.imag.fr/~sifakis/atva2008.pdf
-	\cite{BBN+10} 
-
-
-	FACS:
-	  The maturity attained by the CADP toolbox 
+	The use of automata-based formalisms to model software systems is a rather common
+	approach in the realm of formal methods. This stems from their intuitive usage,
+	and tool support. For instance, the maturity attained by the CADP toolbox \cite{garavel:inria-00583776}
 		made it a reference tool among the formal methods community.  Several case studies have been published, 
 		namely industrial ones addressing other goals than verification. For instance, in \cite{conf/cav/CosteHLS09}
-	Coste et. al. discuss performance evaluation for systems and networks on chips.			
-	 More closely related with our work we must refer the experiments presented in 
+	Coste et. al. discuss performance evaluation for systems and networks on chips. 
+	
+	In \cite{BHHM:FACS11}, Ameur-Boulifa et. al. discussed the specification and verification
+	of a fault-tolerant \ac{GCM} application. Indeed, their approach is akin to the one
+	we used for \textsc{The HyperManager} application. Yet, structural reconfigurations
+	are not contemplated. In fact, our case study described in Chapter \ref{chap:hyper}
+	is the first work addressing the specification and verification of a 
+	reconfigurable \ac{GCM} application.
+	
+
+		 	More closely related with the formalization of dynamic architecture topologies aspects,		 	
+		 we must refer the experiments presented in 
 	 \cite{conf/dais/CornejoGMP01}. A dynamic reconfiguration protocol is specified and model-checked,
 	 however their focus is on the reconfiguration protocol itself rather than reconfigurable applications.
-		 
-		  	
 		Indeed, many works can be found in the literature embracing a behavioural semantics
-		approach for the specification and verification of distributed systems. Yet, 
-		literature addressing the aspects of reconfigurable applications remains 
-		scarce. 
-
+	approach for the specification and verification of distributed systems. Yet, 
+	literature addressing the aspects of reconfigurable applications remains 
+	scarce. 
 		
- Nevertheless, we must cite the work around
+ 	Nevertheless, we must cite the work around
 	    %BIP
 	    BIP (Behaviour, Interaction, Priority) \cite{BBB+11a} --- a framework 
 	 encompassing rigorous design principles. It allows the description of the 
 	 coordination between components
 	 in a layered way. Moreover, it has the particularity of also permitting the 
 	 generation of code from its models. Yet, structural reconfigurations are not supported. 
+	 Further, as demonstrated in \cite{BBN+10}, their compositional rationale	 allows to 	 
+	 combine interactive proof strategies with model-checking.	 
+	 	 	
 	 	
 	%CHARMY	
 	Another rather different approach that we must refer is the one followed by tools 
@@ -68,12 +70,12 @@
 	\textit{user friendly} in an industrial context. Still,
 	architectural specifications remain of static nature. 
 	
-	
+		
 	
 		Looking at the interactive theorem proving arena we can also find some
 	related material. In %coq stuff
 	\cite{Boyer:2013:RRC:2486788.2486791} Boyer et. al. propose a reconfiguration protocol
-	and prove its correctness in the Coq Proof Assistant \cite{09thecoq}. This work however, focuses on the protocol itself, 
+	and prove its correctness in the Coq Proof Assistant \cite{09thecoq}. This work however, also focuses on the protocol itself, 
 	and not in the behaviour of a reconfigurable application. 
    
 
@@ -85,21 +87,16 @@
 \label{sec:relmefresa}
 
 
-%creol
-
-	%    henrio.
- %   Nev- ertheless, we must cite the work from Henrio et al. [12] on a framework for reasoning on the behaviour of GCM component composition mechanized in Isabelle/HOL [18]. Our approach is still considerably different in that we pro- vide a semantics for an operation language for the building and reconfiguration of GCM architectures.
- 
- Many approaches regarding the formalization of component models can be found in the literature. Yet,
-	to the best of our knowledge this is the first work aiming at providing a mechanized framework
-    that applies the \textit{correct-by-construction} paradigm to the world of component-based engineering.
-	Nevertheless, we must cite the work from Henrio et al. \cite{HKK:FMCO09} on a framework for reasoning 
-	on the behaviour of GCM component composition mechanized in Isabelle/HOL \cite{Nipkow-Paulson-Wenzel:2002}. 
-	Our approach is still considerably different
+	Many approaches regarding the formalization of component models can be found in the literature. 
+	In \cite{HKK:FMCO09}, Henrio et al.  formalize a framework for reasoning 
+	on the structural aspects of \ac{GCM} component composition mechanized in 
+	Isabelle/HOL \cite{Nipkow-Paulson-Wenzel:2002}. Further, they provide a semantics
+	for component communication, and illustrate an example concerning request delegation.	 
+	Regarding component composition, our approach is considerably different
 	in that we provide a semantics for an \textit{operation} language for the building 
-	and reconfiguration of GCM architectures.
-	
-	%work of Coq from INRIA Sardes	: http://perso.ens-lyon.fr/damien.pous/rrca/ http://2013.icse-conferences.org/
+	and reconfiguration of \ac{GCM} architectures. Moreover, we define a generic
+	datatype \textsf{Net}, that can be used for both communication and behavioural
+	aspects.	
 	
 	
 	%CREOL
@@ -110,30 +107,42 @@
 	Maude \cite{Maude2:03}. This work however does not contemplate architectural 
 	reconfigurations and follows a methodology in the style of a Hoare Logic. 	
 		
-    
-
-   	
+		
+	%TLA proof		
+			
+	Furthermore, the work around the TLA+ Proof System (TLAPS) \cite{DBLP:journals/corr/abs-1208-5933} 
+	is also worth mentioning. TLA+ is a specification language based on set theory and temporal logic,
+	with recently added constructs for writing proofs. One of its main strengths is its integrated
+	environment allowing to reason about TLA+ specifications using both a model-checker (TLC model-checker),
+	and TLAPS. Moreover, it should be noted that TLAPS provides several back-end provers: the proof
+	assistant Isabelle \cite{Nipkow-Paulson-Wenzel:2002}, 
+	and automated provers such as Zenon \cite{DBLP:conf/lpar/BonichonDD07}.
+	However, at this stage of development it does not perform temporal reasoning. Perhaps
+	a trace-based approach as the one we illustrated in Chapter \ref{chap:behaviour} would
+	suit their needs?
+		
+	The approach embraced by \textsf{BSP-WHY} \cite{Fortin:2010:BIL:1863482.1863491} also permits 
+	the use of several back-end provers. It is tailored for 
+	\textsf{BSP} programs \cite{Valiant:1990:BMP:79173.79181}, and relies on the 
+	\textsf{Why} tool \cite{Filliatre:2007:WPD:1770351.1770379} to produce 
+	the relevant proof obligations w.r.t. to the properties of interest.
+	
+				
+     	
 	%most stuff is "just" model checking
 	%invited speaker conf. http://www.di.univaq.it/inverard/
 	%http://www.di.univaq.it/charmy/
-	Indeed, while the use of proof assistants is gaining notoriety, model-checking is still
+	Indeed, while the use of deductive methods, let it be by means of proof assistants 
+	or automated provers, is gaining notoriety, model-checking is still
 	the \textit{de facto} formal approach for both industrial and academic undertakings.
 	Usually, some form of state machine model is used for the design of the intended
 	system,  and then a carefully chosen model-checker as back-end is employed as
-	a decision procedure. %This is for instance the methology followed in our Vercors
-	%platform \cite{Barros:2007:MDC:1269985.1270075}. 
-	For instance, in \cite{p.2005-1} Inverardi et. al. 
-	discusses \textsf{CHARMY}, a framework for designing and validating architectural 
-	specifications. It offers a full featured graphical interface with the goal of being more 
-	\textit{user friendly} in an industrial scenario. Still,
-	architectural specifications remain of static nature. 
-	The BIP (Behaviour, Interaction, Priority) 
-	framework \cite{BBB+11a} formalizes and specifies component interactions.
-	It has the particularity of also permitting the generation of code from its models.
+	a decision procedure. This is for instance the methodology followed in our Vercors
+	platform \cite{Barros20073}. 
 	
 
 	%formal spec alloy  -> they recommend Coq
-   	Moreover, a formal specification of the Fractal Component Model has 
+   	A formal specification of the Fractal Component Model has 
    	been proposed in the  Alloy specification language \cite{MERLE:2008:INRIA-00338987:1}. 
 	This work proves the consistency of a (set-theoretic) model of Fractal applications. 	 
 	Their goal was to clarify the inherent ambiguities of the informal specification presented
@@ -143,11 +152,11 @@
 	
 	
 	%era PC ano passado
-	%Let us also mention previous work by Aldrich on the use of a type system at the source code level to 
-	%enforce architectural constraints \cite{Aldrich:2008:UTE:1343599.1344114}. This is a rather different
-	%approach than ours as it is a direct extension of the Java programming language with type annotations
-	%that are statically checked. Allowing for flexible and dynamic designs is within the goals of the project,	
-	%but structural reconfigurations are not supported.
+	For last, let us also mention previous work by Aldrich on the use of a type system at the source code level to 
+	enforce architectural constraints \cite{Abi-antoun08staticconformance}. This is a rather different
+	approach than ours as it is a direct extension of the Java programming language with type annotations
+	that are statically checked. Allowing for flexible and dynamic designs is within the goals of the project,	
+	but structural reconfigurations are not supported.
 
 
 	%\paragraph{}
@@ -157,12 +166,7 @@
 	%\paragraph{}
 	%may want to refer dynamic ADLs ?
 
-	%fpath &fscript
-	For last, from a more engineering point of view, we can refer the work around FPath and FScript \cite{journals/adt/DavidLLC09}.
-	FPath is a domain-specific language for the navigation and querying of Fractal architectures. FScript embeds the FPath
-	language and acts as a scripting language for the specification of reconfigurations strategies. The main goal of this
-	work however is to alleviate the need to interact with the low-level API. Further, reliability of these reconfigurations
-	is ensured by run-time checking, while we are more concerned on providing guarantees statically.
+
 	
 	%\paragraph{}
 	%Extension to previous work \cite{gaspar:hal-00725291}
@@ -233,7 +237,7 @@
     proposal is still loosely inspired by the Fractal component model \cite{fractalSpec} whose
 	most peculiar characteristics are its hierarchical composition nature and reconfiguration capabilities.
 	However, while both approaches permit architectural reconfigurations at runtime, 
-    its specification is not supported by their ADL, it solely contemplates deployment related
+    its specification is not supported by their \ac{ADL}, it solely contemplates deployment related
     aspects. Moreover, support for
 	parametrized specifications is also not covered, forcing the software architect to explicitly 	
 	define the application's structure.    
@@ -259,25 +263,7 @@
 	in the \textit{other} category. Indeed, while formal logic is at the foundation of 
 	our approach, all the machinery involving requirement/constraint checking is 
 	implicit and done automatically by our Coq development. The software architect 
-	solely uses a language with a declarative trait. %Another important factor referred by 
+	solely needs to use a language with a declarative trait. %Another important factor referred by 
 	%this survey concerns scalability. In general, a decentralized or distributed approach
 	%is more likely to scale. This is the case for \textsc{Painless}, as	
 	
-	
-	
-		
-	
-		
-	
-	
-	
-	 %oleksandra
-    
-    
-    %Indeed, its structural information remains of static nature, therefore 
-	%not revealing the full picture regarding an application topology. 	
-
-
-
-
-

@@ -1,7 +1,22 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Integration approach}{\reset@font\mtcSfont 118}{section.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{\reset@font\mtcSSfont 119}{subsection.5.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{\reset@font\mtcSSfont 121}{subsection.5.1.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}The \textsc {Painless} architecture description language}{\reset@font\mtcSfont 124}{section.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}\textsc {Painless} Semantics}{\reset@font\mtcSSfont 126}{subsection.5.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}\textsc {Painless} hello world and beyond}{\reset@font\mtcSSfont 127}{subsection.5.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Discussion}{\reset@font\mtcSfont 130}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Mechanizing GCM with the Coq proof assistant}{\reset@font\mtcSfont 70}{section.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Core elements}{\reset@font\mtcSSfont 71}{subsection.4.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Interface datatype}{\reset@font\mtcSSSfont 71}{section*.51}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Component datatype}{\reset@font\mtcSSSfont 73}{section*.53}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Binding datatype}{\reset@font\mtcSSSfont 74}{section*.54}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A complete example}{\reset@font\mtcSSSfont 75}{section*.56}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Well-formed component architectures}{\reset@font\mtcSSfont 78}{subsection.4.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first well-formedness proof}{\reset@font\mtcSSSfont 82}{section*.57}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}Well-typed component architectures}{\reset@font\mtcSSfont 83}{subsection.4.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first well-typedness proof}{\reset@font\mtcSSSfont 86}{section*.58}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}Well-formedness and well-typedness decidability}{\reset@font\mtcSSfont 87}{subsection.4.1.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Well-formedness decidability}{\reset@font\mtcSSSfont 88}{section*.59}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Well-typedness decidability}{\reset@font\mtcSSSfont 93}{section*.60}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}An \textsc {operation} language for composing architectures}{\reset@font\mtcSfont 99}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Syntax and semantics}{\reset@font\mtcSSfont 99}{subsection.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first architecture through an \textsf {operation}}{\reset@font\mtcSSSfont 103}{section*.62}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Building well-formed architectures}{\reset@font\mtcSSfont 106}{subsection.4.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Proving Properties}{\reset@font\mtcSfont 108}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{\reset@font\mtcSSfont 109}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Supporting Parametrized ADLs}{\reset@font\mtcSSfont 110}{subsection.4.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Structural Reconfigurations}{\reset@font\mtcSSfont 112}{subsection.4.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Discussion}{\reset@font\mtcSfont 115}{section.4.4}}

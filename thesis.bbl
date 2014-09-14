@@ -262,11 +262,6 @@ X.~Clerc, ``{OCaml-Java}: {OCaml} on the {JVM}.'' in \emph{Trends in Functional
   Programming}, ser. LNCS, H.-W. Loidl and R.~Peña, Eds., vol. 7829.\hskip 1em
   plus 0.5em minus 0.4em\relax Springer, 2012, pp. 167--181.
 
-\bibitem{BBN+10}
-S.~Bensalem, M.~Bozga, T.-H. Nguyen, and J.~Sifakis, ``Compositional
-  verification for component-based systems and application,'' \emph{IET
-  Software}, vol.~4, no.~3, pp. 181--193, June 2010.
-
 \bibitem{conf/cav/CosteHLS09}
 N.~Coste, H.~Hermanns, E.~Lantreibecq, and W.~Serwe, ``Towards performance
   prediction of compositional models in industrial gals designs.'' in
@@ -284,6 +279,11 @@ M.~A. Cornejo, H.~Garavel, R.~Mateescu, and N.~D. Palma, ``Specification and
 A.~Basu, S.~Bensalem, M.~Bozga, J.~Combaz, M.~Jaber, T.-H. Nguyen, and
   J.~Sifakis, ``Rigorous component-based system design using the bip
   framework,'' \emph{IEEE Software}, vol.~28, no.~3, pp. 41--48, 2011.
+
+\bibitem{BBN+10}
+S.~Bensalem, M.~Bozga, T.-H. Nguyen, and J.~Sifakis, ``Compositional
+  verification for component-based systems and application,'' \emph{IET
+  Software}, vol.~4, no.~3, pp. 181--193, June 2010.
 
 \bibitem{p.2005-1}
 P.~Inverardi, H.~Muccini, and P.~Pelliccione, ``Charmy: An extensible tool for
@@ -317,11 +317,33 @@ M.~Clavel, F.~Dur\'{a}n, S.~Eker, P.~Lincoln, N.~Mart\'{\i}-Oliet, J.~Meseguer,
   R.~Nieuwenhuis, Ed., no. 2706.\hskip 1em plus 0.5em minus 0.4em\relax
   Springer-Verlag, June 2003, pp. 76--87.
 
-\bibitem{journals/adt/DavidLLC09}
-P.-C. David, T.~Ledoux, M.~Léger, and T.~Coupaye, ``Fpath and fscript:
-  Language support for navigation and reliable reconfiguration of fractal
-  architectures.'' \emph{Annales des Télécommunications}, vol.~64, no. 1-2,
-  pp. 45--63, 2009.
+\bibitem{DBLP:journals/corr/abs-1208-5933}
+\BIBentryALTinterwordspacing
+D.~Cousineau, D.~Doligez, L.~Lamport, S.~Merz, D.~Ricketts, and H.~Vanzetto,
+  ``{TLA+} proofs,'' \emph{CoRR}, vol. abs/1208.5933, 2012. [Online].
+  Available: \url{http://arxiv.org/abs/1208.5933}
+\BIBentrySTDinterwordspacing
+
+\bibitem{DBLP:conf/lpar/BonichonDD07}
+R.~Bonichon, D.~Delahaye, and D.~Doligez, ``Zenon : An extensible automated
+  theorem prover producing checkable proofs,'' in \emph{Logic for Programming,
+  Artificial Intelligence, and Reasoning, 14th International Conference, {LPAR}
+  2007, Yerevan, Armenia, October 15-19, 2007, Proceedings}, 2007, pp.
+  151--165.
+
+\bibitem{Barros20073}
+\BIBentryALTinterwordspacing
+T.~Barros, A.~Cansado, E.~Madelaine, and M.~Rivera, ``Model-checking
+  distributed components: The vercors platform,'' \emph{Electronic Notes in
+  Theoretical Computer Science}, vol. 182, no.~0, pp. 3 -- 16, 2007,
+  proceedings of the Third International Workshop on Formal Aspects of
+  Component Software (FACS 2006). [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1571066107003829}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Abi-antoun08staticconformance}
+M.~Abi-antoun and J.~Aldrich, ``Static conformance checking of runtime
+  architectural structure,'' 2008.
 
 \bibitem{DBLP:journals/corr/abs-1006-4829}
 \BIBentryALTinterwordspacing
@@ -395,6 +417,12 @@ J.~S. Bradbury, J.~R. Cordy, J.~Dingel, and M.~Wermelinger, ``A survey of
   \url{http://doi.acm.org/10.1145/1075405.1075411}
 \BIBentrySTDinterwordspacing
 
+\bibitem{journals/adt/DavidLLC09}
+P.-C. David, T.~Ledoux, M.~Léger, and T.~Coupaye, ``Fpath and fscript:
+  Language support for navigation and reliable reconfiguration of fractal
+  architectures.'' \emph{Annales des Télécommunications}, vol.~64, no. 1-2,
+  pp. 45--63, 2009.
+
 \bibitem{merle:inria-00338987}
 \BIBentryALTinterwordspacing
 P.~Merle and J.-B. Stefani, ``\BIBforeignlanguage{Anglais}{{A formal
@@ -406,5 +434,32 @@ P.~Merle and J.-B. Stefani, ``\BIBforeignlanguage{Anglais}{{A formal
 \bibitem{Giménez98atutorial}
 E.~Giménez and P.~Castéran, ``A tutorial on [co-]inductive types in coq,''
   1998.
+
+\bibitem{Fortin:2010:BIL:1863482.1863491}
+\BIBentryALTinterwordspacing
+J.~Fortin and F.~Gava, ``Bsp-why: An intermediate language for deductive
+  verification of bsp programs,'' in \emph{Proceedings of the Fourth
+  International Workshop on High-level Parallel Programming and Applications},
+  ser. HLPP '10.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM,
+  2010, pp. 35--44. [Online]. Available:
+  \url{http://doi.acm.org/10.1145/1863482.1863491}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Valiant:1990:BMP:79173.79181}
+\BIBentryALTinterwordspacing
+L.~G. Valiant, ``A bridging model for parallel computation,'' \emph{Commun.
+  ACM}, vol.~33, no.~8, pp. 103--111, Aug. 1990. [Online]. Available:
+  \url{http://doi.acm.org/10.1145/79173.79181}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Filliatre:2007:WPD:1770351.1770379}
+\BIBentryALTinterwordspacing
+J.~C. Filli\^{a}tre and C.~March{\'e}, ``The why/krakatoa/caduceus platform for
+  deductive program verification,'' in \emph{Proceedings of the 19th
+  International Conference on Computer Aided Verification}, ser. CAV'07.\hskip
+  1em plus 0.5em minus 0.4em\relax Berlin, Heidelberg: Springer-Verlag, 2007,
+  pp. 173--177. [Online]. Available:
+  \url{http://dl.acm.org/citation.cfm?id=1770351.1770379}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

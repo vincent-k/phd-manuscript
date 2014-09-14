@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2011)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: tex/frontmatter/titlepage.aux
@@ -39,45 +39,45 @@ Warning--empty year in garavel:inria-00583776
 Warning--empty booktitle in Bruni:2008:GDA:1424922.1424928
 
 Done.
-You've used 55 entries,
+You've used 62 entries,
             4039 wiz_defined-function locations,
-            1223 strings with 20427 characters,
-and the built_in function-call counts, 39650 in all, are:
-= -- 3194
-> -- 1003
-< -- 242
-+ -- 516
-- -- 195
-* -- 2046
-:= -- 6314
-add.period$ -- 124
-call.type$ -- 55
-change.case$ -- 71
-chr.to.int$ -- 522
-cite$ -- 58
-duplicate$ -- 2893
-empty$ -- 3288
-format.name$ -- 243
-if$ -- 8994
+            1273 strings with 22384 characters,
+and the built_in function-call counts, 45271 in all, are:
+= -- 3664
+> -- 1125
+< -- 288
++ -- 581
+- -- 215
+* -- 2329
+:= -- 7185
+add.period$ -- 140
+call.type$ -- 62
+change.case$ -- 79
+chr.to.int$ -- 630
+cite$ -- 65
+duplicate$ -- 3290
+empty$ -- 3742
+format.name$ -- 269
+if$ -- 10285
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 593
-newline$ -- 248
-num.names$ -- 72
-pop$ -- 1347
+int.to.str$ -- 62
+missing$ -- 664
+newline$ -- 279
+num.names$ -- 79
+pop$ -- 1504
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3033
+skip$ -- 3470
 stack$ -- 0
-substring$ -- 1272
-swap$ -- 2288
-text.length$ -- 68
+substring$ -- 1532
+swap$ -- 2615
+text.length$ -- 78
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 55
+type$ -- 62
 warning$ -- 3
-while$ -- 155
-width$ -- 57
-write$ -- 638
+while$ -- 181
+width$ -- 64
+write$ -- 721
 (There were 8 warnings)

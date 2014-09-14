@@ -1,22 +1,19 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Mechanizing GCM with the Coq proof assistant}{\reset@font\mtcSfont 70}{section.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Core elements}{\reset@font\mtcSSfont 71}{subsection.4.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Interface datatype}{\reset@font\mtcSSSfont 71}{section*.51}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Component datatype}{\reset@font\mtcSSSfont 73}{section*.53}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Binding datatype}{\reset@font\mtcSSSfont 74}{section*.54}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A complete example}{\reset@font\mtcSSSfont 75}{section*.56}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Well-formed component architectures}{\reset@font\mtcSSfont 78}{subsection.4.1.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first well-formedness proof}{\reset@font\mtcSSSfont 82}{section*.57}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}Well-typed component architectures}{\reset@font\mtcSSfont 83}{subsection.4.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first well-typedness proof}{\reset@font\mtcSSSfont 86}{section*.58}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}Well-formedness and well-typedness decidability}{\reset@font\mtcSSfont 87}{subsection.4.1.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Well-formedness decidability}{\reset@font\mtcSSSfont 88}{section*.59}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Well-typedness decidability}{\reset@font\mtcSSSfont 93}{section*.60}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}An \textsc {operation} language for composing architectures}{\reset@font\mtcSfont 99}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Syntax and semantics}{\reset@font\mtcSSfont 99}{subsection.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A first architecture through an \textsf {operation}}{\reset@font\mtcSSSfont 103}{section*.62}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Building well-formed architectures}{\reset@font\mtcSSfont 106}{subsection.4.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Proving Properties}{\reset@font\mtcSfont 108}{section.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Meeting the Specification: Absence of \textit {Cross-Bindings}}{\reset@font\mtcSSfont 109}{subsection.4.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Supporting Parametrized ADLs}{\reset@font\mtcSSfont 110}{subsection.4.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Structural Reconfigurations}{\reset@font\mtcSSfont 112}{subsection.4.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Discussion}{\reset@font\mtcSfont 115}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}The HyperManager architecture}{\reset@font\mtcSfont 42}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Formal specification and verification methodology}{\reset@font\mtcSfont 44}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}The HyperManager as a formal methods case study}{\reset@font\mtcSfont 48}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}On HyperManager Gateway}{\reset@font\mtcSSfont 49}{subsection.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {JMX Indicators} component}{\reset@font\mtcSSSfont 49}{section*.30}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Gateway Primitive} component}{\reset@font\mtcSSSfont 51}{section*.32}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Push Component} component}{\reset@font\mtcSSSfont 53}{section*.34}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Model Generation and Proven Properties}{\reset@font\mtcSSSfont 55}{section*.37}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}On HyperManager Server}{\reset@font\mtcSSfont 57}{subsection.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {JMX Indicators} component}{\reset@font\mtcSSSfont 57}{section*.39}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Server Primitive} component}{\reset@font\mtcSSSfont 57}{section*.40}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \textsf {Pull Component} component}{\reset@font\mtcSSSfont 58}{section*.42}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Model Generation and Proven Properties}{\reset@font\mtcSSSfont 59}{section*.44}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}On System Product}{\reset@font\mtcSSfont 60}{subsection.3.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}The case study reloaded: on structural reconfigurations}{\reset@font\mtcSfont 62}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}On HyperManager Reconfigurable Gateway}{\reset@font\mtcSSfont 63}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}On HyperManager Reconfigurable Server}{\reset@font\mtcSSfont 64}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}On Reconfigurable System Product}{\reset@font\mtcSSfont 64}{subsection.3.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Discussion}{\reset@font\mtcSfont 66}{section.3.5}}

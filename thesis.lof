@@ -1,28 +1,25 @@
 \select@language {english}
-\select@language {french}
 \select@language {english}
-\select@language {portuguese}
-\select@language {english}
-\contentsline {xchapter}{}{xxi}{Doc-Start}
 \contentsline {xchapter}{}{xxiii}{Doc-Start}
+\contentsline {xchapter}{}{xxv}{Doc-Start}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Preliminaries}{7}{chapter.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple GCM architecture\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple GCM architecture\relax }}{8}{figure.caption.4}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Normal Binding\relax }}{11}{figure.caption.8}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Import Binding\relax }}{11}{figure.caption.8}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Export Binding\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Components \textbf {A} and \textbf {B}\relax }}{16}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces \textbf {A} invokes \textbf {f$_1$} from \textbf {B}\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Components \textbf {A} and \textbf {B}\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \textbf {A} invokes \textbf {f$_1$} from \textbf {B}\relax }}{15}{figure.caption.11}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces \textbf {A} blocks! \textit {wait-by-necessity}\relax }}{16}{figure.caption.12}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces \textbf {B} replies, and \textbf {A} is happy\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple GCM application example\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple GCM application example\relax }}{16}{figure.caption.13}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces GCM \textit {composite} application example\relax }}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces pNet representing a primitive component\relax }}{23}{figure.caption.16}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Behaviour of proxy\relax }}{24}{figure.caption.17}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Behaviour of the proxy manager\relax }}{24}{figure.caption.17}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Binding controller\relax }}{25}{figure.caption.18}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces pNet representing a primitive component\relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Behaviour of proxy\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Behaviour of the proxy manager\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Binding controller\relax }}{24}{figure.caption.18}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces pNet example for reconfigurable multicast interface\relax }}{25}{figure.caption.19}
 \addvspace {10\p@ }
 \contentsline {xchapter}{The HyperManager}{39}{chapter.3}

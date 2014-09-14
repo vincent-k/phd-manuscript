@@ -424,7 +424,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 				
 			
 	\begin{lemma} \label{th:wflemmaexC} 
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wflemmaC.tex}				
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wflemmaC.tex}				
 	
 		We start by applying the \textsf{WellFormedComponent} constructor, which yields
 		four subgoals to discharge.			
@@ -448,7 +448,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	\textsf{component} \textit{"Component N"}, its well-formedness is tackled by Lemma \ref{th:wflemmaexN}. 
 				
 	\begin{lemma} \label{th:wflemmaexN} 
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wflemmaN.tex}				
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wflemmaN.tex}				
 	
 		Applying \textsf{WellFormedComponent} yields four subgoals to prove.	
 		
@@ -543,7 +543,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	 	 
 		
 \begin{lemma} \label{th:scontlemma} 
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/scontlemma.tex}		
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/scontlemma.tex}		
 	
 	By unfolding the statement to prove, we can see that it is actually a 
 	conjunction of two predicates: subc\_client\_external\_mandatory\_itfs\_are\_bound 
@@ -579,7 +579,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 		
 
 \begin{lemma} \label{th:wtlemma} 
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wtlemma.tex}		
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wtlemma.tex}		
 		Establishing the well-typedness of component "Component N" boils down to
 	proving that it has a sound contingency and a sound cardinality. This is clearly the case
 	as previously discussed. \qed
@@ -645,7 +645,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 		the first step is to prove its decidability. This is demonstrated by Lemma \ref{th:notindec}. 
 				
 		\begin{lemma} \label{th:notindec} 
-		\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/notindec.tex}		
+		\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/notindec.tex}		
 		
 			We start by applying induction on the structure of \textsf{l}, and thus
 		obtain two subgoals. Both require the original goal but applied 		
@@ -681,7 +681,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	by Lemma \ref{th:uniquedec}.	
 	
 	\begin{lemma} \label{th:uniquedec} 
-		\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/uniquedec.tex}		
+		\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/uniquedec.tex}		
 		
 				We start by applying induction on the structure of \textsf{lc}. This, naturally yields
 			two subgoals: we now need to demonstrate the original goal for an empty list,
@@ -721,7 +721,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	all components in an empty list are well-formed. Lemma \ref{th:wflnil} demonstrates this.			
 			
 		\begin{lemma} \label{th:wflnil} 
-		\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wflnil.tex}
+		\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wflnil.tex}
 		
 		We can easily show the left-hand side of our goal: 
 		$\forall c,\ c \in nil \rightarrow$ well\_formed\_component\ c. This means that
@@ -740,7 +740,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	are also well-formed. 
 
 		\begin{lemma} \label{th:wfcons} 
-		\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wfcons.tex}		
+		\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wfcons.tex}		
 			
 			From the \textsf{Hc} hypothesis we know that well\_formed\_component \textbf{c}
 			is either true or false. If it is false, then it evidently follows that $\neg (\forall e,\
@@ -767,7 +767,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 					
 	\begin{lemma} \label{th:wfclc} \textit{well_formed_component_lc_dec:}
 		\vspace{-0.2cm}
-		\lstinputlisting[language=Coqfix, numbers=left, numberfirstline=false, stepnumber=1, firstnumber=2]{listings/chapter4/wfclc.tex} 
+		\lstinputlisting[language=Coqfix, numbers=left, numberfirstline=false, stepnumber=1, firstnumber=2, nolol=true]{listings/chapter4/wfclc.tex} 
 		
 		%\vspace{-0.8cm} \qed
 	\end{lemma}	
@@ -788,7 +788,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	
 	\begin{theorem} \label{th:wfdec} \textit{well_formed_component_dec:}
 	\vspace{-0.2cm}
-		\lstinputlisting[language=Coq, numbers=left, firstnumber=2]{listings/chapter4/wfdec.tex}	
+		\lstinputlisting[language=Coq, numbers=left, firstnumber=2, nolol=true]{listings/chapter4/wfdec.tex}	
 		%\vspace{-0.9cm} \qed
 	\end{theorem}
 
@@ -911,7 +911,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 	We omit the related auxiliary lemmas	and go straight to the main proof.		
 	
 	\begin{lemma} \label{th:cltintmandcorrect} 
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/cltintmandcorrect.tex}		
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/cltintmandcorrect.tex}		
 		
 		We start by applying the \textsf{fix} tactic and proceed by asserting the equivalence
 	that we are trying to prove on the sub\textsf{component}s. We do this in an analogous
@@ -990,7 +990,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 
 	\begin{theorem} \label{th:wtcorrect} \textit{well_typed_correctness:}
 	\vspace{-0.2cm}
-	\lstinputlisting[language=Coq, numbers=left, firstnumber=2]{listings/chapter4/wtcorrect.tex}		
+	\lstinputlisting[language=Coq, numbers=left, firstnumber=2, nolol=true]{listings/chapter4/wtcorrect.tex}		
 	\end{theorem}
 
 
@@ -1001,7 +1001,7 @@ This chapter presents \textsc{Mefresa} (\textit{\textbf{Me}chanized \textbf{F}ra
 
 	\begin{theorem} \label{th:wtdec} \textit{well_typed_dec:}
 	\vspace{-0.2cm}
-	\lstinputlisting[language=Coq, numbers=left, firstnumber=2]{listings/chapter4/wtdec.tex}		
+	\lstinputlisting[language=Coq, numbers=left, firstnumber=2, nolol=true]{listings/chapter4/wtdec.tex}		
 	\end{theorem}
 
 
@@ -1353,7 +1353,7 @@ $$\\
 
 
 	\begin{lemma} \label{th:wfempty}
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wfempty.tex}			
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wfempty.tex}			
 			
 		We can split this proof into six subgoals. Naturally, the first five subgoals are trivially discharged by reflexivity.		
 	The remaining subgoal concerns the well-formedness of a \textsf{component} without sub\textsf{component}s,
@@ -1452,7 +1452,7 @@ be crossing, a \textsf{binding} must specify a recipient that is not at the same
 For instance, a cross-binding of
 \textit{export} type is defined as follows:
 
-\lstinputlisting[language=Coq]{listings/chapter4/crossexport.tex}	
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/crossexport.tex}	
 
 \noindent A binding of \textit{export} type is made from an \textsf{internal client interface} ---
 this is what the first part of the above definition stands for. Next, since the \textsf{binding} is supposed
@@ -1470,7 +1470,7 @@ component, whose identifier is \textit{idC2}, that is a sub\textsf{component} of
  	Having defined the notion of cross-binding we shall rely on the following
 auxiliary lemma to complete the proof.
 
-\lstinputlisting[language=Coq]{listings/chapter4/crossnotvalid.tex}	
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/crossnotvalid.tex}	
 
 \noindent
 Essentially, the above lemma states that we cannot have a binding \textbf{b} 
@@ -1487,7 +1487,7 @@ The property we want to prove here however is slightly different. We
 want to prove that meeting the specification, indeed we cannot have 
 cross-bindings. In \textsf{Mefresa}, this boils down to the following theorem.
 
-\lstinputlisting[language=Coq]{listings/chapter4/nocross.tex}	
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/nocross.tex}	
 
 \noindent  By definition, in the presence of a well-formed state \textbf{s} we can only
 have valid \textsf{binding}s. As such, any bindings \textbf{b} belonging to \textbf{s} must be valid.
@@ -1510,7 +1510,7 @@ that a \textsf{binding} cannot be valid and crossing at the same time, we can co
 	as a \textit{template} and produces \textbf{n} instances of that  \textsf{component}. For primitive
 	 \textsf{component}s this is achieved as follows:
 	
-	\lstinputlisting[language=Coq]{listings/chapter4/generation.tex}	
+	\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/generation.tex}	
 
 	\noindent At each recursion step we construct a new  \textsf{component}
 	whose identifier is the one from the template suffixed with the
@@ -1524,7 +1524,7 @@ that a \textsf{binding} cannot be valid and crossing at the same time, we can co
 	and each \textsf{component} is well-formed.
 		
 	\begin{lemma}\label{th:wfgen}
-	\lstinputlisting[language=Coq, numbers=none]{listings/chapter4/wellgeneration.tex}		
+	\lstinputlisting[language=Coq, numbers=none, nolol=true]{listings/chapter4/wellgeneration.tex}		
 	
 	Proving the well-formedness of the generated \textsf{component}s is obtained
 	by induction on \textbf{n}. If it is zero, then we get an empty list, which is evidently well-formed. 
@@ -1581,7 +1581,7 @@ that a \textsf{binding} cannot be valid and crossing at the same time, we can co
  \textsf{component} involved in the architecture. For instance, \textsf{component}s
  \textit{Light Collector} and \textit{Street Light} are mechanized as follows:
   
-\lstinputlisting[language=Coq]{listings/chapter4/usecase.tex}	
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/usecase.tex}	
   
   
   \noindent In the above definitions, \textbf{p1} holds the path of 
@@ -1592,7 +1592,7 @@ that a \textsf{binding} cannot be valid and crossing at the same time, we can co
   structure holding the complete hierarchy, we can prove its
   well-formedness.
   
-\lstinputlisting[language=Coq]{listings/chapter4/usecasearch.tex}	  
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/usecasearch.tex}	  
   
 	\noindent The architecture from this use case indeed meets
 	the specification, and proving this lemma poses no particular challenge
@@ -1608,7 +1608,7 @@ that a \textsf{binding} cannot be valid and crossing at the same time, we can co
   higher-level constructs. For instance, we can easily define an \textsf{operation}
   to build several \textsf{component}s at a time:
   
-  \lstinputlisting[language=Coq]{listings/chapter4/mkcomponents.tex}		
+  \lstinputlisting[language=Coq, nolol=true]{listings/chapter4/mkcomponents.tex}		
  
 \noindent This new \textsf{operation} \textsf{mk\_components} takes
 a list of \textsf{component}s as argument and produces a sequence of
@@ -1616,7 +1616,7 @@ a list of \textsf{component}s as argument and produces a sequence of
 \textbf{;} constructor. Further, we shall also define an \textsf{operation}
 for the construction of a list of \textsf{binding}s.
  
- \lstinputlisting[language=Coq]{listings/chapter4/mkmulticast.tex}
+ \lstinputlisting[language=Coq, nolol=true]{listings/chapter4/mkmulticast.tex}
 
 \noindent %As mentioned above, there are three types of bindings -
 %\textit{normal}, \textit{import} and \textit{export} -,
@@ -1638,14 +1638,14 @@ Having defined our new \textsf{operation}s, we can now proceed to the specificat
 of the reconfiguration to add \textit{"Street Light"} \textsf{component}s. Below, \textsf{LightComp}
 is a variable representing our \textit{"Street Light"} \textsf{component} defined above.
  
-\lstinputlisting[language=Coq]{listings/chapter4/usecasereconfig.tex}
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/usecasereconfig.tex}
  
 \noindent Basically, the above creates \textbf{n} \textsf{component}s
 by using the \textit{"Street Light"} \textsf{component} as template, and 
 then establishes the required \textsf{binding}s. This, could for instance be
 used as follows:
 
-\lstinputlisting[language=Coq]{listings/chapter4/usecaseproof.tex}
+\lstinputlisting[language=Coq, nolol=true]{listings/chapter4/usecaseproof.tex}
 
 \noindent Proving the above lemmas is achieved by the same reasoning
 techniques as discussed above. Regarding the first lemma, the key ingredient here to note is that

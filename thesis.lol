@@ -1,6 +1,6 @@
 \addvspace {7pt}
 \addvspace {7pt}
-\contentsline {lstlisting}{\numberline {2.1}GCM/ProActive \textit {slave} component ADL}{17}{lstlisting.2.1}
+\contentsline {lstlisting}{\numberline {2.1}GCM/ProActive \textit {slave} component ADL}{16}{lstlisting.2.1}
 \contentsline {lstlisting}{\numberline {2.2}GCM/ProActive \textit {Composite} component ADL}{18}{lstlisting.2.2}
 \contentsline {lstlisting}{\numberline {2.3}GCM/ProActive \textit {Master} component ADL}{19}{lstlisting.2.3}
 \contentsline {lstlisting}{\numberline {2.4}The \textsf {Order} type}{26}{lstlisting.2.4}
@@ -9,10 +9,10 @@
 \contentsline {lstlisting}{\numberline {2.7}The Master process}{28}{lstlisting.2.7}
 \contentsline {lstlisting}{\numberline {2.8}Process synchronization}{29}{lstlisting.2.8}
 \contentsline {lstlisting}{\numberline {2.9}\textsf {nat} datatype}{30}{lstlisting.2.9}
-\contentsline {lstlisting}{\numberline {2.10}\textsf {list} datatype}{31}{lstlisting.2.10}
+\contentsline {lstlisting}{\numberline {2.10}\textsf {list} datatype}{30}{lstlisting.2.10}
 \contentsline {lstlisting}{\numberline {2.11}\textsf {plus} function definition}{31}{lstlisting.2.11}
 \contentsline {lstlisting}{\numberline {2.12}\textsf {length} function definition}{32}{lstlisting.2.12}
-\contentsline {lstlisting}{\numberline {2.13}\textsf {option} datatype}{33}{lstlisting.2.13}
+\contentsline {lstlisting}{\numberline {2.13}\textsf {option} datatype}{32}{lstlisting.2.13}
 \contentsline {lstlisting}{\numberline {2.14}\textsf {head} function definition}{33}{lstlisting.2.14}
 \contentsline {lstlisting}{\numberline {2.15}\textsf {vector} datatype}{33}{lstlisting.2.15}
 \contentsline {lstlisting}{\numberline {2.16}\textsf {vhead} function definition}{33}{lstlisting.2.16}
@@ -24,10 +24,10 @@
 \contentsline {lstlisting}{\numberline {2.22}Extracted \textsf {vhead} function}{37}{lstlisting.2.22}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {3.1}Queue specification of the \textsf {JMX Indicators} component in Fiacre (bounded at two requests)}{44}{lstlisting.3.1}
-\contentsline {lstlisting}{\numberline {3.2}Body specification of the \textsf {JMX Indicators} component in Fiacre}{45}{lstlisting.3.2}
+\contentsline {lstlisting}{\numberline {3.2}Body specification of the \textsf {JMX Indicators} component in Fiacre}{46}{lstlisting.3.2}
 \contentsline {lstlisting}{\numberline {3.3}Specification for the \textsf {JMXIndicatorsMethod} argument and return types}{49}{lstlisting.3.3}
 \contentsline {lstlisting}{\numberline {3.4}\textsf {JMXIndicatorsMethod} specification}{50}{lstlisting.3.4}
-\contentsline {lstlisting}{\numberline {3.5}\textsf {HMGatewayMethod} specification}{51}{lstlisting.3.5}
+\contentsline {lstlisting}{\numberline {3.5}\textsf {HMGatewayMethod} specification}{52}{lstlisting.3.5}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {4.1}\textsf {interface} datatype}{71}{lstlisting.4.1}
 \contentsline {lstlisting}{\numberline {4.2}\textsf {ident}, \textsf {signature} and \textsf {path} datatypes}{71}{lstlisting.4.2}
@@ -48,29 +48,16 @@
 \contentsline {lstlisting}{\numberline {4.17}Function to find an \textsf {interface} by its identifier and \textsf {visibility} values}{80}{lstlisting.4.17}
 \contentsline {lstlisting}{\numberline {4.18}\textsf {well\_formed\_bindings} predicate definition}{81}{lstlisting.4.18}
 \contentsline {lstlisting}{\numberline {4.19}\textsf {normal\_binding} predicate definition}{81}{lstlisting.4.19}
-\contentsline {lstlisting}{listings/chapter4/wflemmaC.tex}{82}{lstlisting.4.-1}
-\contentsline {lstlisting}{listings/chapter4/wflemmaN.tex}{83}{lstlisting.4.-2}
 \contentsline {lstlisting}{\numberline {4.20}\textsf {well\_typed} predicate definition}{84}{lstlisting.4.20}
 \contentsline {lstlisting}{\numberline {4.21}\textsf {sound\_contingency} predicate definition}{84}{lstlisting.4.21}
 \contentsline {lstlisting}{\numberline {4.22}\textsf {client\_internal\_mandatory\_itfs\_are\_bound} predicate definition}{84}{lstlisting.4.22}
 \contentsline {lstlisting}{\numberline {4.23}\textsf {subc\_client\_external\_mandatory\_itfs\_are\_bound} predicate definition}{85}{lstlisting.4.23}
-\contentsline {lstlisting}{listings/chapter4/scontlemma.tex}{86}{lstlisting.4.-3}
-\contentsline {lstlisting}{listings/chapter4/wtlemma.tex}{87}{lstlisting.4.-4}
 \contentsline {lstlisting}{\numberline {4.24}\textsf {decidable} predicate definition}{87}{lstlisting.4.24}
-\contentsline {lstlisting}{listings/chapter4/notindec.tex}{88}{lstlisting.4.-5}
-\contentsline {lstlisting}{listings/chapter4/uniquedec.tex}{89}{lstlisting.4.-6}
-\contentsline {lstlisting}{listings/chapter4/wflnil.tex}{90}{lstlisting.4.-7}
-\contentsline {lstlisting}{listings/chapter4/wfcons.tex}{90}{lstlisting.4.-8}
-\contentsline {lstlisting}{listings/chapter4/wfclc.tex}{91}{lstlisting.4.-9}
-\contentsline {lstlisting}{listings/chapter4/wfdec.tex}{92}{lstlisting.4.-10}
 \contentsline {lstlisting}{\numberline {4.25}\textsf {well\_typed\_bool} function definition}{93}{lstlisting.4.25}
 \contentsline {lstlisting}{\numberline {4.26}\textsf {sound\_contingency\_bool} function definition}{94}{lstlisting.4.26}
 \contentsline {lstlisting}{\numberline {4.27}\textsf {client\_internal\_mandatory\_itfs\_are\_bound\_bool} function definition}{94}{lstlisting.4.27}
 \contentsline {lstlisting}{\numberline {4.28}\textsf {client\_internal\_mandatory\_itfs\_are\_bound\_bool\_one} function definition}{94}{lstlisting.4.28}
 \contentsline {lstlisting}{\numberline {4.29}\textsf {check\_if\_recipients\_are\_mandatory\_aux} function definition}{95}{lstlisting.4.29}
-\contentsline {lstlisting}{listings/chapter4/cltintmandcorrect.tex}{96}{lstlisting.4.-11}
-\contentsline {lstlisting}{listings/chapter4/wtcorrect.tex}{98}{lstlisting.4.-12}
-\contentsline {lstlisting}{listings/chapter4/wtdec.tex}{98}{lstlisting.4.-13}
 \contentsline {lstlisting}{\numberline {4.30}\textsf {state} datatype}{100}{lstlisting.4.30}
 \contentsline {lstlisting}{\numberline {4.31}\textsf {operation} datatype}{100}{lstlisting.4.31}
 \contentsline {lstlisting}{\numberline {4.32}Notation for sequence of \textsf {operation}s}{100}{lstlisting.4.32}
@@ -82,46 +69,34 @@
 \contentsline {lstlisting}{\numberline {4.38}Overall \textsf {operation} for \textsf {component} \textit {"Compoennt N"}}{105}{lstlisting.4.38}
 \contentsline {lstlisting}{\numberline {4.39}Logical statement regarding the reduction of \textsf {build\_running\_example}}{105}{lstlisting.4.39}
 \contentsline {lstlisting}{\numberline {4.40}\textsf {well\_formed} predicate definition}{106}{lstlisting.4.40}
-\contentsline {lstlisting}{listings/chapter4/wfempty.tex}{106}{lstlisting.4.-14}
 \contentsline {lstlisting}{\numberline {4.41}\textsf {validity} statement}{107}{lstlisting.4.41}
-\contentsline {lstlisting}{listings/chapter4/crossexport.tex}{109}{lstlisting.4.-15}
-\contentsline {lstlisting}{listings/chapter4/crossnotvalid.tex}{110}{lstlisting.4.-16}
-\contentsline {lstlisting}{listings/chapter4/nocross.tex}{110}{lstlisting.4.-17}
-\contentsline {lstlisting}{listings/chapter4/generation.tex}{110}{lstlisting.4.-18}
-\contentsline {lstlisting}{listings/chapter4/wellgeneration.tex}{111}{lstlisting.4.-19}
-\contentsline {lstlisting}{listings/chapter4/usecase.tex}{112}{lstlisting.4.-20}
-\contentsline {lstlisting}{listings/chapter4/usecasearch.tex}{113}{lstlisting.4.-21}
-\contentsline {lstlisting}{listings/chapter4/mkcomponents.tex}{113}{lstlisting.4.-22}
-\contentsline {lstlisting}{listings/chapter4/mkmulticast.tex}{114}{lstlisting.4.-23}
-\contentsline {lstlisting}{listings/chapter4/usecasereconfig.tex}{114}{lstlisting.4.-24}
-\contentsline {lstlisting}{listings/chapter4/usecaseproof.tex}{114}{lstlisting.4.-25}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {5.1}Excerpt of the \textsf {build\_state} function definition}{119}{lstlisting.5.1}
 \contentsline {lstlisting}{\numberline {5.2}\textsf {validity} statement}{120}{lstlisting.5.2}
-\contentsline {lstlisting}{\numberline {5.3}\textsf {wf_error_msg} type definition}{121}{lstlisting.5.3}
+\contentsline {lstlisting}{\numberline {5.3}\textsf {wf_error_msg} type definition}{122}{lstlisting.5.3}
 \contentsline {lstlisting}{\numberline {5.4}\textsf {custom_build_state} function definition}{122}{lstlisting.5.4}
 \contentsline {lstlisting}{\numberline {5.5}\textsf {custom\_build\_state\_correct} lemma}{123}{lstlisting.5.5}
 \contentsline {lstlisting}{\numberline {5.6}Shorthand for interfaces}{125}{lstlisting.5.6}
 \contentsline {lstlisting}{\numberline {5.7}Role symmetry}{126}{lstlisting.5.7}
 \contentsline {lstlisting}{\numberline {5.8}Interface symmetry}{126}{lstlisting.5.8}
 \contentsline {lstlisting}{\numberline {5.9}A first \textsc {Painless} specification}{128}{lstlisting.5.9}
-\contentsline {lstlisting}{\numberline {5.10}\textsc {Painless} specification for the \textit {composite} tutorial}{128}{lstlisting.5.10}
+\contentsline {lstlisting}{\numberline {5.10}\textsc {Painless} specification for the \textit {composite} tutorial}{129}{lstlisting.5.10}
 \contentsline {lstlisting}{\numberline {5.11}\textsc {Painless} reconfigurations}{129}{lstlisting.5.11}
 \addvspace {7pt}
 \contentsline {lstlisting}{\numberline {6.1}\textsf {LList} datatype}{134}{lstlisting.6.1}
-\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{135}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.2}Lazy list holding all natural numbers}{134}{lstlisting.6.2}
 \contentsline {lstlisting}{\numberline {6.3}\textsf {lts\_state} datatype}{135}{lstlisting.6.3}
 \contentsline {lstlisting}{\numberline {6.4}\textsf {action} datatype}{135}{lstlisting.6.4}
-\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{136}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.5}\textsf {message} datatype}{135}{lstlisting.6.5}
 \contentsline {lstlisting}{\numberline {6.6}\textsf {LTS} datatype}{136}{lstlisting.6.6}
-\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{137}{lstlisting.6.7}
+\contentsline {lstlisting}{\numberline {6.7}Trace definition for a \textsf {LTS}}{136}{lstlisting.6.7}
 \contentsline {lstlisting}{\numberline {6.8}\textsf {lts\_target\_state} function definition}{137}{lstlisting.6.8}
 \contentsline {lstlisting}{\numberline {6.9}\textsf {SynchronizationVector} datatype}{139}{lstlisting.6.9}
 \contentsline {lstlisting}{\numberline {6.10}A convenient notation for \textsf {SynchronizationVector}}{139}{lstlisting.6.10}
 \contentsline {lstlisting}{\numberline {6.11}\textsf {Net} datatype}{140}{lstlisting.6.11}
 \contentsline {lstlisting}{\numberline {6.12}\textsf {net\_state} datatype}{140}{lstlisting.6.12}
 \contentsline {lstlisting}{\numberline {6.13}\textsf {net\_target\_states} function definition}{140}{lstlisting.6.13}
-\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{142}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.14}\textsf {init\_net\_state} function}{141}{lstlisting.6.14}
 \contentsline {lstlisting}{\numberline {6.15}\textsf {attainable} predicate definition}{142}{lstlisting.6.15}
 \contentsline {lstlisting}{\numberline {6.16}Trace definition for \textsf {Net}}{143}{lstlisting.6.16}
 \contentsline {lstlisting}{\numberline {6.17}Definition of the \textsf {satisfies} predicate}{144}{lstlisting.6.17}
@@ -138,7 +113,6 @@
 \contentsline {lstlisting}{\numberline {6.28}Definition of the overall \textsf {Net}}{148}{lstlisting.6.28}
 \contentsline {lstlisting}{\numberline {6.29}Definition of the \textsf {interleaving} predicate}{148}{lstlisting.6.29}
 \contentsline {lstlisting}{\numberline {6.30}Definition of the \textsf {Rma} relation}{149}{lstlisting.6.30}
-\contentsline {lstlisting}{listings/chapter6/msproof2.tex}{149}{lstlisting.6.-26}
 \contentsline {lstlisting}{\numberline {6.31}Definition of the \textsf {Rma} relation}{151}{lstlisting.6.31}
 \contentsline {lstlisting}{\numberline {6.32}Encoding of the \textsf {lts\_states} for the queue process}{152}{lstlisting.6.32}
 \contentsline {lstlisting}{\numberline {6.33}Encoding of the \textsf {transitions} for the queue process}{152}{lstlisting.6.33}

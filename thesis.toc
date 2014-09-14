@@ -1,29 +1,27 @@
 \select@language {english}
-\select@language {french}
+\contentsline {chapter}{Abstract}{vii}{Doc-Start}
 \select@language {english}
-\select@language {portuguese}
-\select@language {english}
-\contentsline {chapter}{List of Figures}{xv}{Doc-Start}
-\contentsline {chapter}{List of Listings}{xvii}{Doc-Start}
-\contentsline {xchapter}{}{xxi}{Doc-Start}
-\contentsline {chapter}{List of Tables}{xxiii}{Doc-Start}
+\contentsline {chapter}{List of Figures}{xvii}{Doc-Start}
+\contentsline {chapter}{List of Listings}{xix}{Doc-Start}
 \contentsline {xchapter}{}{xxiii}{Doc-Start}
+\contentsline {chapter}{List of Tables}{xxv}{Doc-Start}
+\contentsline {xchapter}{}{xxv}{Doc-Start}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Component-based software engineering}{2}{section.1.1}
+\contentsline {section}{\numberline {1.1}Component-based software engineering}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Context --- The Spinnaker project}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Contributions}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Organisation of this thesis}{5}{section.1.4}
+\contentsline {section}{\numberline {1.4}Organisation of this thesis}{4}{section.1.4}
 \contentsline {chapter}{\numberline {2}Preliminaries}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}The GCM Component Model}{8}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Overview of the GCM specification}{9}{subsection.2.1.1}
 \contentsline {paragraph}{Component introspection}{9}{section*.5}
 \contentsline {paragraph}{Component configuration}{10}{section*.7}
 \contentsline {paragraph}{Component runtime instantiation}{11}{section*.9}
-\contentsline {paragraph}{Component typing}{12}{section*.10}
-\contentsline {subsection}{\numberline {2.1.2}The GCM ADL}{13}{subsection.2.1.2}
+\contentsline {paragraph}{Component typing}{11}{section*.10}
+\contentsline {subsection}{\numberline {2.1.2}The GCM ADL}{12}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}ProActive --- A middleware for distributed programming}{14}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}GCM/ProActive --- a reference implementation for GCM}{15}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Specifying architectures with the ADL}{17}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Specifying architectures with the ADL}{16}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}pNets: A formalism for defining behavioural semantics}{20}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Behavioural semantics for GCM/ProActive applications}{22}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Coping with structural reconfigurations}{24}{subsection.2.3.2}
@@ -32,13 +30,13 @@
 \contentsline {subsection}{\numberline {2.5.1}Data types}{30}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Functional programming in Coq}{31}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Proving properties}{34}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{37}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.4}Extracting certified programs}{36}{subsection.2.5.4}
 \contentsline {chapter}{\numberline {3}The HyperManager}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}The HyperManager architecture}{41}{section.3.1}
+\contentsline {section}{\numberline {3.1}The HyperManager architecture}{42}{section.3.1}
 \contentsline {section}{\numberline {3.2}Formal specification and verification methodology}{44}{section.3.2}
 \contentsline {section}{\numberline {3.3}The HyperManager as a formal methods case study}{48}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}On HyperManager Gateway}{48}{subsection.3.3.1}
-\contentsline {subsubsection}{\textsf {JMX Indicators} component}{48}{section*.30}
+\contentsline {subsection}{\numberline {3.3.1}On HyperManager Gateway}{49}{subsection.3.3.1}
+\contentsline {subsubsection}{\textsf {JMX Indicators} component}{49}{section*.30}
 \contentsline {subsubsection}{\textsf {Gateway Primitive} component}{51}{section*.32}
 \contentsline {subsubsection}{\textsf {Push Component} component}{53}{section*.34}
 \contentsline {subsubsection}{Model Generation and Proven Properties}{55}{section*.37}
@@ -80,9 +78,9 @@
 \contentsline {section}{\numberline {5.1}Integration approach}{118}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Computing \textsf {states} from \textsf {operations}}{119}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Certified code, \textsc {Painless} interpreter, and the ProActive middleware}{121}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{124}{section.5.2}
+\contentsline {section}{\numberline {5.2}The \textsc {Painless} architecture description language}{125}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}\textsc {Painless} Semantics}{126}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{127}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}\textsc {Painless} hello world and beyond}{128}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Discussion}{130}{section.5.3}
 \contentsline {chapter}{\numberline {6}Mechanized behavioural semantics}{133}{chapter.6}
 \contentsline {section}{\numberline {6.1}Groundwork: Infinite data structures}{134}{section.6.1}
@@ -99,8 +97,8 @@
 \contentsline {section}{\numberline {6.4}Towards GCM behavioural models}{152}{section.6.4}
 \contentsline {section}{\numberline {6.5}Discussion}{156}{section.6.5}
 \contentsline {chapter}{\numberline {7}Related work}{159}{chapter.7}
-\contentsline {section}{\numberline {7.1}On the HyperManager use case}{159}{section.7.1}
-\contentsline {section}{\numberline {7.2}On the Mefresa framework}{160}{section.7.2}
+\contentsline {section}{\numberline {7.1}On the HyperManager use case}{160}{section.7.1}
+\contentsline {section}{\numberline {7.2}On the Mefresa framework}{161}{section.7.2}
 \contentsline {section}{\numberline {7.3}On Painless}{162}{section.7.3}
 \contentsline {chapter}{\numberline {8}Final remarks}{165}{chapter.8}
 \contentsline {chapter}{Bibliography}{167}{chapter.8}
