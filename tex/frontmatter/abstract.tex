@@ -7,53 +7,49 @@
 
 \chapter*{\centering R\'esum\'e}
 
-Cette thèse appartient au domaine des méthodes formelles. 
+Cette thèse s'inscrit dans le domaine des méthodes formelles. 
 Que ce soit par le biais d'approches automatiques ou interactives, l'objectif des méthodes formelles 
 est d'accroître la confiance que l'on peut placer sur les propriétés d'un système. 
-Dans cette thèse, nous concentrons 
-leur application sur une méthodologie spécifique 
-pour le développement de logiciels: l'ingénierie à base de composants. 
+Dans cette thèse, nous concentrons leurs applications ((appliquons ces méthodes?)) sur une méthodologie spécifique liée au développement de logiciels: l'ingénierie à base de composants. 
 
 
-Parmi tous les paradigmes de programmation, de l'ingénierie à base de composants se présente comme une 
-des approches les plus suivies pour le développement de logiciels dans le monde réel. Elle met l'accent 
-sur une séparation nette des préoccupations, attrayant ainsi pour des fins industriels 
-et de recherche. En outre, elle permet des reconfigurations structurelle 
-de l'architecture des applications. L'avantage de la modification de l'architecture du logiciel 
-vient de la nécessité de faire face à la multitude de situations 
-qui peuvent survenir dans un système potentiellement massivement distribué et hétérogène. 
-À cette fin, le \textit{Grid Component Model} (GCM) suis cette approche en fournissant touts  
-les moyens pour définir, composer, et dynamiquement reconfigurer les applications distribuées 
-à base de composants. 
+Parmi tous les paradigmes de programmation, l'ingénierie à base de composants se présente comme une 
+des approches les plus utilisées pour le développement de logiciels dans le monde réel. Elle met l'accent 
+sur une séparation nette des préoccupations ce qui suscite un intérêt grandissant, que ce soit à des fins industriels 
+ou de recherche. Elle permet notamment de réaliser des reconfigurations structurelles 
+de l'architecture des applications, lui permettant ainsi de faire face aux nombreuses situations 
+qui peuvent survenir dans un système potentiellement distribué et hétérogène. 
+À cette fin, le \textit{Grid Component Model} (GCM) suis cette approche en fournissant tout  
+les moyens pour définir, composer, et reconfigurer dynamiquement les applications distribuées 
+à base de composants.
 
 
-Dans cette thèse, nous abordons la spécification formelle, la vérification et le déploiement
- d'applications GCM reconfigurables et distribués. Notre première contribution est un cas d'étude 
+Dans cette thèse nous abordons la spécification formelle, la vérification et le déploiement
+ d'applications GCM reconfigurables et distribuées. Notre première contribution est un cas d'étude 
 industriel 
  sur la spécification comportementale et la vérification d'une application distribuée et 
  reconfigurable: \textsc{The HyperManager}. 
 Cela favorise l'utilisation des méthodes formelles dans un contexte industriel, 
-     mais met également en évidence la nécessité d'approches alternatives et/ou complémentaires 
-afin de mieux répondre à ces entreprises. 
+     mais permet également de mettre en évidence la nécessité d'apporter des approches alternatives et/ou complémentaires 
+afin de mieux répondre aux besoins de ces entreprises. 
 
-Notre deuxième contribution est une plate-forme, élaboré avec l'assistant de preuve Coq, 
-pour le raisonnement sur ​​les architectures logicielles: \textsc {Mefresa} . Cela comprend 
-la mécanisation de la spécification du GCM, et les moyens pour 
-raisonner sur les architectures reconfigurables GCM. En outre, nous adressons 
-les aspects comportementaux en formalisant une sémantique basée sur les traces d'exécution de 
-systèmes de transitions synchronisées. 
-Dans l'ensemble, elle fournit les premiers pas vers une plate-forme complète pour la spécification 
-et la vérification des caractéristiques structurelle et comportementale. 
+Notre deuxième contribution est une plate-forme permettant le raisonnement sur ​​les architectures logicielles: \textsc {Mefresa}, élaboré avec l'assistant de preuve Coq. Cela comprend 
+la mécanisation ((automatisation?)) de la spécification du GCM, et les moyens pour 
+raisonner sur les architectures reconfigurables GCM. Nous adressons également
+les aspects comportementaux par la formalisation d'une sémantique basée sur les traces d'exécution de 
+systèmes de transitions synchronisées ((és?)). 
+Dans l'ensemble, cette sémantique fournit les premiers pas vers une plate-forme complète pour la spécification 
+et la vérification de caractéristiques structurelles et comportementales.
 
-Enfin, notre troisième contribution est un nouveau langage de description d'architecture (ADL): 
-\textsc{Painless}. En outre, nous discutons son intégration avec ProActive --- 
+Enfin, notre troisième contribution consiste en un nouveau langage de description d'architecture (ADL): 
+\textsc{Painless}. Nous discutons entre autre de son intégration avec ProActive --- 
 un intergiciel Java pour la programmation concurrente et distribuée, 
 et l'implantation référence du GCM. 
 \textsc{Painless} permet de spécifier des architectures de GCM paramétrées, avec 
-leurs reconfigurations structurelle, dans un langage déclaratif. Conformité 
+leurs reconfigurations structurelles, dans un langage déclaratif. La conformité 
 avec la spécification de GCM est évaluée par le code fonctionnel certifié extrait de 
-\textsc{Mefresa} . Ceci permet le déploiement et
-reconfigurations sûre des applications du GCM.
+\textsc{Mefresa} . Celà permet le déploiement et la
+reconfiguration sûre des applications du GCM.
 
 
 
